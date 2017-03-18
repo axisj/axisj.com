@@ -23,10 +23,7 @@ author  :
   name  : 'Jowrney Kim'
   url   : http://jowrney.com
 
-gems:
-  - jekyll-polyglot
-  - jekyll-paginate
-  - jekyll-feed
+gems: [jekyll-polyglot, jekyll-paginate, jekyll-feed]
 
 # Permalinks
 permalink : pretty
@@ -45,6 +42,8 @@ github  :
 #Polyglot
 languages     : ["en", "ko"]
 default_lang  : "ko"
+
+parallel_localization: false
 
 exclude_from_localization: ["javascript", "images", "css"]
 
