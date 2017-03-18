@@ -24,7 +24,7 @@ opensources:
     link: "/axboot"
 
   - name: "AX5"
-    desc: "AX5UI is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap."
+    desc: "AX5 is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap."
     img256: "/assets/images/symbolic_ax5_256.png"
     link: "/ax5"
 
@@ -138,7 +138,7 @@ page_axboot_docus:
     group_name: "AXBOOT USER GROUP"
     group_link: "http://facebook.com/group/axboot"
   - label: "UI Framework Demo"
-    desc: "AX5UI Framework Demo & Documentation"
+    desc: "AX5 Framework Demo & Documentation"
     img: "/assets/images/axboot-doc-2@2x.png"
     link_name: "AX5.IO"
     link: "http://ax5.io"
@@ -183,19 +183,19 @@ page_ax5_type:
 page_ax5_desc:
   - msg: "Web Standard Javascript UI Framework, AX5"
   - msg: "
-    AX5UI is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap.<br />
-    To use AX5UI, you need to have basic knowledge of 'HTML, JS, CSS'."
+    AX5 is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap.<br />
+    To use AX5, you need to have basic knowledge of 'HTML, JS, CSS'."
 
 page_ax5_btns:
   - label: "Demo Website"
     link: "http://ax5.io"
   - label: "Github"
-    link: "https://github.com/ax5ui"
+    link: "https://github.com/AX5"
 
 page_ax5_intro:
   - label: "AX5 UI"
     desc:
-      - msg: "AX5UI demonstrates AXISJ's development experience with designed and developed software.
+      - msg: "AX5 demonstrates AXISJ's development experience with designed and developed software.
               The application was trimmed from the AX5 UI using the UI."
         list:
           - txt: "How can developers shorten development time?"
@@ -210,12 +210,12 @@ page_ax5_intro:
           - txt: "The developer should be able to enjoy coding only by automating the whole process."
       - msg: "We will have more improvements and efforts in the future to grow into a usable UI plugin, I would appreciate it if you participate with your heart to make it together."
   - label: "jQuery"
-    desc: "We are using the jQuery library to make UI plug-in development faster and more reasonable. In AX5UI, the role of the jQuery library is to find, add, delete and attach the desired elements.
+    desc: "We are using the jQuery library to make UI plug-in development faster and more reasonable. In AX5, the role of the jQuery library is to find, add, delete and attach the desired elements.
           JQuery is the JS library that most developers in the world are using (http://jquery.com/)."
   - label: "Bootstrap"
     desc: "Bootstrap is a framework that has been pre-built with CSS and Javascript to design various layouts, buttons, and input windows.
            It was explosive enough to be called the revolution in web design and is one of the most used front-end frameworks around the world.<br /><br />
-           The theme system of AX5UI was designed with SCSS code and CSS file which is the final product.
+           The theme system of AX5 was designed with SCSS code and CSS file which is the final product.
             The variable structure in the SCSS code is designed to be compatible with the Bootstrap SCSS structure and has been developed and tested to optimize the usage of CSS classes such as input window in a structure like Bootstrap."
 
 page_ax5_features:
@@ -230,7 +230,7 @@ page_ax5_features:
     desc: "Though AXISJ is a nonprofit open-source project, we try our best to respond to users questions on Github ASAP. We offer various technical products such as visit teaching, remote support, email, call service and custom development for companies to be fully responsible for our project and the source."
     links:
       - label: "View github issue tracker"
-        link: "https://github.com/ax5ui/ax5ui-kernel/issues"
+        link: "https://github.com/AX5/AX5-kernel/issues"
 
 page_ax5_specials:
   - label: "Productivity"
@@ -250,7 +250,7 @@ page_99nerds_name: "99Nerds"
 page_99nerds_desc: "Each time a sticker is sold, it is 'sponsored as an open source project'"
 page_99nerds_stickers: "HTML5, CSS3, JS-J, JS-J, JS-S, JS-JS, GOLang, Eclipse, Angular, Ubuntu, Fedora, Spring, Python,
                       C-Sharp, React, Yeoman, Linux, Android, Bower, CodeIgniter, Redis, GIT, Jenkins, Scala, MongoDB, Gulp, Flask, django,
-                      Bash, jQuery, rm-rf, Bootstrap, Swift, Docker, JS-Yellow, AXISJ, AX5UI, AXBoot"
+                      Bash, jQuery, rm-rf, Bootstrap, Swift, Docker, JS-Yellow, AXISJ, AX5, AXBoot"
 
 page_99nerds_type:
   - msg: "

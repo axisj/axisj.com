@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 제10회 공개소프트웨어 개발자대회 금상 - 액스부트
+title: 제10회 공개소프트웨어 개발자대회 금상 - AXBoot
 category: timeline
 type : right
 lang : ko
 ---
 
-제10회 공개소프트웨어 개발자대회 금상 - 액스부트
+제10회 공개소프트웨어 개발자대회 금상 - AXBoot
 
 ![oss-1]({{ site.baseurl }}/assets/images/2016-12-OSS-1.jpg){:.gallery}
 ![oss-2]({{ site.baseurl }}/assets/images/2016-12-OSS-2.jpg){:.gallery}

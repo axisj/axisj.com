@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AX5UI 2016 KOSS Hackathon Winner
+title: AX5 2016 KOSS Hackathon Winner
 category: timeline
 type : right
 lang : en
 ---
 
-AX5UI 2016 KOSS Hackathon Winner
+AX5 2016 KOSS Hackathon Winner
 
 ![koss-1]({{ site.baseurl }}/assets/images/2016-koss-1.jpg){:.gallery}
 ![koss-2]({{ site.baseurl }}/assets/images/2016-koss-2.jpg){:.gallery}
