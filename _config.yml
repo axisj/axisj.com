@@ -23,7 +23,10 @@ author  :
   name  : 'Jowrney Kim'
   url   : http://jowrney.com
 
-gems: [jekyll-polyglot, jekyll-paginate]
+gems:
+  - jekyll-polyglot
+  - jekyll-paginate
+  - jekyll-feed
 
 # Permalinks
 permalink : pretty
