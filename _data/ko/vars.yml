@@ -364,7 +364,7 @@ page_donate_support_how:
       - label : "페이팔"
         prefix: "paypal"
         desc  : "$3,$100,$200,$400"
-      - label : "Github 공헌자로 참여"
+      - label : "오픈 소스에 공헌하기"
         prefix: "github"
         desc  : "Github Repository"
 
@@ -377,7 +377,7 @@ page_donate_support_how:
       - label : "페이팔 정기후원"
         prefix: "paypal"
         desc  : "매년 $12,매년 $36,매년 $120,매년 $360, 매년 $1,000"
-      - label : "Github 공헌자로 참여"
+      - label : "오픈 소스에 공헌하기"
         prefix: "github"
         desc  : "Github Repository"
 
