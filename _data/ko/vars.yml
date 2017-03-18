@@ -37,11 +37,11 @@ opensources:
     desc: "개발자를 위한 쇼핑몰 99NERDS. 구매한 금액의 10%를 해당 오픈 소스에 후원합니다."
     img256: "/assets/images/symbolic_99nerds_256.png"
     link: "/99nerds"
-
-  - name: "X-JSON"
-    desc: "세상에서 가장 빠른 JSON 뷰어"
-    img256: "/assets/images/symbolic_jsongum_256.png"
-    link: "/jsongum"
+#
+#  - name: "X-JSON"
+#    desc: "세상에서 가장 빠른 JSON 뷰어"
+#    img256: "/assets/images/symbolic_jsongum_256.png"
+#    link: "/xjson"
 
 # Page - AXISJ(Timeline) ########################
 page_axisj_name: "AXISJ"

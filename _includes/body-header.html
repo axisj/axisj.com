@@ -37,7 +37,7 @@
                 {% endif %}
 
                 {% for var in site.data[reverse_lang].vars.languages %}
-                <li><a href="{% if site.active_lang == site.default_lang %} {{site.baseurl}}/en{{page.url}} {% else %} {{site.baseurl}}{{page.url}} {% endif %}"><span class="{{site.active_lang}}"></span>{{ var.select }}</a></li>
+                <!--li><a href="{% if site.active_lang == site.default_lang %} {{site.baseurl}}/en{{page.url}} {% else %} {{site.baseurl}}{{page.url}} {% endif %}"><span class="{{site.active_lang}}"></span>{{ var.select }}</a></li-->
                 {% endfor %}
             </ul>
             {% endif %}

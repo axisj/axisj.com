@@ -11,8 +11,8 @@ topmenus:
       url : '/99nerds/'
     - label: AXICON
       url : '/axicon/'
-    - label: X-JSON
-      url : '/xjson/'
+    #- label: X-JSON
+    #  url : '/xjson/'
   - label: 옵션메뉴
     submenus:
     - label: Medium
