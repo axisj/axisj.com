@@ -80,7 +80,7 @@ bar_logo_link: '/'
                         <h5 class="{{ list.prefix }}">{{ list.label }}</h5>
                         <div class="cate">
                         {% if hero.email != "" %}<a href="mailto:{{ hero.email }}" class="email">{{ hero.email }}</a>{% endif %}
-                        {% if hero.homepage != "" %}<a href="http://{{ hero.homepage }}" class="homepage">{{ hero.homepage }}</a>{% endif %}
+                        {% if hero.homepage != "" %}<a href="http://{{ hero.homepage }}" class="homepage" target="_blank">{{ hero.homepage }}</a>{% endif %}
                         {% if hero.desc != "" %}<div class="desc">{{ hero.desc }}</div>{% endif %}
                         </div>
                     </div>

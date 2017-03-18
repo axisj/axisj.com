@@ -55,7 +55,7 @@ bar_logo_link: '/'
                                     {% assign words = method.desc | split:"," %}
                                     {% if method.prefix == "paypal" %}
 
-                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                         <input type="hidden" name="cmd" value="_s-xclick">
                                         <input type="hidden" name="hosted_button_id" value="6QJZZ5W98K2UA">
                                         <input type="hidden" name="on0" value="donate">
@@ -140,7 +140,7 @@ bar_logo_link: '/'
                             <h4>{{ hero.name }}</h4>
                             <div class="cate">
                                 {% if hero.email != "" %}<a href="mailto:{{ hero.email }}" class="email">{{ hero.email }}</a>{% endif %}
-                                {% if hero.homepage != "" %}<a href="http://{{ hero.homepage }}" class="homepage">{{ hero.homepage }}</a>{% endif %}
+                                {% if hero.homepage != "" %}<a href="http://{{ hero.homepage }}" class="homepage" target="_blank">{{ hero.homepage }}</a>{% endif %}
                                 {% if hero.desc != "" %}<div class="desc">{{ hero.desc }}</div>{% endif %}
                             </div>
                         </div>
