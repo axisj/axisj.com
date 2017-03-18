@@ -24,7 +24,7 @@ opensources:
     link: "/axboot"
 
   - name: "AX5"
-    desc: "17+ 이상의 웹 컴포넌트를 제공하는 No.1 웹 애플리케이션 플러그인"
+    desc: "17+ 이상의 웹 컴포넌트를 제공하는 No.1 웹 애플리케이션 컴포넌트"
     img256: "/assets/images/symbolic_ax5_256.png"
     link: "/ax5"
 
@@ -172,7 +172,7 @@ page_axboot_contact:
 # Page - AX5 ########################
 page_ax5_name: "AX5"
 page_ax5_type:
-  - msg: "No.1 웹 애플리케이션 UI 플러그인"
+  - msg: "No.1 웹 애플리케이션 UI 컴포넌트"
   - msg: "웹을 애플리케이션 UI를 가장 완벽하게 만드는 방법, AX5"
 
 page_ax5_desc:
@@ -195,8 +195,8 @@ page_ax5_intro:
           - txt: "어떻게 하면 개발자들이 원하는 기능을 언제든 편하게 추가 하고 공유 할 수 있을까?"
       - msg: "AX5는 잘 설계된 UI 컴포넌트 입니다."
         list:
-          - txt: "플러그인들 간의 호환성이 뛰어납니다."
-          - txt: "각 플러그인들의 의존관계가 거의 없습니다."
+          - txt: "컴포넌트들 간의 호환성이 뛰어납니다."
+          - txt: "각 컴포넌트들의 의존관계가 거의 없습니다."
           - txt: "NPM, Bower와 같은 의존성 관리 도구를 통해 쉽게 내려받을 수 있습니다."
       - msg: "AX5는 전 세계 웹 애플리케이션에서 사용하고 있는 검증된 UI 컴포넌트 입니다."
   - label: "jQuery"
