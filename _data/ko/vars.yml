@@ -56,7 +56,7 @@ page_axboot_type:
   - msg: "웹 애플리케이션 DIY 키트"
 
 page_axboot_desc:
-  - msg: "웹 애플리케이션의 A-Z"
+  - msg: "웹 애플리케이션 개발에 필요한 핵심엔진을 모두 제공합니다"
   - msg: "AXBoot 프레임워크는 웹 애플리케이션 개발에 필요한 모든 컴포넌트를 제공합니다. 더이상 어렵고 반복적인 웹 개발은 그만! 빠르고 안정적인 엔터프라이즈 서비스 개발에 AXBoot를 사용하세요."
 
 page_axboot_btns:
@@ -131,7 +131,7 @@ page_axboot_docus:
     link_name: "문서보기"
     link: "http://api.axboot.com"
     group_name: "AXBoot 페이스북 그룹 참여하기"
-    group_link: "http://facebook.com/group/axboot"
+    group_link: "https://www.facebook.com/groups/axboot/"
   - label: "UI Framework 데모"
     desc: "AX5 Framework Demo & Documentation"
     img: "/assets/images/axboot-doc-2@2x.png"
