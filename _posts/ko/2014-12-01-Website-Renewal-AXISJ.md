@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 액시스제이 웹사이트 리뉴얼
+title: AXISJ 웹사이트 리뉴얼
 category: timeline
 type : left
 lang : ko

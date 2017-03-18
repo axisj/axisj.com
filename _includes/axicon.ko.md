@@ -49,8 +49,8 @@
     <i class="axi axi-bicycle-man axi-rotate-180"></i>axi-rotate-180<br />
     <i class="axi axi-bicycle-man axi-rotate-270"></i>axi-rotate-270<br />
 
-### 액시스제이 버튼과 함께 사용
-액시스제이 버튼과 사용하면 더욱 멋진 버튼을 구현할 수 있습니다.
+### AXISJ 버튼과 함께 사용
+AXISJ 버튼과 사용하면 더욱 멋진 버튼을 구현할 수 있습니다.
 
     <button class="AXButton"><i class="axi axi-axisj"></i> AXISJ</button><br />
     <button class="AXButton Red"><i class="axi axi-axu"></i> AXU</button><br />

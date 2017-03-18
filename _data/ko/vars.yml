@@ -421,7 +421,7 @@ page_donate_support_sw:
 # Page - Heroes ########################
 page_heroes_name: "영웅들"
 page_heroes_type:
-  - msg: "액시스제이엔 수 많은 영웅들이 있습니다."
+  - msg: "AXISJ엔 수 많은 영웅들이 있습니다."
   - msg: "이들이 있기에 세상은 아름답습니다."
   - msg: "감사합니다."
 page_heroes_section: "우리의 빛나는 영웅들"

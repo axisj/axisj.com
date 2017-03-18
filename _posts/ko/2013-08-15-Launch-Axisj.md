@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 액시스제이 런칭
+title: AXISJ 런칭
 category: timeline
 type : left
 lang : ko

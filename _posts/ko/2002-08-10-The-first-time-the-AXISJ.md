@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 액시스제이의 시작
+title: AXISJ의 시작
 category: timeline
 type : right
 lang : ko
