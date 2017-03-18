@@ -12,7 +12,7 @@ topmenus:
     - label: AXICON
       url : '/axicon/'
     - label: X-JSON
-      url : '/jsongum/'
+      url : '/xjson/'
   - label: Option Menu
     submenus:
     - label: Medium

@@ -34,7 +34,7 @@ opensources:
     link: "/axicon"
 
   - name: "99NERDS"
-    desc: "내가 사용하는 오픈소스를 후원하는 가장 쉬운 방법! 개발자를 위한 쇼핑몰 99Nerds."
+    desc: "개발자를 위한 쇼핑몰 99NERDS. 구매한 금액의 10%를 해당 오픈 소스에 후원합니다."
     img256: "/assets/images/symbolic_99nerds_256.png"
     link: "/99nerds"
 
@@ -241,17 +241,15 @@ page_ax5_specials:
           link: "http://www.facebook.com/axisj"
 
 # Page - 99Nerds ########################
-page_99nerds_name: "구구너드"
-page_99nerds_desc: "스티커가 팔릴 때 마다 해당 '오픈소스 프로젝트로 후원'됩니다"
+page_99nerds_name: ""
+page_99nerds_desc: "구매한 상품 금액의 10%를 해당 오픈 소스에 후원합니다!"
 page_99nerds_stickers: "HTML5, CSS3, JS-J, JS-J, JS-S, JS-JS, GOLang, Eclipse, Angular, Ubuntu, Fedora, Spring, Python,
 C-Sharp, React, Yeoman, Linux, Android, Bower, CodeIgniter, Redis, GIT, Jenkins, Scala, MongoDB, Gulp, Flask, django,
 Bash, jQuery, rm-rf, Bootstrap, Swift, Docker, JS-Yellow, AXISJ, AX5UI, AXBoot"
 
 page_99nerds_type:
-  - msg: "스티커가 팔릴 때 마다 해당 '오픈소스 프로젝트로 후원'됩니다"
-  - msg: "한 장의 스티커가 세상을 바꿉니다."
-  - msg: "한 장의 스티커가 밝은 개발환경을 만듭니다."
-  - msg: "한 장의 스티커가 개발자를 웃게 합니다."
+  - msg: "내 오픈 소스를 후원하는 가장 쉬운 방법. 99NERDS에서 시작하세요!"
+  - msg: "개발자를 위한 쇼핑몰 99NERDS."
 
 page_99nerds_says:
   - msg: "눈을 떠보니 내 놋북에 뙇!"
@@ -262,16 +260,15 @@ page_99nerds_says:
     name: "토마스 링컨"
 
 page_99nerds_desc:
-  - msg: "오픈소스 스티커몰"
-  - msg: "개발자의 인생을 살다보면 수 많은 오픈소스의 사용하게 됩니다.
-  다른 개발자의 땀과 노력이 나의 개발에도 큰 영감과 도움이 될 때 크나큰 감사와 기쁜을 느끼는 것은 비단 저 뿐일까요
-  내 책상에, 나의 노트북에 오픈소스 스티커를 붙여보세요. 작은 실천이 오픈소스의 미래를 밝게 합니다."
+  - msg: "개발자를 위한 쇼핑몰"
+  - msg: "내가 사용하는 오픈 소스를 상품으로 만나보세요!<br/>
+  구매한 금액의 10%를 해당 오픈 소스에 당신의 이름으로 후원합니다!"
 
 page_99nerds_btns:
-  - label: "스티커 쇼핑"
+  - label: "쇼핑하러 가기"
     link: "http://www.99nerds.io"
-  - label: "스티커 제안"
-    link: "mailto:tom@axisj.com"
+  - label: "상품 제안"
+    link: "mailto:bill@chequer.io"
 
 # Page - AXIcon ########################
 page_axicon_name: "액시콘"

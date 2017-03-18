@@ -12,7 +12,7 @@ topmenus:
     - label: AXICON
       url : '/axicon/'
     - label: X-JSON
-      url : '/jsongum/'
+      url : '/xjson/'
   - label: 옵션메뉴
     submenus:
     - label: Medium
@@ -39,10 +39,10 @@ menu_axboot:
     link: "member"
 
 menu_99nerds:
-  - name: "소개"
+  - name: "쇼핑몰 소개"
     link: "intro"
-  - name: "스티커"
-    link: "sticker"
+  - name: "판매 오픈 소스"
+    link: "opensource"
 
 menu_ax5:
   - name: "소개"

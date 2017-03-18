@@ -49,12 +49,12 @@ bar_logo_target: '_blank'
             </div>
         </div>
         <div class="axu-layer visual-desc-layer">
-            <div class="axu-wrap">
+            <div class="axu-wrap" style="text-align:center;">
                 <h3>{{ site.data.vars.page_99nerds_desc[0].msg }}</h3>
                 <p>{{ site.data.vars.page_99nerds_desc[1].msg }}</p>
                 <div class="btns">
                     {% for btn in site.data.vars.page_99nerds_btns %}
-                    <a href="{{ btn.link }}" class="btn-{{forloop.index}}">{{ btn.label }}</a>
+                    <a href="{{ btn.link }}" class="btn-{{forloop.index}}" target="_blank">{{ btn.label }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -64,9 +64,8 @@ bar_logo_target: '_blank'
     <!-- e.AXVisual -->
 
 
-
-    <div id="AXUStickers">
-        <a name="sticker"></a>
+    <a name="intro"></a>
+    <div id="AXUIntro">
         <div class="axu-layer">
             <div class="axu-section-title">
                 <h3><span>{{ site.data.nav.menu_99nerds[0].name }}</span></h3>
@@ -81,7 +80,10 @@ bar_logo_target: '_blank'
                 </div>
             </div>
         </div>
-        <a name="sticker"></a>
+    </div>
+
+    <a name="opensource"></a>
+    <div id="AXUStickers">
         <div class="axu-layer">
             <div class="axu-section-title">
                 <h3><span>{{ site.data.nav.menu_99nerds[1].name }}</span></h3>
