@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- Code Highlighter -->
+    <link rel="stylesheet" href="/assets/css/highlightjs/androidstudio.css">
+
+    
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="Content-Language" content="ko"><link rel="alternate" i18n="ko" href="https://axisj.com/99nerds/" />
+<link rel="alternate" i18n="en" href="https://axisj.com/en/99nerds/" />
+
+    <title>
+        Open Source Group :: AXISJ
+        <!--
+        
+         &middot; AXISJ
+        
+        -->
+    </title>
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="/assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.timeago.js" type="text/javascript"></script>
+    <script src="/assets/js/typed.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/assets/css/justifiedGallery.min.css">
+    <script src="/assets/js/jquery.justifiedGallery.min.js"></script>
+
+    <script src="/assets/js/highlight.pack.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+
+    <script type="text/javascript">
+        var fnObj = {
+            pageStart: function(){
+                //Hamburger menu
+                jQuery(".hamburger-menu").click(function(){
+
+                    jQuery(".hamburger").toggleClass('is-active');
+                    jQuery(".mx-header-overay").toggleClass('open');
+
+                });
+
+                //Timeago
+                
+                jQuery.timeago.settings.strings.suffixAgo = "전";
+                jQuery.timeago.settings.strings.suffixFromNow = "지금부터";
+                jQuery.timeago.settings.strings.inPast = "지금";
+                jQuery.timeago.settings.strings.seconds = "1분 이내";
+                jQuery.timeago.settings.strings.mintue = "약 1분";
+                jQuery.timeago.settings.strings.mintues = "%d분";
+                jQuery.timeago.settings.strings.hour = "약 1시간";
+                jQuery.timeago.settings.strings.hours = "약 %d시간";
+                jQuery.timeago.settings.strings.day = "약 1시간";
+                jQuery.timeago.settings.strings.days = "%d시간";
+                jQuery.timeago.settings.strings.month = "약 1달";
+                jQuery.timeago.settings.strings.months = "%d달";
+                jQuery.timeago.settings.strings.year = "약 1년";
+                jQuery.timeago.settings.strings.years = "%d년";
+                
+
+                jQuery.timeago.settings.allowFuture = true;
+                jQuery("time.timeago").timeago();
+
+                //Typed...
+                Typed.new('#typed', {
+                    //strings:typed_strings,
+                    stringsElement: document.getElementById('typed-msgs'),
+                    contentType: 'html',
+                    shuffle: true,
+                    typeSpeed: 100,
+                    startDelay: 500,
+                    backDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                });
+
+                //Code Highlighting...
+                hljs.initHighlightingOnLoad();
+                var aCodes = document.getElementsByTagName('pre code');
+                for (var i=0; i < aCodes.length; i++) {
+                    hljs.highlightBlock(aCodes[i]);
+                }
+                /*
+                jQuery('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+                */
+
+                //Markdown 타임라인용 갤러리 지원
+                jQuery('.gallery').each(function() {
+                    if (jQuery(this.parentNode).hasClass('flex-images')) return;
+                    jQuery(this).nextUntil(':not(.gallery)').addBack().wrapAll("<div class='flex-images mp-gallery'>");
+                });
+
+                jQuery('.flex-images').find('.gallery').each(function(){
+                    var src = jQuery(this).prop("src");
+                    jQuery(this).wrap("<a href='"+src+"' >");
+                    //console.log(src);
+                });
+                jQuery(".flex-images").justifiedGallery({
+                    rowHeight : 80,
+                    lastRow : 'justify',
+                    margins : 0,
+                    captions:false,
+                    randomize:true
+                });
+
+
+                //Magnific popup
+                jQuery('.mp-gallery').each(function() { // the containers for all your galleries
+                    jQuery(this).magnificPopup({
+                        delegate: 'a', // the selector for gallery item
+                        type: 'image',
+                        gallery: {
+                            enabled:true
+                        }
+                    });
+                });
+
+
+
+                //jQuery('.flex-images').find('.gallery').wrap("<a href='"+jQuery(this).attr('src')+"' >");
+
+
+                //Flex Images...
+
+                //jQuery("#AXUTimeline img[class^='gallery']").wrap("<div class='flex-images' />");
+                //var first_evt = jQuery("#AXUTimeline").find(".flex-image").find(".gallery").wrap("<a href='#' />");
+
+                /*
+                jQuery.when.apply(this, first_evt).done(function(){
+                    second_evt;
+                });
+                */
+
+                //jQuery("#AXUTimeline").find(".gallery").wrapAll("<div class='flex-images' />");
+
+            },
+            //When scrolling add bar shadow class...
+            pageScroll:function(){
+
+                if(jQuery(this).scrollTop()) {
+                    jQuery('#AXUHeader .header-bar').addClass('scrolled');
+                    jQuery('#AXUHeader .mx-header-bar').addClass('scrolled');
+                } else {
+                    jQuery('#AXUHeader .header-bar').removeClass('scrolled');
+                    jQuery('#AXUHeader .mx-header-bar').removeClass('scrolled');
+                }
+            },
+            //Random Timeline Images..
+            pageResize: function(){
+
+            }
+        }
+
+        jQuery(document.body).ready(function(){
+
+            if (!window.getComputedStyle) {
+                window.getComputedStyle = function(element) {
+                    return element.currentStyle;
+                }
+            }
+            fnObj.pageStart();
+            jQuery(window).resize(fnObj.pageResize);
+            jQuery(window).scroll(fnObj.pageScroll);
+        });
+
+
+
+
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/lang_ko.css">
+    <link rel="stylesheet" href="/assets/css/layout_99nerds.css">
+    <link rel="stylesheet" href="/assets/css/contents_99nerds.css">
+
+</head>
+
+<body>
+<div id="AXUBody">
+    
+
+<div id="AXUHeader">
+    <div class="header-bar-fixed"></div>
+    <div class="axu-layer mx-header-hamburger">
+        <div class="axu-wrap">
+            <a href="#axu" class="hamburger-menu">
+                <div class="hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="axu-layer mx-header-overay">
+        <nav>
+            
+            
+            <ul class="top-menu">
+                
+                <li><a href="/" class=""><span class="bullet"></span>AXISJ</a></li>
+                
+                <li><a href="/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                
+                <li><a href="/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                
+                <li><a href="/99nerds/" class="on"><span class="bullet"></span>99NERDS</a></li>
+                
+                <li><a href="/axicon/" class=""><span class="bullet"></span>AXICON</a></li>
+                
+                <li><a href="/xjson/" class=""><span class="bullet"></span>X-JSON</a></li>
+                
+            </ul>
+            
+            
+            
+            <ul class="option-menu">
+                
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>Medium</a></li>
+                
+                <li><a href="/heroes" target="_self"><span class="icon2"></span>Heros</a></li>
+                
+                <li><a href="/donation" target="_self"><span class="icon3"></span>Donation</a></li>
+                
+
+
+                <!-- 언어 역으로 구해야함 -->
+                
+
+                
+                <li><a href=" /en/99nerds/ "><span class="ko"></span>To English</a></li>
+                
+            </ul>
+            
+            
+
+        </nav>
+    </div>
+    <div class="axu-layer mx-header-bar">
+        <div class="axu-wrap">
+            <div class="axu-unit">
+                <div class="header-logo">
+                         <a href="http://99nerds.io" target="_blank" >
+                             <span class="symbolic nerds"></span>
+                             <div class="descript">Go to the ShoppingMall</div>
+                         </a>
+                     </div>
+            </div>
+        </div>
+     </div>
+
+    <div class="axu-layer header-bar">
+        <div class="axu-wrap">
+            <div class="axu-left">
+                <div class="axu-unit">
+                    <div class="header-logo">
+                        <a href="http://99nerds.io" target="_blank" >
+                            <span class="symbolic nerds"></span>
+                            <div class="descript">Go to the ShoppingMall</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="axu-right">
+                <div class="axu-unit">
+                    
+                    
+                    <ul class="top-menu">
+                        
+                        <li><a href="/" class="">AXISJ</a></li>
+                        
+                        <li><a href="/axboot/" class="">AXBoot</a></li>
+                        
+                        <li><a href="/ax5/" class="">AX5</a></li>
+                        
+                        <li><a href="/99nerds/" class="on">99NERDS</a></li>
+                        
+                        <li><a href="/axicon/" class="">AXICON</a></li>
+                        
+                        <li><a href="/xjson/" class="">X-JSON</a></li>
+                        
+                    </ul>
+                    
+                    
+                    
+                    <ul class="option-menu">
+                        
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>Medium</a></li>
+                        
+                            <li><a href="/heroes" target="_self"><span class="icon2"></span>Heros</a></li>
+                        
+                            <li><a href="/donation" target="_self"><span class="icon3"></span>Donation</a></li>
+                        
+                    </ul>
+                    
+                    
+                    <!--
+                    <a href=" /en/99nerds/ " class="lang-menu ko"><span> ko</span></a>
+                    -->
+                </div>
+            </div>
+            <div class="axu-clear"></div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div id="AXUContents">
+
+    <!-- s.AXVisual -->
+    <div id="AXUVisual">
+        <div class="visual-top">
+            <div class="axu-layer visual-top-layer">
+                <div class="axu-wrap">
+                    <div class="axu-col-2">
+                        <div class="logo">
+                            <img src="/assets/images/page_logo_99nerds@2x.png" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="axu-col-10">
+                        <ul class="menu">
+                            
+                            <li><a href="#intro">쇼핑몰 소개</a></li>
+                            
+                            <li><a href="#opensource">판매 오픈 소스</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-message-layer">
+            <div class="axu-wrap">
+                <h1><span id="typed"></span></h1>
+                <div id="typed-msgs">
+                    
+                    
+                    
+                    
+                    <p>개발자를 위한 쇼핑몰 99NERDS.</p>
+                    
+                    
+                </div>
+                <h2>내 오픈 소스를 후원하는 가장 쉬운 방법. 99NERDS에서 시작하세요!</h2>
+            </div>
+        </div>
+        <div class="axu-layer visual-image-layer">
+            <div class="axu-wrap">
+                <img src="/assets/images/symbolic_99nerds_512.png" />
+            </div>
+        </div>
+        <div class="axu-layer visual-desc-layer">
+            <div class="axu-wrap" style="text-align:center;">
+                <h3>개발자를 위한 쇼핑몰</h3>
+                <p>내가 사용하는 오픈 소스를 상품으로 만나보세요!<br/> 구매한 금액의 10%를 해당 오픈 소스에 당신의 이름으로 후원합니다!</p>
+                <div class="btns">
+                    
+                    <a href="http://www.99nerds.io" class="btn-1" target="_blank">쇼핑하러 가기</a>
+                    
+                    <a href="mailto:bill@chequer.io" class="btn-2" target="_blank">상품 제안</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="axu-h50"></div>
+    </div>
+    <!-- e.AXVisual -->
+
+
+    <a name="intro"></a>
+    <div id="AXUIntro">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>쇼핑몰 소개</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="axu-unit">
+                    <div class="promo-card">
+                        <img src="/assets/images/99nerds-promo-ko.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a name="opensource"></a>
+    <div id="AXUStickers">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>판매 오픈 소스</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-html5.png" />
+                                <p>HTML5</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-css3.png" />
+                                <p> CSS3</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-js-j.png" />
+                                <p> JS-J</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-js-j.png" />
+                                <p> JS-J</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-js-s.png" />
+                                <p> JS-S</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-js-js.png" />
+                                <p> JS-JS</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-golang.png" />
+                                <p> GOLang</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-eclipse.png" />
+                                <p> Eclipse</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-angular.png" />
+                                <p> Angular</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-ubuntu.png" />
+                                <p> Ubuntu</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-fedora.png" />
+                                <p> Fedora</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-spring.png" />
+                                <p> Spring</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-python.png" />
+                                <p> Python</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-c-sharp.png" />
+                                <p> C-Sharp</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-react.png" />
+                                <p> React</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-yeoman.png" />
+                                <p> Yeoman</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-linux.png" />
+                                <p> Linux</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-android.png" />
+                                <p> Android</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-bower.png" />
+                                <p> Bower</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-codeigniter.png" />
+                                <p> CodeIgniter</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-redis.png" />
+                                <p> Redis</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-git.png" />
+                                <p> GIT</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-jenkins.png" />
+                                <p> Jenkins</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-scala.png" />
+                                <p> Scala</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-mongodb.png" />
+                                <p> MongoDB</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-gulp.png" />
+                                <p> Gulp</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-flask.png" />
+                                <p> Flask</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-django.png" />
+                                <p> django</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-bash.png" />
+                                <p> Bash</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-jquery.png" />
+                                <p> jQuery</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-rm-rf.png" />
+                                <p> rm-rf</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-bootstrap.png" />
+                                <p> Bootstrap</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-swift.png" />
+                                <p> Swift</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-docker.png" />
+                                <p> Docker</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-js-yellow.png" />
+                                <p> JS-Yellow</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-axisj.png" />
+                                <p> AXISJ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-ax5ui.png" />
+                                <p> AX5UI</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-axboot.png" />
+                                <p> AXBoot</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="axu-h50"></div>
+    <div class="axu-h50"></div>
+
+</div>
+    <div id="AXUFooter">
+    <div class="axu-layer footer-1">
+        <div class="axu-wrap">
+            <div class="axu-col-6 left">
+                <div class="axu-unit">
+                    <span class="copy">© AXISJ 2014-2017</span>
+                    <ul class="lang">
+                        
+                        <li><a  href=" /en/99nerds/ ">EN</a></li>
+                        
+                        <li><a class="on" href=" /99nerds/ ">KO</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="axu-col-6 right">
+                <div class="ax-unit">
+                    <ul class="bottom_menu">
+                        <li><a href="/">AXISJ</a></li>
+                        <li><a href="axboot/">AXBoot</a></li>
+                        <li><a href="ax5/">AX5</a></li>
+                        <li><a href="axicon/">AXICON</a></li>
+                        <li><a href="xjson/">X-JSON</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="axu-clear"></div>
+        </div>
+    </div>
+    <div class="axu-layer footer-2">
+        <div class="axu-wrap">
+            <div class="ax-unit">
+                <h4>SPONSORED</h4>
+                <ul>
+                    <li><a href="https://www.jetbrains.com" target="_blank">JetBrains</a></li>
+                    <li><a href="https://www.atlassian.com/" target="_blank">Atlassian</a></li>
+                    <li><a href="http://www.chequer.io" target="_blank">CHEQUER</a></li>
+                    <li><a href="http://www.dnsever.com" target="_blank">DNSEver</a></li>
+                    <li><a href="http://www.antwiz.com" target="_blank">Antwiz</a></li>
+                    <li><a href="http://www.flybasket.com" target="_blank">FlyBasket</a></li>
+                </ul>
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>

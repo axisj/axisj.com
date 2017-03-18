@@ -43,8 +43,6 @@ github  :
 languages     : ["en", "ko"]
 default_lang  : "ko"
 
-parallel_localization: false
-
 exclude_from_localization: ["javascript", "images", "css"]
 
 sass:
