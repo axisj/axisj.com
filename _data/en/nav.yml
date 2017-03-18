@@ -1,17 +1,17 @@
 topmenus:
   - label: Top Menu
     submenus:
-    - label: Timeline
+    - label: AXISJ
       url : '/'
     - label: AXBoot
       url : '/axboot/'
     - label: AX5
       url : '/ax5/'
-    - label: 99Nerds
+    - label: 99NERDS
       url : '/99nerds/'
-    - label: AXIcon
+    - label: AXICON
       url : '/axicon/'
-    - label: JSONGum
+    - label: X-JSON
       url : '/jsongum/'
   - label: Option Menu
     submenus:
@@ -20,8 +20,8 @@ topmenus:
       target: '_blank'
     - label: Heroes
       url : '/heroes'
-    - label: Donate
-      url : '/donate'
+    - label: Donation
+      url : '/donation'
 
 menu_axboot:
   - name: "Feature"

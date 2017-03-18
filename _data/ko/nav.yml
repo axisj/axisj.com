@@ -1,35 +1,35 @@
 topmenus:
   - label: 상단메뉴
     submenus:
-    - label: 타임라인
+    - label: AXISJ
       url : '/'
-    - label: 액스부트
+    - label: AXBoot
       url : '/axboot/'
-    - label: 액스5
+    - label: AX5
       url : '/ax5/'
-    - label: 99너드
+    - label: 99NERDS
       url : '/99nerds/'
-    - label: 액시콘
+    - label: AXICON
       url : '/axicon/'
-    - label: 제이슨껌
+    - label: X-JSON
       url : '/jsongum/'
   - label: 옵션메뉴
     submenus:
-    - label: 미디엄
+    - label: Medium
       url : 'https://medium.com/chequer'
       target: '_blank'
-    - label: 영웅들
+    - label: Heros
       url : '/heroes'
-    - label: 후원하기
-      url : '/donate'
+    - label: Donation
+      url : '/donation'
 
 
 menu_axboot:
   - name: "특징"
     link: "feature"
-  - name: "비디오"
+  - name: "소개영상"
     link: "video"
-  - name: "기술문서"
+  - name: "문서"
     link: "document"
   - name: "테마"
     link: "theme"
