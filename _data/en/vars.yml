@@ -322,7 +322,7 @@ page_jsongum_desc:
 
 page_jsongum_btns:
   - label: "Install(Win)"
-    link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe"
+    link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip"
   - label: "Install(OS X)"
     link: "/assets/jsongum/JSONGum.dmg"
 
@@ -355,9 +355,9 @@ page_jsongum_buy:
     desc: "JSONGum can be used even without a license. You just have a bit more inconvenience with a pop-up ad."
     btns:
       - label: "OSX Version Download"
-        link: "location.href = '/assets/jsongum/JSONGum.dmg"
+        link: "location.href = '/assets/jsongum/JSONGum.dmg';"
       - label: "WIN 32Bit Download"
-        link: "location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe"
+        link: "location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip';"
   - label: "Purchase JSONGum license"
     desc: "If you pay by paypal, the license will be sent to the email address registered on your paypal account."
     btns:

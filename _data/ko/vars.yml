@@ -322,7 +322,7 @@ page_jsongum_desc:
 
 page_jsongum_btns:
   - label: "설치하기(Win)"
-    link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe"
+    link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip"
   - label: "설치하기(OS X)"
     link: "/assets/jsongum/JSONGum.dmg"
 
@@ -357,7 +357,7 @@ page_jsongum_buy:
       - label: "OSX 버전 다운로드"
         link: "location.href = '/assets/jsongum/JSONGum.dmg';"
       - label: "WIN 32비트 다운로드"
-        link: "location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe"
+        link: "location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip';"
   - label: "제이슨껌 정품 라이센스 구매하기"
     desc: "페이팔로 결재하시면 페이팔 계정에 등록된 이메일주소로 라이선스가 발급됩니다."
     btns:

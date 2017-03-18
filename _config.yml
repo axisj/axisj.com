@@ -29,7 +29,7 @@ gems: [jekyll-polyglot, jekyll-paginate]
 permalink : pretty
 
 #include  : []
-exclude   : ['Gemfile','Gemfile.lock','CNAME']
+exclude   : ['Gemfile','Gemfile.lock']
 
 # Setup
 title   :   AXISJ
