@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="ko" href="https://axisj.com/xjson/" />
+<link rel="alternate" i18n="en" href="https://axisj.com/en/xjson/" />
+
+    <title>
+        Open Source Group :: AXISJ
+        <!--
+        
+         &middot; AXISJ
+        
+        -->
+    </title>
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/en/atom.xml">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/en/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/en/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/en/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/en/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/en/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/en/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/en/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/en/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/en/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/en/assets/favicons/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/en/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/en/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/en/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="/assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.timeago.js" type="text/javascript"></script>
+    <script src="/assets/js/typed.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/en/assets/css/justifiedGallery.min.css">
+    <script src="/assets/js/jquery.justifiedGallery.min.js"></script>
+
+    <script src="/assets/js/highlight.pack.js"></script>
+
+    <link rel="stylesheet" href="/en/assets/css/magnific-popup.css">
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+
+    <script type="text/javascript">
+        var fnObj = {
+            pageStart: function(){
+                //Hamburger menu
+                jQuery(".hamburger-menu").click(function(){
+
+                    jQuery(".hamburger").toggleClass('is-active');
+                    jQuery(".mx-header-overay").toggleClass('open');
+
+                });
+
+                //Timeago
+                
+
+                jQuery.timeago.settings.allowFuture = true;
+                jQuery("time.timeago").timeago();
+
+                //Typed...
+                Typed.new('#typed', {
+                    //strings:typed_strings,
+                    stringsElement: document.getElementById('typed-msgs'),
+                    contentType: 'html',
+                    shuffle: true,
+                    typeSpeed: 100,
+                    startDelay: 500,
+                    backDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                });
+
+                //Code Highlighting...
+                hljs.initHighlightingOnLoad();
+                var aCodes = document.getElementsByTagName('pre code');
+                for (var i=0; i < aCodes.length; i++) {
+                    hljs.highlightBlock(aCodes[i]);
+                }
+                /*
+                jQuery('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+                */
+
+                //Markdown 타임라인용 갤러리 지원
+                jQuery('.gallery').each(function() {
+                    if (jQuery(this.parentNode).hasClass('flex-images')) return;
+                    jQuery(this).nextUntil(':not(.gallery)').addBack().wrapAll("<div class='flex-images mp-gallery'>");
+                });
+
+                jQuery('.flex-images').find('.gallery').each(function(){
+                    var src = jQuery(this).prop("src");
+                    jQuery(this).wrap("<a href='"+src+"' >");
+                    //console.log(src);
+                });
+                jQuery(".flex-images").justifiedGallery({
+                    rowHeight : 80,
+                    lastRow : 'justify',
+                    margins : 0,
+                    captions:false,
+                    randomize:true
+                });
+
+
+                //Magnific popup
+                jQuery('.mp-gallery').each(function() { // the containers for all your galleries
+                    jQuery(this).magnificPopup({
+                        delegate: 'a', // the selector for gallery item
+                        type: 'image',
+                        gallery: {
+                            enabled:true
+                        }
+                    });
+                });
+
+
+
+                //jQuery('.flex-images').find('.gallery').wrap("<a href='"+jQuery(this).attr('src')+"' >");
+
+
+                //Flex Images...
+
+                //jQuery("#AXUTimeline img[class^='gallery']").wrap("<div class='flex-images' />");
+                //var first_evt = jQuery("#AXUTimeline").find(".flex-image").find(".gallery").wrap("<a href='#' />");
+
+                /*
+                jQuery.when.apply(this, first_evt).done(function(){
+                    second_evt;
+                });
+                */
+
+                //jQuery("#AXUTimeline").find(".gallery").wrapAll("<div class='flex-images' />");
+
+            },
+            //When scrolling add bar shadow class...
+            pageScroll:function(){
+
+                if(jQuery(this).scrollTop()) {
+                    jQuery('#AXUHeader .header-bar').addClass('scrolled');
+                    jQuery('#AXUHeader .mx-header-bar').addClass('scrolled');
+                } else {
+                    jQuery('#AXUHeader .header-bar').removeClass('scrolled');
+                    jQuery('#AXUHeader .mx-header-bar').removeClass('scrolled');
+                }
+            },
+            //Random Timeline Images..
+            pageResize: function(){
+
+            }
+        }
+
+        jQuery(document.body).ready(function(){
+
+            if (!window.getComputedStyle) {
+                window.getComputedStyle = function(element) {
+                    return element.currentStyle;
+                }
+            }
+            fnObj.pageStart();
+            jQuery(window).resize(fnObj.pageResize);
+            jQuery(window).scroll(fnObj.pageScroll);
+        });
+
+
+
+
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/en/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/en/assets/css/layout_jsongum.css">
+    <link rel="stylesheet" href="/en/assets/css/contents_jsongum.css">
+
+</head>
+
+<body>
+<div id="AXUBody">
+    
+
+<div id="AXUHeader">
+    <div class="header-bar-fixed"></div>
+    <div class="axu-layer mx-header-hamburger">
+        <div class="axu-wrap">
+            <a href="#axu" class="hamburger-menu">
+                <div class="hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="axu-layer mx-header-overay">
+        <nav>
+            
+            
+            <ul class="top-menu">
+                
+                <li><a href="/en/" class=""><span class="bullet"></span>AXISJ</a></li>
+                
+                <li><a href="/en/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                
+                <li><a href="/en/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                
+                <li><a href="/en/99nerds/" class=""><span class="bullet"></span>99NERDS</a></li>
+                
+                <li><a href="/en/axicon/" class=""><span class="bullet"></span>AXICON</a></li>
+                
+                <li><a href="/en/xjson/" class="on"><span class="bullet"></span>X-JSON</a></li>
+                
+            </ul>
+            
+            
+            
+            <ul class="option-menu">
+                
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>Medium</a></li>
+                
+                <li><a href="/en/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                
+                <li><a href="/en/donation" target="_self"><span class="icon3"></span>Donation</a></li>
+                
+
+
+                <!-- 언어 역으로 구해야함 -->
+                
+
+                
+                <li><a href=" /xjson/ "><span class="en"></span>한국어로</a></li>
+                
+            </ul>
+            
+            
+
+        </nav>
+    </div>
+    <div class="axu-layer mx-header-bar">
+        <div class="axu-wrap">
+            <div class="axu-unit">
+                <div class="header-logo">
+                         <a href="/en/assets/jsongum/JSONGum.dmg" target="_self" >
+                             <span class="symbolic jsongum"></span>
+                             <div class="descript">Now Download and Install</div>
+                         </a>
+                     </div>
+            </div>
+        </div>
+     </div>
+
+    <div class="axu-layer header-bar">
+        <div class="axu-wrap">
+            <div class="axu-left">
+                <div class="axu-unit">
+                    <div class="header-logo">
+                        <a href="/en/assets/jsongum/JSONGum.dmg" target="_self" >
+                            <span class="symbolic jsongum"></span>
+                            <div class="descript">Now Download and Install</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="axu-right">
+                <div class="axu-unit">
+                    
+                    
+                    <ul class="top-menu">
+                        
+                        <li><a href="/en/" class="">AXISJ</a></li>
+                        
+                        <li><a href="/en/axboot/" class="">AXBoot</a></li>
+                        
+                        <li><a href="/en/ax5/" class="">AX5</a></li>
+                        
+                        <li><a href="/en/99nerds/" class="">99NERDS</a></li>
+                        
+                        <li><a href="/en/axicon/" class="">AXICON</a></li>
+                        
+                        <li><a href="/en/xjson/" class="on">X-JSON</a></li>
+                        
+                    </ul>
+                    
+                    
+                    
+                    <ul class="option-menu">
+                        
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>Medium</a></li>
+                        
+                            <li><a href="/en/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                        
+                            <li><a href="/en/donation" target="_self"><span class="icon3"></span>Donation</a></li>
+                        
+                    </ul>
+                    
+                    
+                    <!--
+                    <a href=" /xjson/ " class="lang-menu en"><span> en</span></a>
+                    -->
+                </div>
+            </div>
+            <div class="axu-clear"></div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div id="AXUContents">
+
+    <!-- s.AXVisual -->
+    <div id="AXUVisual">
+        <div class="visual-top">
+            <div class="axu-layer visual-top-layer">
+                <div class="axu-wrap">
+                    <div class="axu-col-2">
+                        <div class="logo">
+                            <img src="/assets/images/page_logo_jsongum@2x.png" />
+                            <span>JSONGUm</span>
+                        </div>
+                    </div>
+                    <div class="axu-col-10">
+                        <ul class="menu">
+                            
+                            <li><a href="#preview">Preview</a></li>
+                            
+                            <li><a href="#feature">Features</a></li>
+                            
+                            <li><a href="#download">Download</a></li>
+                            
+                            <li><a href="#license">License</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-message-layer">
+            <div class="axu-wrap">
+                <h1>Gum is Jason Gum too!</h1>
+                <h2><span id="typed"></span></h2>
+                <div id="typed-msgs">
+                    
+                    
+                    
+                    
+                    <p>From now on, you do not need to open your eyes to analyze JSON.</p>
+                    
+                    
+                    
+                    <p>Let's chew a piece of JSONGum.</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-image-layer">
+            <div class="axu-wrap">
+                <img src="/assets/images/symbolic_jsongum_512.png" />
+            </div>
+        </div>
+        <div class="axu-layer visual-desc-layer">
+            <div class="axu-wrap">
+                <h3>JSON Data Format Viewer, JSONGum</h3>
+                <p>It can be useful when you want to analyze JSON data structure and find the data you want. Actually JSONGum was created by Javascript master Tom to sort out his own inconvenience. Let's chew a piece of JSONGum.</p>
+                <div class="btns">
+                    
+                    <a href="/en/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip" class="btn-1">Install(Win)</a>
+                    
+                    <a href="/en/assets/jsongum/JSONGum.dmg" class="btn-2">Install(OS X)</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="axu-h30"></div>
+    </div>
+    <!-- e.AXVisual -->
+
+    <a name="preview"></a>
+    <div id="AXUCaptures">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>Preview</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer mp-gallery">
+            <div class="axu-wrap">
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-1.png" title="Freeware"><img src="/assets/images/jsongum-capture-1.png" /></a>
+                            <span class="desc">Freeware</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-2.png" title="Edit code"><img src="/assets/images/jsongum-capture-2.png" /></a>
+                            <span class="desc">Edit code</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-3.png" title="Beautiful code"><img src="/assets/images/jsongum-capture-3.png" /></a>
+                            <span class="desc">Beautiful code</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-4.png" title="Function folding"><img src="/assets/images/jsongum-capture-4.png" /></a>
+                            <span class="desc">Function folding</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-5.png" title="Convert JSON"><img src="/assets/images/jsongum-capture-5.png" /></a>
+                            <span class="desc">Convert JSON</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-6.png" title="Supported HTML"><img src="/assets/images/jsongum-capture-6.png" /></a>
+                            <span class="desc">Supported HTML</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-7.png" title="HTML to JSON"><img src="/assets/images/jsongum-capture-7.png" /></a>
+                            <span class="desc">HTML to JSON</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-3 capture-column">
+                    <div class="axu-unit">
+                        <div class="capture-card">
+                            <a href="/en/assets/images/jsongum-capture-8.png" title="JSONGum"><img src="/assets/images/jsongum-capture-8.png" /></a>
+                            <span class="desc">JSONGum</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-h30"></div>
+    </div>
+
+
+    <a name="feature"></a>
+    <div id="AXUFeatures">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>Features</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                
+                <div class="axu-col-4 feature-column">
+                    <div class="axu-unit">
+                        <div class="feature-card">
+                            <img src="/assets/images/jsongum-feature-1.png" />
+                            <h3>So~ pretty!</h3>
+                            <p>JSON code highlight shows JSON arranged and neat by applying code block indent.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-4 feature-column">
+                    <div class="axu-unit">
+                        <div class="feature-card">
+                            <img src="/assets/images/jsongum-feature-2.png" />
+                            <h3>Insanely useful</h3>
+                            <p>So useful to show only what you want to see from JSON by tree list format! Also, it can convert HTML or XML to JSON format!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-4 feature-column">
+                    <div class="axu-unit">
+                        <div class="feature-card">
+                            <img src="/assets/images/jsongum-feature-3.png" />
+                            <h3>Bloody~ simple</h3>
+                            <p>Why always need to wrap key values with quotation? Why so picky! JSONGum just sorts out it by itself. Let's dig up the code!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-h30"></div>
+    </div>
+
+    <a name="download"></a>
+    <div id="AXUInstall">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>Download</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer buy-desc-layer">
+            <div class="axu-wrap">
+
+                
+                <div class="desc">
+                    AXISJ is doing various open-source projects like Javascript UI, Web font icons, responsive web templates and etc.
+                </div>
+                
+                <div class="desc">
+                    AXISJ will keep making a commitment for a better world of open-source.
+                </div>
+                
+                <div class="desc">
+                    AXISJ decided to sell JSONGum for a healthier open-source development.
+                </div>
+                
+                <div class="desc">
+                    You can give some hopes to developers in Korea by buying just a gum of $4.99.
+                </div>
+                
+
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-layer buy-layer">
+            <div class="axu-wrap">
+                
+                <div class="axu-col-6 buy-column">
+                    <div class="axu-unit">
+                        <h3>Download</h3>
+                        <p>JSONGum can be used even without a license. You just have a bit more inconvenience with a pop-up ad.</p>
+                        
+                        <a href="javascript:location.href = '/assets/jsongum/JSONGum.dmg';">OSX Version Download</a>
+                        
+                        <a href="javascript:location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip';">WIN 32Bit Download</a>
+                        
+                    </div>
+                </div>
+                
+                <div class="axu-col-6 buy-column">
+                    <div class="axu-unit">
+                        <h3>Purchase JSONGum license</h3>
+                        <p>If you pay by paypal, the license will be sent to the email address registered on your paypal account.</p>
+                        
+                        <a href="javascript:#">Coming soon.</a>
+                        
+                    </div>
+                </div>
+                
+
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-h30"></div>
+    </div>
+
+
+    <a name="license"></a>
+    <div id="AXUSearch">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>License</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="search-card">
+                    <div class="axu-unit">
+                        <p class="desc">Forgot JSONGum license?<br /> Please type in the email address that you entered when you purchased JSONGum</p>
+                        <form name="find-form" method="post" onsubmit="return fn_check_license();">
+                            <label>
+                                <span>Email</span>
+                                <input type="text" name="email" placeholder="abc@axisj.com" value="" class="axu-input" />
+                                <button>Submit</button>
+                            </label>
+                        </form>
+                        <div class="caution"> If you enter wrong email address, there might be difficulties in finding license.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="axu-h50"></div>
+    </div>
+
+
+</div>
+    <div id="AXUFooter">
+    <div class="axu-layer footer-1">
+        <div class="axu-wrap">
+            <div class="axu-col-6 left">
+                <div class="axu-unit">
+                    <span class="copy">© AXISJ 2014-2017</span>
+                    <ul class="lang">
+                        
+                        <li><a class="on" href=" /en/xjson/ ">EN</a></li>
+                        
+                        <li><a  href=" /xjson/ ">KO</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="axu-col-6 right">
+                <div class="ax-unit">
+                    <ul class="bottom_menu">
+                        <li><a href="/en/">AXISJ</a></li>
+                        <li><a href="axboot/">AXBoot</a></li>
+                        <li><a href="ax5/">AX5</a></li>
+                        <li><a href="axicon/">AXICON</a></li>
+                        <li><a href="xjson/">X-JSON</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="axu-clear"></div>
+        </div>
+    </div>
+    <div class="axu-layer footer-2">
+        <div class="axu-wrap">
+            <div class="ax-unit">
+                <h4>SPONSORED</h4>
+                <ul>
+                    <li><a href="https://www.jetbrains.com" target="_blank">JetBrains</a></li>
+                    <li><a href="https://www.atlassian.com/" target="_blank">Atlassian</a></li>
+                    <li><a href="http://www.chequer.io" target="_blank">CHEQUER</a></li>
+                    <li><a href="http://www.dnsever.com" target="_blank">DNSEver</a></li>
+                    <li><a href="http://www.antwiz.com" target="_blank">Antwiz</a></li>
+                    <li><a href="http://www.flybasket.com" target="_blank">FlyBasket</a></li>
+                </ul>
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>
