@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 제이슨껌 런칭
+title: X-JSON 런칭
 category: timeline
 type : left
 lang : ko
 ---
 
-JSON 데이터를 분석하고 편집가능한 제이슨 뷰어. 이제 JSON은 씹어서 분석하세요.
+세상에서 가장 빠른 JSON 뷰어
 
 ![jsongum]({{ site.baseurl }}/assets/images/mem-jsongum.png){:class="logo"}
