@@ -1,0 +1,93 @@
+// AXU for Sass //////////////////////////////////
+// Developer  : Jowrney Kim
+// Date       : 10 May 2016
+// Namespace       : AXU
+// Camel Notation  : Only Unique item(ex. AXUPage)
+// Snake Notation  : Multiple items(All Character lowercase, ex. axu-layer)
+
+
+// Responsive Web Design //////////////////////////
+html, body {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+
+
+// Standard screen width
+$screen-wx-width :1440px;
+$screen-dx-width :1024px;
+$screen-tx-width :768px;
+$screen-mx-width :320px;
+
+// Grid system width
+$grid-wx-width :1152px;
+$grid-dx-width :960px;
+$grid-tx-width :722px;
+$grid-mx-width :300px;
+
+// Grid gutter width
+$grid-gutter-width  :20px;
+$grid-num-columns   :12;
+
+@mixin rwd($media){
+  @if $media == wx {
+    @media only screen and (min-width: $screen-wx-width) { @content; }
+  }
+  @else if $media == dx {
+    @media only screen and (min-width: $screen-dx-width) and (max-width: $screen-wx-width - 1) { @content; }
+  }
+  @else if $media == tx {
+    @media only screen and (min-width: $screen-tx-width) and (max-width: $screen-dx-width - 1) { @content; }
+  }
+  @else if $media == mx {
+    @media only screen and (max-width: $screen-tx-width - 1) { @content; }
+  }
+}
+
+@mixin gs($media){
+  $p : percentage(1/$grid-num-columns);
+  @for $i from 1 through $grid-num-columns {
+    .#{$media}-col-#{$i} {
+      width: $p * $i;
+      float:left; height:inherit;
+    }
+  }
+}
+
+// Common axu
+.axu-wrap   { margin:0px auto;}
+.axu-layer  {}
+.axu-clear  {clear:both;}
+.axu-unit	{margin:0 10px; }
+.axu-left   {float:left;}
+.axu-right   {float:right;}
+@include gs(axu);
+
+#AXUBody{
+
+  @include rwd(wx){
+    .axu-wrap { width: $grid-wx-width;}
+    @include gs(wx);
+  }
+
+  @include rwd(dx){
+    .axu-wrap { width: $grid-dx-width;}
+    @include gs(dx);
+  }
+
+  @include rwd(tx){
+    .axu-wrap { width: $grid-tx-width;}
+    @include gs(tx);
+  }
+
+  @include rwd(mx){
+    .axu-wrap { width: 100%;}
+    @include gs(mx);
+  }
+}
+
+.axu-h10{font-size:0px; height:10px;}
+.axu-h20{font-size:0px; height:20px;}
+.axu-h30{font-size:0px; height:30px;}
+.axu-h40{font-size:0px; height:40px;}
+.axu-h50{font-size:0px; height:50px;}

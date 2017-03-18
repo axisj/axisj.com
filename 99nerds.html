@@ -1,0 +1,113 @@
+---
+layout: layout_99nerds
+page: 99nerds
+bar_logo_class: nerds
+bar_logo_desc: Go to the ShoppingMall
+bar_logo_link: 'http://99nerds.io'
+bar_logo_target: '_blank'
+---
+
+<div id="AXUContents">
+
+    <!-- s.AXVisual -->
+    <div id="AXUVisual">
+        <div class="visual-top">
+            <div class="axu-layer visual-top-layer">
+                <div class="axu-wrap">
+                    <div class="axu-col-2">
+                        <div class="logo">
+                            <img src="/assets/images/page_logo_99nerds@2x.png" />
+                            <span>{{ site.data.vars.page_99nerds_name}}</span>
+                        </div>
+                    </div>
+                    <div class="axu-col-10">
+                        <ul class="menu">
+                            {% for menu in site.data.nav.menu_99nerds %}
+                            <li><a href="#{{ menu.link }}">{{ menu.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-message-layer">
+            <div class="axu-wrap">
+                <h1><span id="typed"></span></h1>
+                <div id="typed-msgs">
+                    {% for entry in site.data.vars.page_99nerds_type %}
+                    {% if forloop.index != 1 %}
+                    <p>{{ entry.msg }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <h2>{{ site.data.vars.page_99nerds_type[0].msg }}</h2>
+            </div>
+        </div>
+        <div class="axu-layer visual-image-layer">
+            <div class="axu-wrap">
+                <img src="/assets/images/symbolic_99nerds_512.png" />
+            </div>
+        </div>
+        <div class="axu-layer visual-desc-layer">
+            <div class="axu-wrap">
+                <h3>{{ site.data.vars.page_99nerds_desc[0].msg }}</h3>
+                <p>{{ site.data.vars.page_99nerds_desc[1].msg }}</p>
+                <div class="btns">
+                    {% for btn in site.data.vars.page_99nerds_btns %}
+                    <a href="{{ btn.link }}" class="btn-{{forloop.index}}">{{ btn.label }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="axu-h50"></div>
+    </div>
+    <!-- e.AXVisual -->
+
+
+
+    <div id="AXUStickers">
+        <a name="sticker"></a>
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_99nerds[0].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="axu-unit">
+                    <div class="promo-card">
+                        <img src="/assets/images/99nerds-promo-{{ site.active_lang}}.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="sticker"></a>
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_99nerds[1].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                {% assign stickers = site.data.vars.page_99nerds_stickers | split: "," %}
+                {% for s in stickers %}
+                <div class="axu-col-2 sticker-column">
+                    <div class="axu-unit">
+                        <div class="sticker-card">
+                            <a href="http://www.99nerds.io" target="_blank">
+                                <img src="/assets/images/sticker-{{ s | downcase | strip }}.png" />
+                                <p>{{ s }}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="axu-h50"></div>
+    <div class="axu-h50"></div>
+
+</div>

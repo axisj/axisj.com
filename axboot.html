@@ -1,0 +1,268 @@
+---
+layout: layout_axboot
+page: axboot
+bar_logo_class: axboot
+bar_logo_desc: Fork AXBoot on Github
+bar_logo_link: 'https://github.com/axboot'
+bar_logo_target: '_blank'
+---
+
+<div id="AXUContents">
+
+    <!-- s.AXVisual -->
+    <div id="AXUVisual">
+        <div class="visual-top">
+            <div class="axu-layer visual-top-layer">
+                <div class="axu-wrap">
+                    <div class="axu-col-2">
+                        <div class="logo">
+                            <img src="/assets/images/page_logo_axboot@2x.png" />
+                            <span>{{ site.data.vars.page_axboot_name}}</span>
+                        </div>
+                    </div>
+                    <div class="axu-col-10">
+                        <ul class="menu">
+                            {% for menu in site.data.nav.menu_axboot %}
+                            <li><a href="#{{ menu.link }}">{{ menu.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-message-layer">
+            <div class="axu-wrap">
+                <h1>{{ site.data.vars.page_axboot_type[0].msg }}</h1>
+                <h2><span id="typed"></span></h2>
+                <div id="typed-msgs">
+                    {% for entry in site.data.vars.page_axboot_type %}
+                    {% if forloop.index != 1 %}
+                    <p>{{ entry.msg }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-image-layer">
+            <div class="axu-wrap">
+                <img src="/assets/images/symbolic_axboot_512.png" />
+            </div>
+        </div>
+        <div class="axu-layer visual-desc-layer">
+            <div class="axu-wrap">
+                <h3>{{ site.data.vars.page_axboot_desc[0].msg }}</h3>
+                <p>{{ site.data.vars.page_axboot_desc[1].msg }}</p>
+                <div class="btns">
+                    {% for btn in site.data.vars.page_axboot_btns %}
+                    <a href="{{ btn.link }}" class="btn-{{forloop.index}}">{{ btn.label }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="axu-h50"></div>
+    </div>
+    <!-- e.AXVisual -->
+
+    <!-- s.AXUFeatures -->
+    <a name="feature"></a>
+    <div id="AXUFeatures">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_axboot[0].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer feature-layer">
+            <div class="axu-wrap">
+                {% for entry in site.data.vars.page_axboot_features %}
+                <div class="axu-col-4 feature-column">
+                    <div class="axu-unit">
+                        <img src="/assets/images/axboot-feature-{{ forloop.index }}@2x.png" style="width:64px; height:64px;" />
+                        <h3>{{ entry.label }}</h3>
+                        {% for entry_item in entry.feature %}
+                            <h4>{{ entry_item.label }}</h4>
+                            <p>{{ entry_item.desc }}</p>
+                            <div class="axu-h20"></div>
+                        {% endfor %}
+                    </div>
+                    <div class="axu-h50"></div>
+                </div>
+                {% endfor %}
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- e.AXUFeatures -->
+
+    <!-- s.AXUVideos -->
+    <a name="video"></a>
+    <div id="AXUVideos">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_axboot[1].name }}</span></h3>
+            </div>
+        </div>
+        <div class="mp-gallery">
+            <div class="axu-layer">
+                <div class="axu-wrap">
+
+                    {% for video in site.data.vars.page_axboot_videos %}
+                    <div class="axu-col-4 video-column">
+                        <a href="{{ video.link }}" class="video-card mfp-iframe" title="{{ video.label }}">
+                            <div class="btn-box">
+                                <div class="btn-play"></div>
+                            </div>
+                            <img src="{{ video.img }}" />
+                            <div class="video-title">{{ video.label }}</div>
+                        </a>
+                    </div>
+                    {% endfor %}
+
+                    <div class="axu-clear"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- e.AXUVideos -->
+
+    <!-- s.AXUDocuments -->
+    <a name="document"></a>
+    <div id="AXUDocuments">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_axboot[2].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                {% for doc in site.data.vars.page_axboot_docus %}
+                <div class="axu-col-6 docu-column">
+                    <div class="docu-card">
+                        <img src="{{ doc.img }}" />
+                        <h3>{{ doc.label }}</h3>
+                        <p>{{ doc.desc }}</p>
+                        <a href="{{ doc.link }}" class="btn" target="_blank">{{ doc.link_name }}</a>
+                        {% if doc.group_name %}
+                        <a href="{{ doc.group_link }}" target="_blank">{{ doc.group_name }}</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- e.AXUDocuments -->
+
+    <!-- s.AXUThemes -->
+    <a name="theme"></a>
+    <div id="AXUThemes">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_axboot[3].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="theme-link">
+                    <a href="{{ site.data.vars.page_axboot_themes.link }}" target="_blank">{{ site.data.vars.page_axboot_themes.label }}</a>
+                </div>
+                <div class="mp-gallery">
+
+                    {% for theme in site.data.vars.page_axboot_themes.images %}
+                    <div class="axu-col-4 theme-column">
+                        <a href="{{ theme.img }}" class="theme-card" title="{{ theme.label }}, {{ theme.desc }}">
+                            <img src="{{ theme.img }}" />
+                            <div class="theme-overlay">
+                                <div class="to-content">
+                                    <h4>{{ theme.desc }}</h4>
+                                    <p>{{ theme.label }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                <div class="axu-clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- e.AXDocuments -->
+
+    <a name="contact"></a>
+    <div id="AXUContact">
+        <div class="axu-layer contact-layer">
+
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_axboot[4].name }}</span></h3>
+            </div>
+            <div class="axu-wrap">
+
+                <div class="axu-col-6 cont-column">
+                    <div class="cont-card">
+                        <img src="/assets/images/axboot-contact-1@2x.png" />
+                        <h3>{{ site.data.vars.page_axboot_contact.qa }}</h3>
+                        <p>{{ site.data.vars.page_axboot_contact.qa_desc }}</p>
+                    </div>
+                </div>
+                <div class="axu-col-6 cont-column">
+                    <div class="cont-card">
+                        <img src="/assets/images/axboot-contact-2@2x.png" />
+                        <h3>{{ site.data.vars.page_axboot_contact.biz_hour }}</h3>
+                        <p>{{ site.data.vars.page_axboot_contact.biz_desc }}</p>
+                        <a href="mailto:{{ site.data.vars.page_axboot_contact.ca_mail }}" class="btn">{{ site.data.vars.page_axboot_contact.ca_mail }}</a>
+                        <a href="tel:{{ site.data.vars.page_axboot_contact.ca_tel }}">{{ site.data.vars.page_axboot_contact.ca_tel }}</a>
+                    </div>
+                </div>
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- s.AXUMembers -->
+    <a name="member"></a>
+    <div id="AXUMembers">
+        <div class="axu-layer member-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_axboot[5].name }}</span></h3>
+            </div>
+            <div class="axu-wrap">
+                {% for member in site.data.vars.members %}
+                <div class="axu-col-6 member-column">
+                    <div class="member-card" style="background: url('{{member.img}}') no-repeat; background-size: contain;">
+                        <div class="member-name-title">
+                            <div>{{ member.name }}</div>
+                            <span>{{ member.pos }}</span>
+                        </div>
+                        <div class="member-info-box">
+                            <div class="mib-title">
+                                <div>{{ member.name }}</div>
+                                <span>{{ member.pos }}</span>
+                                <ul>
+                                    {% for so in member.links %}
+                                    <li><a href="{{ so.link }}">{{ so.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                                <div class="axu-clear"></div>
+                            </div>
+                            <div class="mib-body">
+                                <div class="desc">{{ member.desc }}</div>
+                                <ul>
+                                    {% for ht in member.history %}
+                                    <li>{{ ht.text }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- e.AXUMemeber -->
+
+</div>

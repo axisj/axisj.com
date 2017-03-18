@@ -1,0 +1,29 @@
+---
+---
+
+/**
+ * 노토 산스 KR
+ * 다양한 굵기를 제공하는 구글 웹폰트, 용량이 큰것과 힌팅이 안되는 것이
+ * CDN이 안될 경우 /assets/font/notosanskr.css 이용
+ */
+/*
+$font:'Noto Sans KR', sans-serif;
+@import url('http://fonts.googleapis.com/e  arlyaccess/notosanskr.css');
+*/
+
+/**
+ * 이롭게 바탕
+ * 아름다운 바탕체, 한가지 스타일 밖에 없지만 한글 폰트치곤 용량이 가벼움
+ * CDN이 안될 경우 /assets/font/iropkebatang.css 이용
+ */
+
+$font:'Iropke Batang', sans-serif;
+@import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+
+body, input, table, textarea, select, button{
+  font-family:$font;
+  font-weight:100;
+  -webkit-font-smoothing: antialiased;
+}
+

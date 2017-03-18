@@ -1,0 +1,99 @@
+//////////////////////////////////////////////////////////////////
+// Color Preset
+//////////////////////////////////////////////////////////////////
+$color-fore: #f1d49d;    //전경색 : 폰트, 라인 색상
+$color-back: #745230;  //배경색
+$color-spot: #D5A253; //별색 : 주로 hover된 색상
+$color-warm: #B6212D;    //따뜻한 색
+$color-cool: #5D95B1;    //시원한 색
+
+//////////////////////////////////////////////////////////////////
+// Override Header & Footer
+//////////////////////////////////////////////////////////////////
+#AXUHeader {
+  .mx-header-overay{
+    .option-menu{
+      li{
+        a{
+          span {
+            &.icon2 {
+              background: url('/assets/images/logo-hero-axicon-32.svg') no-repeat center center !important;
+            }
+            &.icon3 {
+              background: url('/assets/images/logo-donate-axicon-32.svg') no-repeat center center !important;
+            }
+            &.en {
+              background: url('/assets/images/logo-lang-axicon-en-32.svg') no-repeat center center !important;
+            }
+            &.ko {
+              background: url('/assets/images/logo-lang-axicon-ko-32.svg') no-repeat center center !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header-bar {
+    background: darken($color-back, 20%);
+    .axu-right{
+      .top-menu{
+        li{
+          a{
+            &.on{
+              background: url("/assets/images/topmenu_selector_axicon.svg") no-repeat bottom center;
+            }
+          }
+        }
+      }
+      .option-menu{ //ul
+        li{
+          a{
+            background:darken($color-back, 30%);
+            &:hover{
+              background:darken($color-back, 25%);
+            }
+          }
+        }
+      }
+      .lang-menu{
+        &.en{ background: url("/assets/images/lang_en_axicon@2x.png") no-repeat; background-size: contain; }
+        &.ko{ background: url("/assets/images/lang_ko_axicon@2x.png") no-repeat; background-size: contain; }
+      }
+    }
+  }
+}
+
+
+#AXUFooter{
+  .footer-1{
+    .left{
+      .copy{color:lighten($color-back, 30%);}
+      .lang{
+        li{
+          a{color:$color-fore;}
+        }
+      }
+    }
+    .right{
+      .bottom_menu{
+        a{
+          color:lighten($color-back, 40%);
+          &:hover{color:$color-spot;}
+        }
+      }
+    }
+  }
+  .footer-2{
+    h4{color:darken($color-back, 5%);}
+    ul{
+      li{
+        a{
+          color:darken($color-back, 10%);
+          &:hover{color:$color-spot;}
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,487 @@
+languages:
+  - title: "언어선택"
+    select: "한국어로"
+    langs:
+      - en: "영어"
+        ko: "한국어"
+
+define_axisj: "<strong>액시스제이</strong>는 오픈소스 그룹입니다."
+products_str: "액시스제이 오픈소스"
+
+strings:
+    email: "이메일"
+    submit: "확인"
+
+opensources:
+  - name: "액시스제이"
+    desc: "오픈소스 자바스크립트 UI프레임워크로 다양한 오픈소스 프로젝트를 운영하고 서비스하는 조직이자 온라인커뮤니티입니다."
+    img256: "/assets/images/symbolic_axisj_256.png"
+    link: "/"
+
+  - name: "액스부트"
+    desc: "자바 스프링를 기반으로 하는 풀 스택 웹 애플리케이션 개발 프레임워크이다."
+    img256: "/assets/images/symbolic_axboot_256.png"
+    link: "/axboot"
+
+  - name: "액스5"
+    desc: "UI 프레임워크와 부트스트랩을 연동한 프런트-엔드의 끝판왕"
+    img256: "/assets/images/symbolic_ax5_256.png"
+    link: "/ax5"
+
+  - name: "구구너드"
+    desc: "오픈소스 스티커 쇼핑몰, 구매할 때마다 오픈소스 프로젝트를 후원합니다"
+    img256: "/assets/images/symbolic_99nerds_256.png"
+    link: "/99nerds"
+
+  - name: "액시콘"
+    desc: "900개가 넘는 벡터 아이콘으로 보다 쉽고 빠르게 웹 애플리케이션을 구축할 수 있습니다"
+    img256: "/assets/images/symbolic_axicon_256.png"
+    link: "/axicon"
+
+  - name: "제이슨껌"
+    desc: "JSON 데이터의 구조를 분석하거나 원하는 데이터를 취하고 쉽을 때 편리하게 이용할 수 있습니다."
+    img256: "/assets/images/symbolic_jsongum_256.png"
+    link: "/jsongum"
+
+# Page - AXISJ(Timeline) ########################
+page_axisj_name: "액시스제이"
+page_axisj_type:
+  - msg: "반가워요, 개발자님"
+  - msg: "나는 코딩한다, 고로 나는 존재한다."
+  - msg: "내일 정전이 된다해도 나는 오늘 한 줄의 코드를 쓰겠다."
+  - msg: "스스로 돌아봐서 에러가 없다면 천만인이 가로막아도 나는 컴파일하리라."
+  - msg: "나는 하루라도 코드를 쓰지 않으면 입안에 가시가 돋는다."
+  - msg: "가장 커다란 에러는 컴파일의 순간에 도사린다."
+  - msg: "대박 프로그램은 1%의 영감과 99%의 노가다로 이루어진다."
+
+page_axboot_name: "액스부트"
+page_axboot_type:
+  - msg: "함께 개발합니다"
+  - msg: "액스부트와 함께라면 개발이 즐겁다."
+  - msg: "웹 애플리케이션 DIY 키트"
+
+page_axboot_desc:
+  - msg: "풀 스택 웹 애플리케이션 개발 프레임워크"
+  - msg: "액스부트는 자바와 HTML를 기반으로 하는 웹 애플리케이션을 쉽게 구축할 수 있습니다. 어렵고 반복되는 개발 프로세스를 해결할 수 있습니다. 게다가 레이아웃, 웹 UI 컴포넌트, 일반적인 비즈니스 서비스를 미리 구축해 놓았습니다. 빠르고 안정적인 엔터프라이즈 서비스 개발, 최후의 수단을 최초로 사용하십시오."
+
+page_axboot_btns:
+  - label: "데모보기"
+    link: "/"
+  - label: "깃허브"
+    link: "/"
+  - label: "액스부트 설정"
+    link: "/"
+
+page_axboot_features:
+  - label: "풀스택 프레임워크"
+    feature:
+      - label: "프론트엔드"
+        desc: "프론트엔트 프레임워크는 HTML5, 자바스크립트 기반의 컴포넌트(그리드, 선택자, 토스트, 달력 등)와 레이아웃 시스템을 제공합니다"
+      - label: "백엔드"
+        desc: "백엔드 프레임워크는 웹 개발 환경을 기반의 빠르고 유연한 자바 및 스프링을 지원합니다."
+  - label: "다양한 레이아웃과 테마"
+    feature:
+      - label: "레이아웃"
+        desc: "인기있는 레이아웃 10가지와 함께 그리드와 선택자 그리고 폼은 레이아웃에 기본으로 제공됩니다. 그리고 사용자가 개발시 쉽게 이해할 수 있게 샘플 서식이 있어 10분 정도면 완성할 수 있습니다"
+      - label: "테마"
+        desc: "테마선택을 통해 사용자는 모양과 느낌을 변경할 수 있으며, 사용자가 UI의 세부사항을 세밀하게 조정할 수 있습니다."
+  - label: "개발자 친화적 환경"
+    feature:
+      - label: "순수 UI 컴포넌트"
+        desc: "웹UI를 구성하기 위해 디자인에 구애 받을 필요가 없습니다."
+      - label: "열린 구조"
+        desc: "소스코드에 대한 무제한 접근, 공개 상속 패턴의 광범위한 사용 및 고유 확장 기능을 이용해 필요에 따라 플랫폼을 수정할 수 있습니다."
+      - label: "개발환경의 자유"
+        desc: "익숙한 IDE를 사용할 수 있는 환경"
+  - label: "생산성"
+    feature:
+      - label: "빠르게 시작"
+        desc: "액스부트 초기설정기는 완전한 형태의 애플리케이션 소스 세트를 제공하며 사용자는 자신의 IDE로 다운로드한 파일로 실행하여 서버를 시작할 수 있습니다."
+      - label: "손쉬운 CRUD 구현"
+        desc: "사용자는 CRUD 스캔 폴딩 도구로 CRUD 로직을 쉽게 구현할 수 있습니다."
+      - label: "빠르게 숙련 가능"
+        desc: "한국 개발자를 위한 한국어로 된 양질의 문서를 제공합니다. 또한 사례 연구를 통해 가장 적절한 방법도 제공되오니 비즈니스 애플리케이션 개발 중 발생할 수 있는 문제를 해결할 수 있습니다."
+  - label: "준비된 엔터프라이즈"
+    feature:
+      - label: "확장성"
+        desc: "데이터베이스 풀링, 데이터 캐싱 옵션 및 리소스 최적화의 미세 조정을 통해 병렬로 확장하고 대규모 트래픽을 처리하기 쉽습니다."
+      - label: "똑똑한 에러 검출"
+        desc: "슬로우 비즈니스 로직 및 쿼리 지연 오류를 로그에서 감지, 집계할 수 있으며 수집된 데이터는 이메일, 문자 메시지, 메신저 웹훅 등을 통해 보낼 수 있습니다."
+      - label: "레퍼런스"
+        desc: "액스부트는 인천공항 POS 할인 시스템(하루 1백만회 이상 사용 25TPS), 대림 글로벌 물류 관리 시스템 및 JTNet 관리 시스템을 포함한 유수 대기업에서 사용되어지고 있습니다."
+  - label: "유지관리"
+    feature:
+      - label: "걱정마세요"
+        desc: "뷰와 API는 명확하게 분리되어 있습니다. HTTP 및 JSON(RESTful API)은 전송에 사용되어 효과적인 코드 확장 및 유지 관리가 보장됩니다."
+      - label: "계층화된 구조"
+        desc: "MVC의 레이어 구조를 활용하여 역할과 논리가 레이어별로 정의되어 있습니다. 이를 통해 사용자는 코드를 통해 오류를 확장, 수정할 수 있습니다."
+      - label: "개발, 운영 지원"
+        desc: "젠킨스와 앤서블을 통해 배포하기 때문 다수 배포를 가능케 하는 코드 라이프 사이클을 실행할 수 있습니다."
+
+page_axboot_videos:
+  - label: "액스부트의 새로운 특징"
+    img: "/assets/images/axboot-video-1.png"
+    link: "https://www.youtube.com/watch?v=7CbEWftw0eo"
+  - label: "액스부트 UI 프레임워크 소개"
+    img: "/assets/images/axboot-video-2.png"
+    link: "https://www.youtube.com/watch?v=7HDo_nVNQuc"
+  - label: "액스부트 테마"
+    img: "/assets/images/axboot-video-3.png"
+    link: "https://www.youtube.com/watch?v=XXXn7Fw_DL8"
+
+page_axboot_docus:
+  - label: "액스부트 시작하기"
+    desc: "빠른 시작 설명서와 액스부트 기술문서"
+    img: "/assets/images/axboot-doc-1@2x.png"
+    link_name: "API.AXBOOT.COM"
+    link: "http://api.axboot.com"
+    group_name: "액스부트 사용자 그룹"
+    group_link: "http://facebook.com/group/axboot"
+  - label: "UI 프레임워크 데모"
+    desc: "AX5UI Framework Demo & Documentation"
+    img: "/assets/images/axboot-doc-2@2x.png"
+    link_name: "AX5.IO"
+    link: "http://ax5.io"
+
+page_axboot_themes:
+    label: "액스부트 테마 바로가기"
+    link: "http://github.com/axboot/ax-boot-themes"
+    images:
+    - label: "액스부트 메인"
+      desc: "아롱이 테마"
+      img: "/assets/images/axboot-theme-1.jpg"
+    - label: "액스부트 프로젝트 관리자"
+      desc: "아롱이 테마"
+      img: "/assets/images/axboot-theme-2.jpg"
+    - label: "액스부트 메뉴 관리"
+      desc: "도베르만 테마"
+      img: "/assets/images/axboot-theme-3.jpg"
+    - label: "액스부트 사용자 관리"
+      desc: "도베르만 테마"
+      img: "/assets/images/axboot-theme-4.jpg"
+    - label: "액스부트 공통코드 관리"
+      desc: "도베르만 테마"
+      img: "/assets/images/axboot-theme-5.jpg"
+    - label: "액스부트 에러로그 관리"
+      desc: "도베르만 테마"
+      img: "/assets/images/axboot-theme-6.jpg"
+
+page_axboot_contact:
+    qa: "도움이 필요하신가요?"
+    qa_desc: "핵심 팀원들은 크고 작은 액스부트의 이슈에 대한 전문적인 컨설팅을 해드립니다. 전문가들이 만들고 제공하는 지식과 경험으로 성공을 경험하세요. 분야별 최고의 전문가로 애플케이션 아키텍처, 지속적 관계유지 및 구독 등을 통해 가능합니다."
+    biz_hour: "오후 01-07 / 월요일-금요일"
+    biz_desc: "컨설팅에 대한 문의 사항이 있으시면 아래의 담당자에게 문의하세요."
+    ca_mail: "tom@axisj.com"
+    ca_tel: "82-10-8881-9137"
+
+# Page - AX5 ########################
+page_ax5_name: "액스5"
+page_ax5_type:
+  - msg: "부트스트랩과 사랑에 빠지다"
+  - msg: "웹을 시작하는 가장 빠르고 안정적인 방법, 액스5"
+
+page_ax5_desc:
+  - msg: "웹 표준 자바스크립트 UI 프레임워크, 액스5"
+  - msg: "AX5UI는 jQuery/Bootstrap과 함께 사용하는 HTML5 웹표준 Javascript UI 플러그인입니다. (데모 : http://ax5.io)<br />
+    AX5UI를 사용하기 위해서는 'HTML, JS, CSS'에 대한 기본지식이 있어야 합니다."
+
+page_ax5_btns:
+  - label: "데모 사이트"
+    link: "http://ax5.io"
+  - label: "깃허브"
+    link: "http://www.github.com/ax5"
+
+page_ax5_intro:
+  - label: "AX5 UI"
+    desc:
+      - msg: "AX5UI는 AXISJ의 개발경험을 가지고 설계 개발된 소프트웨어 입니다.
+              수많은 UI라이브러리를 사용자에게 제공하면서 가지게 된 생각을 AX5UI에 담아내려고 애썻습니다."
+        list:
+          - txt: "어떻게 하면 개발자들의 개발시간을 단축 시킬 수 있을까?"
+          - txt: "어떻게 하면 개발자들이 즐겁게 개발 할 수 있을까?"
+          - txt: "어떻게 하면 개발자들이 원하는 기능을 언제든 편하게 추가 하고 공유 할 수 있을까?"
+      - msg: "이런 고민들을 해결하기 위해 몇가지 새로운 방법들이 필요했습니다."
+        list:
+          - txt: "프레임워크보다는 플러그인 형태로 개발하여 가볍게 추가하고 다른 플러그인들과 함께 사용하는데 편리하게 만들어야 한다."
+          - txt: "각각의 UI 플러그인들을 상호 호환되면서 독립적이어야 한다."
+          - txt: "NPM이나 Bower처럼 편리한 배포 시스템이 있어야 한다."
+          - txt: "플러그인을 하나의 레포지터리에서 개발할 수 있어야 하고, 각각의 UI 플러그들은 각각의 레포지터리로 배포 되어야 한다."
+          - txt: "모든 과정을 자동화 하여 개발자는 코딩만 즐길 수 있어야 한다."
+      - msg: "앞으로 더 많은 개선과 노력이 있어야 쓸만한 UI 플러그인으로 성장해 나아가 겠지만,
+              함께 만들어 간다는 마음으로 참여 해주시면 감사하겠습니다."
+  - label: "jQuery"
+    desc: "UI 플러그인 개발을 보다 빠르고 합리적으로 하기위해 jQuery 라이브러리를 사용하고 있습니다. AX5UI에서 jQuery 라이브러리의 역할은 원하는 엘리먼트를 찾고 지우고 추가하고 이벤트를 연결하는데 사용합니다.
+           jQuery는 전세계에게 가장 많은 개발자가 사용중인 JS 라이브러리 입니다 (http://jquery.com/)."
+  - label: "Bootstrap"
+    desc: "Bootstrap은 각종 레이아웃, 버튼, 입력창등의 디자인을 CSS와 Javascript로 미리 만들어진 프레임워크 입니다.
+           웹 디자인의 혁명이라 불릴정도로 폭발적인 반응이 있었고, 전 세계적으로 가장 많이 사용된 프론트앤드 프레임워크 중에 하나입니다.<br /><br />
+           AX5UI의 테마시스템은 SCSS코드로 제작되어, 최종 산출물인 CSS파일이 만들어지는 구조로 설계되었습니다.
+           SCSS코드내 변수구조가 Bootstrap SCSS구조와 호환되도록 설계되어있고, 입력창등의 CSS 클래스 사용법을 Bootstrap와 같은 구조에서 최적화 되도록 개발 및 테스트 되었습니다."
+
+page_ax5_features:
+  - label: "유용한"
+    desc: "클래스, 함수, 오브젝트, 프로토타입으로 정리된 API 문서는 라이브러리 초기 도입에 큰 도움이 됩니다. 또한 미리 준비해둔 샘플을 참조할 수 있어 유용하게 이용할 수 있습니다."
+    links:
+      - label: "개발 API 문서 바로가기"
+        link: ""
+      - label: "샘플페이지 바로가기"
+        link: ""
+  - label: "강력한"
+    desc: "80개 이상의 사용자 인터페이스 구성요소를 통해 다양한 화면에 대한 요구사항을 처리할 수 있습니다. 또한 최신의 브라우저 뿐만 아니라 터치 기반의 기기에도 동작하도록 개발되어 있습니다."
+  - label: "충실한"
+    desc: "오픈소스로 비영리로 운영되고 있지만 궁금한 점을 깃헙(Github) 이슈트래커를 통해 최대한 빠른 시일내에 응대해드리고 있습니다. 또한 업체의 커스텀 및 별도 개발을 위해 방문교육, 원격지원, 이메일, 전화상담 등 다양한 기술상품으로 배포된 소스와 개발물에 책임을 다하고 있습니다"
+    links:
+      - label: "깃헙 이슈 트래커 바로가기"
+        link: ""
+
+page_ax5_specials:
+  - label: "생산성"
+    desc: "이미 사전에 구축된 사용자 인터페이스 구성요소를 단 몇 줄의 코드만으로도 개발이 가능합니다."
+  - label: "확장성"
+    desc: "다양한 웹 애플리케이션의 요구사항의 변경 또는 추가에 대해 확장하고 진화할 수 있도록 설계되어 있습니다."
+  - label: "개방성"
+    desc: "액시스제이는 오픈소스입니다. 언제든지 이슈트래커를 통해 개선 및 아이디어를 게재하고 직접 개발에 참여하여 더욱 발전시킬 수 있습니다."
+  - label: "신뢰성"
+    desc: "개발자 톰은 프런트엔드의 아름다운 미래를 꿈꿉니다. 오늘도 여러분과 소통하기 위해 끊임없이 노력하고 이야기하고 있습니다."
+    links:
+        - label: "액시스제이 페이스북 바로가기"
+          link: "http://www.facebook.com/axisj"
+
+# Page - 99Nerds ########################
+page_99nerds_name: "구구너드"
+page_99nerds_desc: "스티커가 팔릴 때 마다 해당 '오픈소스 프로젝트로 후원'됩니다"
+page_99nerds_stickers: "HTML5, CSS3, JS-J, JS-J, JS-S, JS-JS, GOLang, Eclipse, Angular, Ubuntu, Fedora, Spring, Python,
+C-Sharp, React, Yeoman, Linux, Android, Bower, CodeIgniter, Redis, GIT, Jenkins, Scala, MongoDB, Gulp, Flask, django,
+Bash, jQuery, rm-rf, Bootstrap, Swift, Docker, JS-Yellow, AXISJ, AX5UI, AXBoot"
+
+page_99nerds_type:
+  - msg: "스티커가 팔릴 때 마다 해당 '오픈소스 프로젝트로 후원'됩니다"
+  - msg: "한 장의 스티커가 세상을 바꿉니다."
+  - msg: "한 장의 스티커가 밝은 개발환경을 만듭니다."
+  - msg: "한 장의 스티커가 개발자를 웃게 합니다."
+
+page_99nerds_says:
+  - msg: "눈을 떠보니 내 놋북에 뙇!"
+    say: "스티커 한 장이지만 개발자에겐 위대한 도약이다"
+    name: "브랜트 암스트롱"
+  - msg: "개발자를 위한 특별한 스티커"
+    say: "개발자의 개발자를 위한 개발자에 의한 구구너드"
+    name: "토마스 링컨"
+
+page_99nerds_desc:
+  - msg: "오픈소스 스티커몰"
+  - msg: "개발자의 인생을 살다보면 수 많은 오픈소스의 사용하게 됩니다.
+  다른 개발자의 땀과 노력이 나의 개발에도 큰 영감과 도움이 될 때 크나큰 감사와 기쁜을 느끼는 것은 비단 저 뿐일까요
+  내 책상에, 나의 노트북에 오픈소스 스티커를 붙여보세요. 작은 실천이 오픈소스의 미래를 밝게 합니다."
+
+page_99nerds_btns:
+  - label: "스티커 쇼핑"
+    link: "http://www.99nerds.io"
+  - label: "스티커 제안"
+    link: "mailto:thomas@axisj.com"
+
+# Page - AXIcon ########################
+page_axicon_name: "액시콘"
+page_axicon_type:
+  - msg: "개발자도 디자이너도 모두 필요한 도구"
+  - msg: "고해상도 스크린에서도 깨끗하게. 선명하게."
+  - msg: "아이콘 검색도구로 편리하게."
+
+page_axicon_desc:
+  - msg: "웹 아이콘 폰트 패키지, 액시콘"
+  - msg: "당신의 웹 애플리케이션 프로젝트에 벡터 아이콘을 사용해보세요.
+          900개가 넘는 벡터 아이콘으로 보다 쉽고 빠르게 웹 애플리케이션을 구축할 수 있습니다.
+          기획자도, 프로그래머도, 디자이너도 액시콘이 답입니다."
+
+page_axicon_btns:
+  - label: "다운로드"
+    link: "https://github.com/axisj/axicon/releases"
+  - label: "아이콘 탐색기"
+    link: "http://axicon.axisj.com"
+
+page_axicon_features:
+  - label: "벡터 폰트 아이콘"
+    desc: "하나의 폰트에 900개의 픽토그래픽 아이콘이 가득합니다. 또한 벡터방식으로 사이즈를 변경해도 깨끗한 이미지를 보여줍니다. 특히 레티나 디스플레이에 완벽하게 보여집니다."
+  - label: "빠르고 쉽다"
+    desc: "자바스크립트 없이 CSS만으로 조작이 가능합니다. 간단히 태그만으로 쉽게 아이콘을 추가합니다. 특히 “악수(AXU, 반응형 디자인 프레임워크)”과 함께라면 빠르고 쉽게 근사한 결과물을 만들 수 있습니다."
+  - label: "아이콘 검색 도구"
+    desc: "수 많은 아이콘을 일일이 확인하며 찾을 필요가 없습니다. 액시콘은 편리한 검색도구를 제공합니다. 빠르게 검색하고 용도에 맞게 복사하여 붙여넣어 사용하십시오."
+    link: "액시콘 검색하기"
+
+
+# Page - JSONGum ########################
+page_jsongum_name: "제이슨껌"
+page_jsongum_type:
+  - msg: "껌은 역시 제이슨 껌!"
+  - msg: "이제 JSON 데이터를 분석하기 위해 인상 쓸 필요가 없다"
+  - msg: "껌은 씹어야 제맛이죠!"
+
+page_jsongum_desc:
+  - msg: "제이슨 데이터 포맷 뷰어, 제이슨껌"
+  - msg: "JSON 데이터의 구조를 분석하거나 원하는 데이터를 취하고 쉽을 때 편리하게 이용할 수 있습니다.
+          자바스크립트 고수 톰이 자신의 불편함을 해결하기 위해 만들어진 “제이슨껌”
+          껌은 씹어야 제맛이죠! JSON을 씹어 드립니다."
+
+page_jsongum_btns:
+  - label: "설치하기"
+    link: "/"
+
+page_jsongum_capture:
+  - label: "프리웨어"
+  - label: "코드 편집"
+  - label: "아름다운 코드정렬"
+  - label: "폴딩 기능"
+  - label: "JSON 변환"
+  - label: "HTML지원"
+  - label: "HTML에서 JSON으로"
+  - label: "제이슨껌"
+
+page_jsongum_features:
+  - label: "대박~ 이뻐!"
+    desc: "JSON 코드 하이라이트는 기본코드 블럭 들여쓰기 정렬을 통해 깔끔하고 이쁘게 JSON을 보여준다구!"
+  - label: "완전 유용해"
+    desc: "JSON을 트리형 리스트로 보여주니 깔끔하고 원하는 부분만 집중해서 볼 수 있으니 얼마나 유용해! 게다가 HTML이나 XML도 JSON형태로 변형해주는 기능도 있다구!"
+  - label: "졸라~ 간단해"
+    desc: "키 값에 꼭 코테이션으로 감싸줘야 된다구? 왜 그렇게 까탈스러운거야! 제이슨껌은 그냥 알아서 인식한다구. 어서 코드 분석하자구!"
+
+page_jsongum_install:
+  - msg: "액시스제이는 자바스크립트 UI, 웹폰트아이콘, 반응형템플릿 등 다양한 오픈소스 프로젝트를 만들고 있습니다."
+  - msg: "액시스제이는 앞으로도 오픈소스로 세상에 기여하는 일에 최선을 다하려고 합니다."
+  - msg: "액시스제이가 건강하게 오픈소스를 개발하기 위한 방법으로 JSONGum을 팔기로 했습니다."
+  - msg: "지금 이 순간 당신의 껌 값 $4.99로 대한민국의 개발자에게 희망을 주세요."
+
+page_jsongum_buy:
+  - label: "다운로드"
+    desc: "제이슨껌은 정품 라이센스가 없어도 사용할 수 있습니다. 다만 정품 라이센스가 없으면 정품 사용자에 비해 몇번의 클릭을 더 하셔야 합니다."
+    btns:
+      - label: "OSX 버전 다운로드"
+        link: "location.href = 'download/JSONGum.dmg"
+      - label: "WIN 32비트 다운로드"
+        link: "location.href = 'download/jsongum-setup-win32-1-0.exe"
+  - label: "제이슨껌 정품 라이센스 구매하기"
+    desc: "페이팔로 결재하시면 페이팔 계정에 등록된 이메일주소로 라이선스가 발급됩니다."
+    btns:
+      - label: "페이팔 $4.99"
+        link: "https://www.paypal.com/cgi-bin/webscr"
+
+page_jsongum_license:
+  label: "라이선스"
+  desc: "JSONGum 라이선스를 잊으셨나요?<br />
+           구매하셨을 때 입력하신 이메일 주소를 입력해주세요"
+  caution: "구매 당시 사용하신 이메일 주소가 명확하지 않은 경우에는 라이선스 찾기가 어려울 수 있습니다."
+
+# Page - Donate ########################
+page_donate_name: "후원"
+page_donate_type:
+  - msg: "함께 만들고 함께 씁니다."
+  - msg: "멋진 개발을 위해 오늘도 달립니다."
+  - msg: "작은 후원 하나 하나 모여 아름다운 애플리케이션으로 탄생합니다."
+
+page_donate_desc:
+  - msg: "공짜라서 싸구려가 아닌 오픈소스라서 가치있는 액시스제이가 되기위해, 오늘도 수많은 우리들 속에 영웅들이 땀흘려 노력하고 있습니다!!"
+  - msg: "자바스크립트 UI 라이브러리 AXISJ, 반응형 웹 애플리케이션 템플릿 패키지 AXU, 웹 아이콘 폰트 패키지 AXIcon 등
+          다양한 오픈소스 프로젝트를 진행하고 또 서비스 하고 있습니다."
+  - msg: "우리는 액시스제이에 후원을 하실 귀한 분들을 찾고 있습니다. 다음의 방법으로 후원을 해주십시요. 보다 가치있고 의미 있는 일에 쓰겠습니다."
+
+page_donate_support_how:
+  - label : "후원방법"
+    desc  : "페이팔로 후원해주시면 페이팔 결재시스템과 연동되어 페이팔 정보(이메일, 이름)으로 후원영웅 목록에 등록되십니다.
+           은행송금방식으로 입금하신 경우에는 tom@axisj.com으로 연락주시거나 전화로(010-8881-9137) 알려주세요."
+    methods:
+      - label : "은행송금"
+        prefix: "bank"
+        desc  : "우리은행,1005-402-375399,액시스제이"
+      - label : "페이팔"
+        prefix: "paypal"
+        desc  : "$3,$100,$200,$400"
+      - label : "제이슨껌 구매"
+        prefix: "jsongum"
+        desc  : "오직 $4.99"
+  - label : "정기후원"
+    desc: "정기후원(매달/매년 일정 금액을 후원해주시는 분들)해주시는 분들 후원영웅(마스터)로 등록됩니다.
+           gitHub 컨트리뷰터로 활동하시는 분들께는 답변영웅, 버그영웅 등으로 등록됩니다."
+    methods:
+      - label : "은행송금"
+        prefix: "bank"
+        desc  : "우리은행,1005-402-375399,액시스제이"
+      - label : "페이팔 정기후원"
+        prefix: "paypal"
+        desc  : "매년 $12,매년 $36,매년 $120,매년 $360,1000"
+      - label : "깃허브 컨트리뷰터 참여"
+        prefix: "github"
+        desc  : "깃허브 액시스제이 가기"
+
+page_donate_support_sw:
+    label: "소프트웨어 후원사"
+    list:
+      - name  : "JetBrain"
+        desc  : ""
+        img   : "/assets/images/donate-sw-1.png"
+        link  : ""
+      - name  : "IntelliJ IDEA"
+        desc  : ""
+        img   : "/assets/images/donate-sw-2.png"
+        link  : ""
+      - name  : "Atlassian"
+        desc  : ""
+        img   : "/assets/images/donate-sw-3.png"
+        link  : ""
+      - name  : "JIRA"
+        desc  : ""
+        img   : "/assets/images/donate-sw-4.png"
+        link  : ""
+
+# Page - Heroes ########################
+page_heroes_name: "영웅들"
+page_heroes_type:
+  - msg: "액시스제이엔 수 많은 영웅들이 있습니다."
+  - msg: "이들이 있기에 세상은 아름답습니다."
+  - msg: "감사합니다."
+page_heroes_section: "우리의 빛나는 영웅들"
+
+# Page - Member ########################
+members:
+  - name: "Thomas Jang"
+    desc: "Thomas Jang is one of the best front-end engineers in Korea with more than 15 years web application development work exprience."
+    pos: "Web UI Expert"
+    img: "/assets/images/member-tom.png"
+    email: "tom@axisj.com"
+    links:
+      - name: "Github"
+        link: "http://github.com/thomasjang"
+      - name: "Blog"
+        link: "http://blog.axisj.com"
+      - name: "Facebook"
+        link: "http://facebook.com/axisjtom"
+    history:
+      - text: "HTML5, CSS, JavaScript Expert"
+      - text: "Web Application Interface Professional"
+      - text: "Creator of Full Stack Web UI Framework"
+      - text: "Creator of Advanced HTML5 UI Framework"
+      - text: "Global Opensource Frontier - NIPA"
+      - text: "The Winner of Super Developer K3 Award- NIA"
+
+  - name: "Brant Hwang"
+    desc: "Brant Hwang is a back-end engineer who manages Distributed Processing, Java, Spring Framework"
+    pos: "Java & Server Expert"
+    img: "/assets/images/member-brant.png"
+    email: "brant@axboot.com"
+    links:
+      - name: "Github"
+        link: "http://github.com/brant-hwang"
+      - name: "Blog"
+        link: "http://brantiffy.axisj.com/about-me"
+      - name: "Facebook"
+        link: "http://facebook.com/tjdus3361"
+      - name: "LinkedIn"
+        link: "http://linkedin.com/in/ishwang"
+    history:
+      - text: "Java, Spring Framework, Linux Expert"
+      - text: "Former E-Commerce Platform, Commerce Service Developer at KAKAO"
+      - text: "Former POS Platform, POS Software Developer - Alternative Military Service"
+      - text: "Cloud Infrastructure Design & Automation Professional"
+      - text: "Microsoft Certified System Engineer, IT Professional, Technology Specialist, Database Administrator"
+      - text: "Oracle Certified Database Professional"
+      - text: "Sun Certified Network, System Engineer & Java Programmer"
+      - text: "Certified Linux Server Professional"
+      - text: "Spring Boot in Action Korean version translator - Spring Boot Coding Factory"

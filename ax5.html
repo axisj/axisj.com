@@ -1,0 +1,202 @@
+---
+layout: layout_ax5
+page: ax5
+bar_logo_class: ax5
+bar_logo_desc: Fork AX5 on Github
+bar_logo_link: 'https://github.com/axisj'
+bar_logo_target: '_blank'
+---
+
+<div id="AXUContents">
+    <!-- s.AXVisual -->
+    <div id="AXUVisual">
+        <div class="visual-top">
+            <div class="axu-layer visual-top-layer">
+                <div class="axu-wrap">
+                    <div class="axu-col-2">
+                        <div class="logo">
+                            <img src="/assets/images/page_logo_ax5@2x.png" />
+                            <span>{{ site.data.vars.page_ax5_name}}</span>
+                        </div>
+                    </div>
+                    <div class="axu-col-10">
+                        <ul class="menu">
+                            {% for menu in site.data.nav.menu_ax5 %}
+                            <li><a href="#{{ menu.link }}">{{ menu.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-message-layer">
+            <div class="axu-wrap">
+                <h1>{{ site.data.vars.page_ax5_type[0].msg }}</h1>
+                <h2><span id="typed"></span></h2>
+                <div id="typed-msgs">
+                    {% for entry in site.data.vars.page_ax5_type %}
+                    {% if forloop.index != 1 %}
+                    <p>{{ entry.msg }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="axu-layer visual-image-layer">
+            <div class="axu-wrap">
+                <img src="/assets/images/symbolic_ax5_512.png" />
+            </div>
+        </div>
+        <div class="axu-layer visual-desc-layer">
+            <div class="axu-wrap">
+                <h3>{{ site.data.vars.page_ax5_desc[0].msg }}</h3>
+                <p>{{ site.data.vars.page_ax5_desc[1].msg }}</p>
+                <div class="btns">
+                    {% for btn in site.data.vars.page_ax5_btns %}
+                    <a href="{{ btn.link }}" class="btn-{{forloop.index}}">{{ btn.label }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="axu-h50"></div>
+    </div>
+    <!-- e.AXVisual -->
+
+    <a name="intro"></a>
+    <div id="AXUIntroduction">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_ax5[0].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer intro-layer">
+            <div class="axu-wrap">
+                {% assign intro = site.data.vars.page_ax5_intro %}
+
+                <div class="axu-col-6 intro-column">
+                    <div class="axu-unit">
+                        <div class="intro-card">
+                            <img src="/assets/images/ax5-intro-1.png" />
+                            <h3>{{intro[0].label}}</h3>
+                            <p>
+                                {% for desc in intro[0].desc %}
+                                    <h4>{{desc.msg}}</h4>
+                                    <ul>
+                                        {% for list in desc.list %}
+                                        <li>{{list.txt}}</li>
+                                        {% endfor %}
+                                    </ul>
+
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="axu-col-6 intro-column">
+                    <div class="axu-unit">
+                        <div class="intro-card">
+                            <img src="/assets/images/ax5-intro-2.png" />
+                            <h3>{{intro[1].label}}</h3>
+                            <p>{{intro[1].desc}}</p>
+                        </div>
+                        <div class="intro-card">
+                            <img src="/assets/images/ax5-intro-3.png" />
+                            <h3>{{intro[2].label}}</h3>
+                            <p>{{intro[2].desc}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-h30"></div>
+    </div>
+
+
+    <a name="feature"></a>
+    <div id="AXUFeatures">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_ax5[1].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer feature-layer">
+            <div class="axu-wrap">
+                {% for feature in site.data.vars.page_ax5_features %}
+                <div class="axu-col-4 feature-column">
+                    <div class="axu-unit">
+                        <div class="feature-card">
+                            <img src="/assets/images/ax5-feature-{{ forloop.index }}.png" />
+                            <h3>{{ feature.label }}</h3>
+                            <p>
+                                {{ feature.desc }}
+                            </p>
+                            {% if feature.links %}
+                            <div class="btns">
+                                {% for lk in feature.links %}
+                                <a href="{{lk.link}}" target="_blank">{{lk.label}}</a>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="axu-clear"></div>
+            </div>
+            <div class="axu-h30"></div>
+        </div>
+        <div class="axu-layer special-layer">
+            <div class="axu-wrap">
+
+                {% for special in site.data.vars.page_ax5_specials %}
+                <div class="axu-col-3 special-column">
+                    <div class="axu-unit">
+                        <div class="special-card">
+
+                            <img src="/assets/images/ax5-special-{{ forloop.index }}.png" />
+                            <h3>{{ special.label }}</h3>
+                            <p>
+                                {{ special.desc }}
+                            </p>
+                                {% if special.links %}
+                                <div class="btns">
+                                {% for lk in special.links %}
+                                <a href="{{lk.link}}" target="_blank">{{lk.label}}</a>
+                                {% endfor %}
+                                </div>
+                                {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <a name="how"></a>
+    <!-- s.AXUMarkDown -->
+    <div id="AXUMarkDown">
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.nav.menu_ax5[2].name }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="axu-unit">
+                {% capture my_include %}{% include ax5.{{site.active_lang}}.md %}{% endcapture %}
+                {{ my_include | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- e.AXUMarkDown -->
+
+    <div class="axu-h50"></div>
+    <div class="axu-h50"></div>
+
+</div>

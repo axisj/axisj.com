@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- Code Highlighter -->
+    <link rel="stylesheet" href="/assets/css/highlightjs/androidstudio.css">
+
+    {% include head.html %}
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lang_{{ site.active_lang}}.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/layout_99nerds.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/contents_99nerds.css">
+
+</head>
+
+<body>
+<div id="AXUBody">
+    {% include body-header.html %}
+    {{ content }}
+    {% include body-footer.html %}
+</div>
+</body>
+</html>

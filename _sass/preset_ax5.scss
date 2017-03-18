@@ -1,0 +1,33 @@
+// Color Preset //////////////////////////////////
+$color-fore: #666;    //전경색 : 폰트, 라인 색상
+$color-back: #f2f2f2;  //배경색
+$color-spot: #F15929; //별색 : 주로 hover된 색상
+$color-warm: #f00;    //따뜻한 색
+$color-cool: #0ff;    //시원한 색
+
+
+//////////////////////////////////////////////////////////////////
+// Override Header & Footer
+// 콘텐츠 구조상 헤더와 푸터의 미세한 조정은 이곳에서 오버라이드 해서 조정함
+// 다음 설계때는 고려사항으로 넣을 것
+//////////////////////////////////////////////////////////////////
+#AXUHeader {
+  .header-bar {
+    .axu-right{
+      .top-menu{
+        li{
+          a{
+            &.on{
+              background: url("/assets/images/topmenu_selector_ax5.svg") no-repeat bottom center;
+            }
+          }
+        }
+      }
+      .lang-menu{
+        &.en{ background: url("/assets/images/lang_en_ax5@2x.png") no-repeat; background-size: contain; }
+        &.ko{ background: url("/assets/images/lang_ko_ax5@2x.png") no-repeat; background-size: contain; }
+      }
+    }
+  }
+}
+

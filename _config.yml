@@ -1,0 +1,50 @@
+# Where things are
+source      : .
+destination : ./_site
+plugins_dir : ./_plugins
+layouts_dir : ./_layouts
+data_dir    : ./_data
+includes_dir: ./_includes
+collections :
+  posts:
+    output: true
+
+# Conversion
+markdown  : kramdown
+kramdown  :
+  input: GFM
+highlighter : rouge
+lsi         : false
+excerpt_separator : "\n\n"
+incremental       : false
+
+# author
+author  :
+  name  : 'Jowrney Kim'
+  url   : http://jowrney.com
+
+gems: [jekyll-polyglot, jekyll-paginate]
+
+# Permalinks
+permalink : pretty
+
+#include  : []
+exclude   : ['Gemfile','Gemfile.lock','CNAME','axisj.github.io.iml']
+
+# Setup
+title   :   AXISJ
+tagline : 'Open Source Group'
+paginate: 5
+version : 1.2.4
+github  :
+  repo: https://github.com/axisj
+
+#Polyglot
+languages     : ["en", "ko"]
+default_lang  : "en"
+
+exclude_from_localization: ["javascript", "images", "css"]
+
+sass:
+  style   : compressed
+  sass_dir: _sass

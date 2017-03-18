@@ -1,0 +1,71 @@
+topmenus:
+  - label: 상단메뉴
+    submenus:
+    - label: 타임라인
+      url : '/'
+    - label: 액스부트
+      url : '/axboot/'
+    - label: 액스5
+      url : '/ax5/'
+    - label: 99너드
+      url : '/99nerds/'
+    - label: 액시콘
+      url : '/axicon/'
+    - label: 제이슨껌
+      url : '/jsongum/'
+  - label: 옵션메뉴
+    submenus:
+    - label: 미디엄
+      url : 'https://medium.com/@axisj'
+      target: '_blank'
+    - label: 영웅들
+      url : '/heroes'
+    - label: 후원하기
+      url : '/donate'
+
+
+menu_axboot:
+  - name: "특징"
+    link: "feature"
+  - name: "비디오"
+    link: "video"
+  - name: "기술문서"
+    link: "document"
+  - name: "테마"
+    link: "theme"
+  - name: "컨설팅"
+    link: "contact"
+  - name: "팀"
+    link: "member"
+
+menu_99nerds:
+  - name: "소개"
+    link: "intro"
+  - name: "스티커"
+    link: "sticker"
+
+menu_ax5:
+  - name: "소개"
+    link: "intro"
+  - name: "특징"
+    link: "feature"
+  - name: "사용법"
+    link: "how"
+
+menu_axicon:
+  - name: "특징"
+    link: "feature"
+  - name: "사용법"
+    link: "how"
+  - name: "검색도구"
+    link: "http://axicon.axisj.com"
+
+menu_jsongum:
+  - name: "미리보기"
+    link: "preview"
+  - name: "특징"
+    link: "feature"
+  - name: "다운로드"
+    link: "download"
+  - name: "라이선스"
+    link: "license"

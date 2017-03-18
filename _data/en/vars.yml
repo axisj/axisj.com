@@ -1,0 +1,486 @@
+languages:
+  - title: "Languages"
+    select: "To English"
+    langs:
+      - en: "English"
+        ko: "Korean"
+
+define_axisj: "The <strong>AXISJ</strong> is open source groups."
+products_str: "AXISJ Open Source"
+
+strings:
+    email: "Email"
+    submit: "Submit"
+
+opensources:
+  - name: "AXISJ"
+    desc: "AXISJ(from below 'We') is a group and online community developing open-source projects based on Javascript UI framework AXISJ(axis of javascript"
+    img256: "/assets/images/symbolic_axisj_256.png"
+    link: "/"
+
+  - name: "AXBoot"
+    desc: "asy to build web applications with Java & HTML5. Repeatable and noise development process are resolved by AXBoot."
+    img256: "/assets/images/symbolic_axboot_256.png"
+    link: "/axboot"
+
+  - name: "AX5"
+    desc: "AX5UI is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap."
+    img256: "/assets/images/symbolic_ax5_256.png"
+    link: "/ax5"
+
+  - name: "99Nerds"
+    desc: "Opensoure Sticker Shoppingmall"
+    img256: "/assets/images/symbolic_99nerds_256.png"
+    link: "/99nerds"
+
+  - name: "AXICon"
+    desc: "Web application can be built more easily and quickly with more than 900 vector icons."
+    img256: "/assets/images/symbolic_axicon_256.png"
+    link: "/axicon"
+
+  - name: "JSONGum"
+    desc: "It can be useful when you want to analyze JSON data structure and find the data you want."
+    img256: "/assets/images/symbolic_jsongum_256.png"
+    link: "/jsongum"
+
+
+# Page - AXISJ(Timeline) ########################
+page_axisj_name: "AXISJ"
+page_axisj_type:
+  - msg: "Hello Developers, Welcome."
+  - msg: "Don’t worry if it doesn’t work right.<br /> If everything did, you’d be out of a job."
+  - msg: "Talk is cheap. Show me the code."
+  - msg: "In theory, theory and practice are the same.<br /> In practice, they’re not."
+  - msg: "Beware of bugs in the above code; I have only proved it correct, not tried it"
+  - msg: "To iterate is human, to recurse divine"
+
+page_axboot_name: "AXBoot"
+page_axboot_type:
+  - msg: "Make it better easy with AXBoot"
+  - msg: "Web Application DIY Kit"
+  - msg: "Enjoy developing with AXBoot"
+
+page_axboot_desc:
+  - msg: "Full Stack Web Application Development Framework"
+  - msg: "AXBoot makes it easy to build web applications with Java & HTML5. Repeatable and noise development process are resolved by AXBoot."
+
+page_axboot_btns:
+  - label: "demo"
+    link: "/"
+  - label: "Github"
+    link: "/"
+  - label: "Initialzr"
+    link: "/"
+
+page_axboot_features:
+  - label: "FullStack Framework"
+    feature:
+      - label: "Front-end"
+        desc: "Front-end Framework provides HTML5, Javascript based 17+ HTML5 components (including GRID, Selector, Toast, Calendar.. etc) and layout system."
+      - label: "Back-end"
+        desc: "Back-end Framework provides fast and flexible Java & Spring based web development environment.<br />AXBoot is the framework that provides A to Z Web Development solutions."
+  - label: "Various Layout, Theme"
+    feature:
+      - label: "Various Layout"
+        desc: "provides 10 most popular layouts used on Web UI. Grid, Selector, and form are built into the layout section, and when a user develops UI based on a given sample format, UI could be completed in as quickly as 10 minutes."
+      - label: "Theme"
+        desc: "Theme selection allows a user to change look and feel, as well as allowing the user to fine tune specifics of the UI."
+  - label: "Developer-friendly"
+    feature:
+      - label: "Pure UI Component"
+        desc: "No need to add any other dependency to design the Web UI."
+      - label: "Open Architecture"
+        desc: "Adapt the platform to your needs with unrestricted access to low level code, wide use of the open inheritance pattern and the unique Extensions feature."
+      - label: "No Restricted Development Environment"
+        desc: "Environment, User-Friendly IDE can be used."
+  - label: "Productive"
+    feature:
+      - label: "Easy to Start"
+        desc: "AXBoot Initialzr provides a complete form of Application Source Set and a user can start the server by importing a downloaded IDE then using spring-boot:run command."
+      - label: "Fast CRUD Implementation"
+        desc: "A user can easily materialize CRUD Logic with CRUD scaffolding tool."
+      - label: "Quick to Master"
+        desc: "provides high quality documentation along with Korean version documents for Korean developers. In addition, the most adequate practices are provided based on case studies, this allows the users to solve problems that may occur during business application development."
+  - label: "Enterprise Ready"
+    feature:
+      - label: "Scalable"
+        desc: "Easy to Expand in parallel and processing large scale traffic with fine-tuning database pooling, data caching option and resource optimization."
+      - label: "Smart Error Detecting"
+        desc: "An up-to-date slow business logic and slow query can be detected and aggregated in Error Log, while aggregated data can be send through email, texting, messenger, Webhook and, etc."
+      - label: "Reference"
+        desc: "The system has been proven, and its impressive portfolio includes list of large enterprise system usage including: Incheon Airport POS Concession System (Over 1 million times used per day, 25TPS), DAELIM Corporation Global Logistics Management System, and JTNET Van Administration System."
+  - label: "Maintainable"
+    feature:
+      - label: "Separation of concern"
+        desc: "There is clear separation between View and API. HTTP and JSON(RESTful API) are used for transmission, ensuring effective coding expansion and maintenance."
+      - label: "Layered Architecture"
+        desc: "By utilizing MVC’s Layer Architecture, role and logic have been cleared defined from layer to layer. That allows a user to expand and fix an error through coding quickly."
+      - label: "Support Dev&Ops"
+        desc: "Zero Downtime Deployment has been made possible through Customized Jenkins and Ansible which is fully compatible with AXBoot. This allows the system to quicken the code lifecycle which makes high number of distribution possible."
+
+page_axboot_videos:
+  - label: "AXBoot New Feature"
+    img: "/assets/images/axboot-video-1.png"
+    link: "https://www.youtube.com/watch?v=7CbEWftw0eo"
+  - label: "AXBoot UI Framework Introduction"
+    img: "/assets/images/axboot-video-2.png"
+    link: "https://www.youtube.com/watch?v=7HDo_nVNQuc"
+  - label: "AXBoot Theme"
+    img: "/assets/images/axboot-video-3.png"
+    link: "https://www.youtube.com/watch?v=XXXn7Fw_DL8"
+
+page_axboot_docus:
+  - label: "Getting Started"
+    desc: "Check Quick Start & AXBoot Documentation"
+    img: "/assets/images/axboot-doc-1@2x.png"
+    link_name: "API.AXBOOT.COM"
+    link: "http://api.axboot.com"
+    group_name: "AXBOOT USER GROUP"
+    group_link: "http://facebook.com/group/axboot"
+  - label: "UI Framework Demo"
+    desc: "AX5UI Framework Demo & Documentation"
+    img: "/assets/images/axboot-doc-2@2x.png"
+    link_name: "AX5.IO"
+    link: "http://ax5.io"
+
+page_axboot_themes:
+    label: "GET AXBOOT THEMES"
+    link: "http://github.com/axboot/ax-boot-themes"
+    images:
+    - label: "AXBoot Main"
+      desc: "ARONGI THEME"
+      img: "/assets/images/axboot-theme-1.jpg"
+    - label: "AXBoot Project Manager"
+      desc: "ARONGI THEME"
+      img: "/assets/images/axboot-theme-2.jpg"
+    - label: "AXBoot Menu Management"
+      desc: "DOBERMAN THEME"
+      img: "/assets/images/axboot-theme-3.jpg"
+    - label: "AXBoot User Management"
+      desc: "DOBERMAN THEME"
+      img: "/assets/images/axboot-theme-4.jpg"
+    - label: "AXBoot Common Code Management"
+      desc: "DOBERMAN THEME"
+      img: "/assets/images/axboot-theme-5.jpg"
+    - label: "AXBoot Error Log Management"
+      desc: "DOBERMAN THEME"
+      img: "/assets/images/axboot-theme-6.jpg"
+
+page_axboot_contact:
+    qa: "Need a AXBoot Consulting?"
+    qa_desc: "Our core team is able to offer expert consulting on both large and small AXBoot applications. Be confident in your success with the knowledge that your projects are being built by the experts. The best expert in field solves whatever problems you have including application architecture, continuous delivery, learning subscription."
+    biz_hour: "PM 01-07 / Monday-Friday"
+    biz_desc: "If you have any questions about consulting, you can contact our team."
+    ca_mail: "tom@axisj.com"
+    ca_tel: "82-10-8881-9137"
+
+# Page - AX5 ########################
+page_ax5_name: "AX5"
+page_ax5_type:
+  - msg: "Fall in love with bootstrap"
+  - msg: "The fastest and most reliable way to start the web, AX5"
+
+page_ax5_desc:
+  - msg: "Web Standard Javascript UI Framework, AX5"
+  - msg: "
+    AX5UI is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap.<br />
+    To use AX5UI, you need to have basic knowledge of 'HTML, JS, CSS'."
+
+page_ax5_btns:
+  - label: "Demo Website"
+    link: "http://ax5.io"
+  - label: "Github"
+    link: "http://www.github.com/ax5"
+
+page_ax5_intro:
+  - label: "AX5 UI"
+    desc:
+      - msg: "AX5UI demonstrates AXISJ's development experience with designed and developed software.
+              The application was trimmed from the AX5 UI using the UI."
+        list:
+          - txt: "How can developers shorten development time?"
+          - txt: "How can developers develop fun?"
+          - txt: "How can developers easily add and share the features they want at any time?"
+      - msg: "We needed some new ways to solve these problems."
+        list:
+          - txt: "t should be developed in the form of a plug-in rather than a framework and should be made lightweight and convenient for use with other plug-ins."
+          - txt: "Each UI plug-in must be mutually compatible and independent."
+          - txt: "There should be a convenient distribution system like NPM or Bower."
+          - txt: "The plug-in should be able to be developed in one repository, and each UI plug must be distributed in its own repository."
+          - txt: "The developer should be able to enjoy coding only by automating the whole process."
+      - msg: "We will have more improvements and efforts in the future to grow into a usable UI plugin, I would appreciate it if you participate with your heart to make it together."
+  - label: "jQuery"
+    desc: "We are using the jQuery library to make UI plug-in development faster and more reasonable. In AX5UI, the role of the jQuery library is to find, add, delete and attach the desired elements.
+          JQuery is the JS library that most developers in the world are using (http://jquery.com/)."
+  - label: "Bootstrap"
+    desc: "Bootstrap is a framework that has been pre-built with CSS and Javascript to design various layouts, buttons, and input windows.
+           It was explosive enough to be called the revolution in web design and is one of the most used front-end frameworks around the world.<br /><br />
+           The theme system of AX5UI was designed with SCSS code and CSS file which is the final product.
+            The variable structure in the SCSS code is designed to be compatible with the Bootstrap SCSS structure and has been developed and tested to optimize the usage of CSS classes such as input window in a structure like Bootstrap."
+
+page_ax5_features:
+  - label: "Useful"
+    desc: "API document of class, function, object and prototype is useful for initial introduction of library. Also, the samples prepared for you here can be really useful."
+    links:
+      - label: "View development API document"
+        link: ""
+      - label: "View sample page"
+        link: ""
+  - label: "Powerful"
+    desc: "More than 80 components of user interface help you deal with lots of requirements for various displays. Also, it was developed not only to support the latest version of browsers but touch-based devices as well."
+  - label: "Faithful"
+    desc: "Though AXISJ is a nonprofit open-source project, we try our best to respond to users questions on Github ASAP. We offer various technical products such as visit teaching, remote support, email, call service and custom development for companies to be fully responsible for our project and the source."
+    links:
+      - label: "View github issue tracker"
+        link: "http://github.com/ax5"
+
+page_ax5_specials:
+  - label: "Productivity"
+    desc: "Only a few lines of code enable the user interface components pre-made already."
+  - label: "Ｅxpandability"
+    desc: "It is structured to be adaptable and expandable according to requirement changes or additions of various web application."
+  - label: "Openness"
+    desc: "AXISJ is an open-source. You can share your ideas anytime to improve it more through the issue tracker and also can participate in developing together."
+  - label: "Reliability"
+    desc: "Not only the project leader 'Tom' but also all of the team members dream of front-end bright future. That is why we keep trying to communicate with you to make it better."
+    links:
+        - label: "AXISJ Facebook"
+          link: "http://www.facebook.com/axisj"
+
+# Page - 99Nerds ########################
+page_99nerds_name: "99Nerds"
+page_99nerds_desc: "Each time a sticker is sold, it is 'sponsored as an open source project'"
+page_99nerds_stickers: "HTML5, CSS3, JS-J, JS-J, JS-S, JS-JS, GOLang, Eclipse, Angular, Ubuntu, Fedora, Spring, Python,
+                      C-Sharp, React, Yeoman, Linux, Android, Bower, CodeIgniter, Redis, GIT, Jenkins, Scala, MongoDB, Gulp, Flask, django,
+                      Bash, jQuery, rm-rf, Bootstrap, Swift, Docker, JS-Yellow, AXISJ, AX5UI, AXBoot"
+
+page_99nerds_type:
+  - msg: "
+Each time a sticker is sold, it is 'sponsored as an open source project'"
+  - msg: "One sticker changes the world."
+  - msg: "One sticker creates a bright development environment."
+  - msg: "One sticker makes the developer laugh."
+
+page_99nerds_says:
+  - msg: "I opened my eyes and it is perfect for my eyes!"
+    say: "It's a sticker, but it's a great leap for developers."
+    name: "Brant Amstrong"
+  - msg: "Special stickers for developers"
+    say: "For developers, for developers, by developers, 99Nerds"
+    name: "Thomas Lincoln"
+
+page_99nerds_desc:
+  - msg: "Opensource Sticker Mall"
+  - msg: "If you live the life of a developer, you will be using a lot of open source.
+            Is it only me that I feel great gratitude and joy when the perspiration and effort of other developers are great inspiration and help in my development.
+            On my desk, stick an open source sticker on my laptop. Small practice brightens the future of open source."
+
+page_99nerds_btns:
+  - label: "Go Shopping"
+    link: "http://www.99nerds.io"
+  - label: "Suggest Sticker"
+    link: "mailto:thomas@axisj.com"
+
+# Page - AXIcon ########################
+page_axicon_name: "AXIcon"
+page_axicon_type:
+  - msg: "Both developers and designers need the tools"
+  - msg: "It is also beautiful on a high resolution screen. Clear."
+  - msg: "Icon search tool conveniently."
+
+page_axicon_desc:
+  - msg: "Web Icon Font Package, AXIcon"
+  - msg: "Try using vector icons for your web application projects.
+          Web application can be built more easily and quickly with more than 900 vector icons.
+          AXIcon is just right choice for managers, programmers and designers."
+
+page_axicon_btns:
+  - label: "Download"
+    link: "https://github.com/axisj/axicon/releases"
+  - label: "Icon Finder"
+    link: "http://axicon.axisj.com"
+
+page_axicon_features:
+  - label: "Vector font icons"
+    desc: "More than 900 pictographic icons within one font. It shows clear images even with enlarged icons in vector. Especially, it is powerful for retina displays."
+  - label: "Easy and quick"
+    desc: "It can be controlled by just using CSS without Javascript. Icons can be added simply with some tags. Also, you can build up a wonderful outcome especially using AXU along with AXIcon."
+  - label: "Icon search tool"
+    desc: "No need to search every icon wasting much time as it offers a convenient search tool. Search quickly and just copy and paste the tags to use icons."
+    link: "Search AXIcon"
+
+# Page - JSONGum ########################
+page_jsongum_name: "JSONGUm"
+page_jsongum_type:
+  - msg: "Gum is Jason Gum too!"
+  - msg: "From now on, you do not need to open your eyes to analyze JSON."
+  - msg: "Let's chew a piece of JSONGum."
+
+page_jsongum_desc:
+  - msg: "JSON Data Format Viewer, JSONGum"
+  - msg: "It can be useful when you want to analyze JSON data structure and find the data you want.
+          Actually JSONGum was created by Javascript master Tom to sort out his own inconvenience.
+          Let's chew a piece of JSONGum."
+
+page_jsongum_btns:
+  - label: "Install"
+    link: "/"
+
+page_jsongum_capture:
+  - label: "Freeware"
+  - label: "Edit code"
+  - label: "Beautiful code"
+  - label: "Function folding"
+  - label: "Convert JSON"
+  - label: "Supported HTML"
+  - label: "HTML to JSON"
+  - label: "JSONGum"
+
+page_jsongum_features:
+  - label: "So~ pretty!"
+    desc: "JSON code highlight shows JSON arranged and neat by applying code block indent."
+  - label: "Insanely useful"
+    desc: "So useful to show only what you want to see from JSON by tree list format! Also, it can convert HTML or XML to JSON format!"
+  - label: "Bloody~ simple"
+    desc: "Why always need to wrap key values with quotation? Why so picky! JSONGum just sorts out it by itself. Let's dig up the code!"
+
+page_jsongum_install:
+  - msg: "AXISJ is doing various open-source projects like Javascript UI, Web font icons, responsive web templates and etc."
+  - msg: "AXISJ will keep making a commitment for a better world of open-source."
+  - msg: "AXISJ decided to sell JSONGum for a healthier open-source development."
+  - msg: "You can give some hopes to developers in Korea by buying just a gum of $4.99."
+
+page_jsongum_buy:
+  - label: "Download"
+    desc: "JSONGum can be used even without a license. You just have a bit more inconvenience with a pop-up ad."
+    btns:
+      - label: "OSX Version Download"
+        link: "location.href = 'download/JSONGum.dmg"
+      - label: "WIN 32Bit Download"
+        link: "location.href = 'download/jsongum-setup-win32-1-0.exe"
+  - label: "Purchase JSONGum license"
+    desc: "If you pay by paypal, the license will be sent to the email address registered on your paypal account."
+    btns:
+      - label: "PayPal $4.99"
+        link: "https://www.paypal.com/cgi-bin/webscr"
+
+page_jsongum_license:
+  label: "License"
+  desc: "Forgot JSONGum license?<br />
+           Please type in the email address that you entered when you purchased JSONGum"
+  caution: " If you enter wrong email address, there might be difficulties in finding license."
+
+# Page - Donate ########################
+page_donate_name: "Donation"
+page_donate_type:
+  - msg: "Develop and write together."
+  - msg: "We run today for great development"
+  - msg: "A small donation brings together a beautiful application."
+
+page_donate_desc:
+  - msg: "We do our best to make a valuable open-source of AXISJ, not a free and low-quality one."
+  - msg: "We are doing open-source projects and services from Javascript UI library 'AXISJ', responsive web application template package 'AXU', web icon font package 'AXIcon' and etc."
+  - msg: "We are looking for someone who can help AXISJ. You can support through the following ways."
+
+page_donate_support_how:
+  - label : "How to support"
+    desc  : "You will be registered in our hero list with the information of your paypal account if you make a donation by paypal.
+             If you prefer bank transfer, please let us know through email at tom@axisj.com or call +82-10-8881-9137 after making your transaction."
+    methods:
+      - label : "Bank transfer"
+        prefix: "bank"
+        desc  : "Woori bank,1005-402-375399,AXISJ"
+      - label : "Paypal"
+        prefix: "paypal"
+        desc  : "3,100,200,400"
+      - label : "Purchase JSONGum"
+        prefix: "jsongum"
+        desc  : "Only $4.99"
+  - label : "Support regularly"
+    desc  : "Regular supporters(who donate annually or monthly) will be registered as our sponsor hero.
+             gitHub contributors will be registered as Q&A hero or Bugging hero."
+    methods:
+      - label : "Bank transfer"
+        prefix: "bank"
+        desc  : "Woori bank,1005-402-375399,AXISJ"
+      - label : "Paypal Reguarly"
+        prefix: "paypal"
+        desc  : "12,36,120,360,1000"
+      - label : "Join Github contributor"
+        prefix: "github"
+        desc  : "Go Github.com"
+
+page_donate_support_sw:
+  - label: "Software Sponsors"
+    list:
+      - name  : "JetBrain"
+        desc  : ""
+        img   : ""
+        link  : ""
+      - name  : "IntelliJ IDEA"
+        desc  : ""
+        img   : ""
+        link  : ""
+      - name  : "Atlassian"
+        desc  : ""
+        img   : ""
+        link  : ""
+      - name  : "JIRA"
+        desc  : ""
+        img   : ""
+        link  : ""
+
+# Page - Heroes ########################
+page_heroes_name: "Heroes"
+page_heroes_type:
+  - msg: "AXISJ has many heroes."
+  - msg: "The world is beautiful because of these."
+  - msg: "Thanks all"
+page_heroes_section: "Our Brilliant Heroes"
+
+# Page - Member ########################
+members:
+  - name: "Thomas Jang"
+    desc: "Thomas Jang is one of the best front-end engineers in Korea with more than 15 years web application development work exprience."
+    pos: "Web UI Expert"
+    img: "/assets/images/member-tom.png"
+    email: "tom@axisj.com"
+    links:
+      - name: "Github"
+        link: "http://github.com/thomasjang"
+      - name: "Blog"
+        link: "http://blog.axisj.com"
+      - name: "Facebook"
+        link: "http://facebook.com/axisjtom"
+    history:
+      - text: "HTML5, CSS, JavaScript Expert"
+      - text: "Web Application Interface Professional"
+      - text: "Creator of Full Stack Web UI Framework"
+      - text: "Creator of Advanced HTML5 UI Framework"
+      - text: "Global Opensource Frontier - NIPA"
+      - text: "The Winner of Super Developer K3 Award- NIA"
+
+  - name: "Brant Hwang"
+    desc: "Brant Hwang is a back-end engineer who manages Distributed Processing, Java, Spring Framework"
+    pos: "Java & Server Expert"
+    img: "/assets/images/member-brant.png"
+    email: "brant@axboot.com"
+    links:
+      - name: "Github"
+        link: "http://github.com/brant-hwang"
+      - name: "Blog"
+        link: "http://brantiffy.axisj.com/about-me"
+      - name: "Facebook"
+        link: "http://facebook.com/tjdus3361"
+      - name: "LinkedIn"
+        link: "http://linkedin.com/in/ishwang"
+    history:
+      - text: "Java, Spring Framework, Linux Expert"
+      - text: "Former E-Commerce Platform, Commerce Service Developer at KAKAO"
+      - text: "Former POS Platform, POS Software Developer - Alternative Military Service"
+      - text: "Cloud Infrastructure Design & Automation Professional"
+      - text: "Microsoft Certified System Engineer, IT Professional, Technology Specialist, Database Administrator"
+      - text: "Oracle Certified Database Professional"
+      - text: "Sun Certified Network, System Engineer & Java Programmer"
+      - text: "Certified Linux Server Professional"
+      - text: "Spring Boot in Action Korean version translator - Spring Boot Coding Factory"

@@ -1,0 +1,73 @@
+//////////////////////////////////////////////////////////////////
+// Color Preset
+//////////////////////////////////////////////////////////////////
+$color-fore: #666;    //전경색 : 폰트, 라인 색상
+$color-back: #CED2D7;  //배경색
+$color-spot: #e95287; //별색 : 주로 hover된 색상
+$color-warm: #f00;    //따뜻한 색
+$color-cool: #2E80A2;    //시원한 색
+
+//////////////////////////////////////////////////////////////////
+// Override Header & Footer
+//////////////////////////////////////////////////////////////////
+#AXUHeader {
+  .header-bar {
+    .axu-right{
+      .top-menu{
+        li{
+          a{
+            &.on{
+              background: url("/assets/images/topmenu_selector_jsongum.svg") no-repeat bottom center;
+            }
+          }
+        }
+      }
+      .lang-menu{
+        &.en{ background: url("/assets/images/lang_en_jsongum@2x.png") no-repeat; background-size: contain; }
+        &.ko{ background: url("/assets/images/lang_ko_jsongum@2x.png") no-repeat; background-size: contain; }
+      }
+    }
+  }
+}
+
+#AXUFooter{
+
+
+  .footer-1{
+    .left{
+      .copy{color:$color-fore}
+      .lang{
+        li{
+          a{color:$color-fore;}
+        }
+      }
+    }
+    .right{
+      .bottom_menu{
+        a{
+          color:$color-fore;
+          &:hover{color:$color-spot;}
+        }
+      }
+    }
+  }
+  .footer-2{
+    .axu-wrap {
+      border-top: 1px solid darken($color-back, 5%);
+      h4 {
+        color: darken($color-back, 5%);
+      }
+      ul {
+        li {
+          a {
+            color: $color-fore;
+            &:hover {
+              color: $color-spot;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

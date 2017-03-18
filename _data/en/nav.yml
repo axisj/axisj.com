@@ -1,0 +1,70 @@
+topmenus:
+  - label: Top Menu
+    submenus:
+    - label: Timeline
+      url : '/'
+    - label: AXBoot
+      url : '/axboot/'
+    - label: AX5
+      url : '/ax5/'
+    - label: 99Nerds
+      url : '/99nerds/'
+    - label: AXIcon
+      url : '/axicon/'
+    - label: JSONGum
+      url : '/jsongum/'
+  - label: Option Menu
+    submenus:
+    - label: Medium
+      url : 'https://medium.com/@axisj'
+      target: '_blank'
+    - label: Heroes
+      url : '/heroes'
+    - label: Donate
+      url : '/donate'
+
+menu_axboot:
+  - name: "Feature"
+    link: "feature"
+  - name: "Video"
+    link: "video"
+  - name: "Document"
+    link: "document"
+  - name: "Theme"
+    link: "theme"
+  - name: "Contact"
+    link: "contact"
+  - name: "Team"
+    link: "member"
+
+menu_ax5:
+  - name: "AX5"
+    link: "intro"
+  - name: "Feature"
+    link: "feature"
+  - name: "How to Use"
+    link: "how"
+
+menu_99nerds:
+  - name: "99Nerds!"
+    link: "intro"
+  - name: "Stickers"
+    link: "sticker"
+
+menu_axicon:
+  - name: "Features"
+    link: "feature"
+  - name: "How to use"
+    link: "how"
+  - name: "Icon Finder"
+    link: "http://axicon.axisj.com"
+
+menu_jsongum:
+  - name: "Preview"
+    link: "preview"
+  - name: "Features"
+    link: "feature"
+  - name: "Download"
+    link: "download"
+  - name: "License"
+    link: "license"

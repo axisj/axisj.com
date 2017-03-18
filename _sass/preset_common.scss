@@ -1,0 +1,33 @@
+// Color Preset //////////////////////////////////
+$color-fore: #4A4A4A; //전경색 : 폰트, 라인 색상
+$color-back: #FAFAFA; //배경색
+$color-spot: #2AA3DA; //별색 : 주로 hover된 색상
+$color-warm: #f00; //따뜻한 색
+$color-cool: #0ff; //시원한 색
+
+//////////////////////////////////////////////////////////////////
+// Override Header & Footer
+//////////////////////////////////////////////////////////////////
+#AXUFooter{
+  .footer-1{
+    .left{
+      .copy{color:lighten($color-fore, 30%);}
+      .lang{ //ul
+        li{
+          a{ background: darken($color-back,10%);}
+        }
+      }
+    }
+    .right{
+      a{color:lighten($color-fore, 20%);}
+    }
+  }
+  .footer-2{
+    .axu-wrap{
+      border-top:1px solid darken($color-back, 5%);
+      h4{color:lighten($color-fore, 50%);}
+      a{color:lighten($color-fore, 30%);}
+    }
+
+  }
+}

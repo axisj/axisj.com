@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    {% include head.html %}
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lang_{{ site.active_lang}}.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/layout_common.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/contents_common.css">
+
+</head>
+
+<body>
+
+<div id="AXUBody">
+    {% include body-header.html %}
+    {{ content }}
+    {% include body-footer.html %}
+</div>
+</body>
+</html>
