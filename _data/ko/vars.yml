@@ -318,7 +318,6 @@ page_jsongum_features:
 page_jsongum_install:
   - msg: "X-JSON은 프리웨어 입니다"
   - msg: "하지만 정품 구매시 AXISJ 오픈 소스 그룹 후원자로 등록됩니다."
-  - msg: "또한 정품 인증 창 업이 더 빠르게 X-JSON을 사용할 수 있습니다."
   - msg: "$4.99로 오픈 소스 후원자가 되어보세요!"
   - msg: "지금 구매하러 가기!"
 
