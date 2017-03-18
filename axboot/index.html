@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="en" href="http://localhost:4000/axboot/" />
-<link rel="alternate" i18n="ko" href="http://localhost:4000/ko/axboot/" />
+    <meta http-equiv="Content-Language" content="ko"><link rel="alternate" i18n="ko" href="http://localhost:4000/axboot/" />
+<link rel="alternate" i18n="en" href="http://localhost:4000/en/axboot/" />
 
     <title>
         
@@ -60,6 +60,21 @@
                 });
 
                 //Timeago
+                
+                jQuery.timeago.settings.strings.suffixAgo = "전";
+                jQuery.timeago.settings.strings.suffixFromNow = "지금부터";
+                jQuery.timeago.settings.strings.inPast = "지금";
+                jQuery.timeago.settings.strings.seconds = "1분 이내";
+                jQuery.timeago.settings.strings.mintue = "약 1분";
+                jQuery.timeago.settings.strings.mintues = "%d분";
+                jQuery.timeago.settings.strings.hour = "약 1시간";
+                jQuery.timeago.settings.strings.hours = "약 %d시간";
+                jQuery.timeago.settings.strings.day = "약 1시간";
+                jQuery.timeago.settings.strings.days = "%d시간";
+                jQuery.timeago.settings.strings.month = "약 1달";
+                jQuery.timeago.settings.strings.months = "%d달";
+                jQuery.timeago.settings.strings.year = "약 1년";
+                jQuery.timeago.settings.strings.years = "%d년";
                 
 
                 jQuery.timeago.settings.allowFuture = true;
@@ -175,7 +190,7 @@
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/assets/css/lang_ko.css">
     <link rel="stylesheet" href="/assets/css/layout_axboot.css">
     <link rel="stylesheet" href="/assets/css/contents_axboot.css">
 
@@ -205,17 +220,17 @@
             
             <ul class="top-menu">
                 
-                <li><a href="/" class=""><span class="bullet"></span>Timeline</a></li>
+                <li><a href="/" class=""><span class="bullet"></span>타임라인</a></li>
                 
-                <li><a href="/axboot/" class="on"><span class="bullet"></span>AXBoot</a></li>
+                <li><a href="/axboot/" class="on"><span class="bullet"></span>액스부트</a></li>
                 
-                <li><a href="/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                <li><a href="/ax5/" class=""><span class="bullet"></span>액스5</a></li>
                 
-                <li><a href="/99nerds/" class=""><span class="bullet"></span>99Nerds</a></li>
+                <li><a href="/99nerds/" class=""><span class="bullet"></span>99너드</a></li>
                 
-                <li><a href="/axicon/" class=""><span class="bullet"></span>AXIcon</a></li>
+                <li><a href="/axicon/" class=""><span class="bullet"></span>액시콘</a></li>
                 
-                <li><a href="/jsongum/" class=""><span class="bullet"></span>JSONGum</a></li>
+                <li><a href="/jsongum/" class=""><span class="bullet"></span>제이슨껌</a></li>
                 
             </ul>
             
@@ -223,11 +238,11 @@
             
             <ul class="option-menu">
                 
-                <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                 
-                <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                 
-                <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                 
 
 
@@ -235,7 +250,7 @@
                 
 
                 
-                <li><a href=" /ko/axboot/ "><span class="en"></span>한국어로</a></li>
+                <li><a href=" /ko/axboot/ "><span class="ko"></span>To English</a></li>
                 
             </ul>
             
@@ -274,17 +289,17 @@
                     
                     <ul class="top-menu">
                         
-                        <li><a href="/" class="">Timeline</a></li>
+                        <li><a href="/" class="">타임라인</a></li>
                         
-                        <li><a href="/axboot/" class="on">AXBoot</a></li>
+                        <li><a href="/axboot/" class="on">액스부트</a></li>
                         
-                        <li><a href="/ax5/" class="">AX5</a></li>
+                        <li><a href="/ax5/" class="">액스5</a></li>
                         
-                        <li><a href="/99nerds/" class="">99Nerds</a></li>
+                        <li><a href="/99nerds/" class="">99너드</a></li>
                         
-                        <li><a href="/axicon/" class="">AXIcon</a></li>
+                        <li><a href="/axicon/" class="">액시콘</a></li>
                         
-                        <li><a href="/jsongum/" class="">JSONGum</a></li>
+                        <li><a href="/jsongum/" class="">제이슨껌</a></li>
                         
                     </ul>
                     
@@ -292,16 +307,16 @@
                     
                     <ul class="option-menu">
                         
-                            <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                         
-                            <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                            <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                         
-                            <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                            <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                         
                     </ul>
                     
                     
-                    <a href=" /ko/axboot/ " class="lang-menu en"><span> en</span></a>
+                    <a href=" /en/axboot/ " class="lang-menu ko"><span> ko</span></a>
                 </div>
             </div>
             <div class="axu-clear"></div>
@@ -321,23 +336,23 @@
                     <div class="axu-col-2">
                         <div class="logo">
                             <img src="/assets/images/page_logo_axboot@2x.png" />
-                            <span>AXBoot</span>
+                            <span>액스부트</span>
                         </div>
                     </div>
                     <div class="axu-col-10">
                         <ul class="menu">
                             
-                            <li><a href="#feature">Feature</a></li>
+                            <li><a href="#feature">특징</a></li>
                             
-                            <li><a href="#video">Video</a></li>
+                            <li><a href="#video">비디오</a></li>
                             
-                            <li><a href="#document">Document</a></li>
+                            <li><a href="#document">기술문서</a></li>
                             
-                            <li><a href="#theme">Theme</a></li>
+                            <li><a href="#theme">테마</a></li>
                             
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">컨설팅</a></li>
                             
-                            <li><a href="#member">Team</a></li>
+                            <li><a href="#member">팀</a></li>
                             
                         </ul>
                     </div>
@@ -346,18 +361,18 @@
         </div>
         <div class="axu-layer visual-message-layer">
             <div class="axu-wrap">
-                <h1>Make it better easy with AXBoot</h1>
+                <h1>함께 개발합니다</h1>
                 <h2><span id="typed"></span></h2>
                 <div id="typed-msgs">
                     
                     
                     
                     
-                    <p>Web Application DIY Kit</p>
+                    <p>액스부트와 함께라면 개발이 즐겁다.</p>
                     
                     
                     
-                    <p>Enjoy developing with AXBoot</p>
+                    <p>웹 애플리케이션 DIY 키트</p>
                     
                     
                 </div>
@@ -370,15 +385,15 @@
         </div>
         <div class="axu-layer visual-desc-layer">
             <div class="axu-wrap">
-                <h3>Full Stack Web Application Development Framework</h3>
-                <p>AXBoot makes it easy to build web applications with Java & HTML5. Repeatable and noise development process are resolved by AXBoot.</p>
+                <h3>풀 스택 웹 애플리케이션 개발 프레임워크</h3>
+                <p>액스부트는 자바와 HTML를 기반으로 하는 웹 애플리케이션을 쉽게 구축할 수 있습니다. 어렵고 반복되는 개발 프로세스를 해결할 수 있습니다. 게다가 레이아웃, 웹 UI 컴포넌트, 일반적인 비즈니스 서비스를 미리 구축해 놓았습니다. 빠르고 안정적인 엔터프라이즈 서비스 개발, 최후의 수단을 최초로 사용하십시오.</p>
                 <div class="btns">
                     
-                    <a href="/" class="btn-1">demo</a>
+                    <a href="http://demo.axboot.com/" class="btn-1">데모보기</a>
                     
-                    <a href="/" class="btn-2">Github</a>
+                    <a href="https://github.com/axboot" class="btn-2">깃허브</a>
                     
-                    <a href="/" class="btn-3">Initialzr</a>
+                    <a href="http://start.axboot.com/" class="btn-3">액스부트 Initialzr</a>
                     
                 </div>
             </div>
@@ -392,7 +407,7 @@
     <div id="AXUFeatures">
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Feature</span></h3>
+                <h3><span>특징</span></h3>
             </div>
         </div>
         <div class="axu-layer feature-layer">
@@ -401,14 +416,14 @@
                 <div class="axu-col-4 feature-column">
                     <div class="axu-unit">
                         <img src="/assets/images/axboot-feature-1@2x.png" style="width:64px; height:64px;" />
-                        <h3>FullStack Framework</h3>
+                        <h3>풀스택 프레임워크</h3>
                         
-                            <h4>Front-end</h4>
-                            <p>Front-end Framework provides HTML5, Javascript based 17+ HTML5 components (including GRID, Selector, Toast, Calendar.. etc) and layout system.</p>
+                            <h4>프론트엔드</h4>
+                            <p>프론트엔트 프레임워크는 HTML5, 자바스크립트 기반의 컴포넌트(그리드, 선택자, 토스트, 달력 등)와 레이아웃 시스템을 제공합니다</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Back-end</h4>
-                            <p>Back-end Framework provides fast and flexible Java & Spring based web development environment.<br />AXBoot is the framework that provides A to Z Web Development solutions.</p>
+                            <h4>백엔드</h4>
+                            <p>백엔드 프레임워크는 웹 개발 환경을 기반의 빠르고 유연한 자바 및 스프링을 지원합니다.</p>
                             <div class="axu-h20"></div>
                         
                     </div>
@@ -418,14 +433,14 @@
                 <div class="axu-col-4 feature-column">
                     <div class="axu-unit">
                         <img src="/assets/images/axboot-feature-2@2x.png" style="width:64px; height:64px;" />
-                        <h3>Various Layout, Theme</h3>
+                        <h3>다양한 레이아웃과 테마</h3>
                         
-                            <h4>Various Layout</h4>
-                            <p>provides 10 most popular layouts used on Web UI. Grid, Selector, and form are built into the layout section, and when a user develops UI based on a given sample format, UI could be completed in as quickly as 10 minutes.</p>
+                            <h4>레이아웃</h4>
+                            <p>인기있는 레이아웃 10가지와 함께 그리드와 선택자 그리고 폼은 레이아웃에 기본으로 제공됩니다. 그리고 사용자가 개발시 쉽게 이해할 수 있게 샘플 서식이 있어 10분 정도면 완성할 수 있습니다</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Theme</h4>
-                            <p>Theme selection allows a user to change look and feel, as well as allowing the user to fine tune specifics of the UI.</p>
+                            <h4>테마</h4>
+                            <p>테마선택을 통해 사용자는 모양과 느낌을 변경할 수 있으며, 사용자가 UI의 세부사항을 세밀하게 조정할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
                     </div>
@@ -435,18 +450,18 @@
                 <div class="axu-col-4 feature-column">
                     <div class="axu-unit">
                         <img src="/assets/images/axboot-feature-3@2x.png" style="width:64px; height:64px;" />
-                        <h3>Developer-friendly</h3>
+                        <h3>개발자 친화적 환경</h3>
                         
-                            <h4>Pure UI Component</h4>
-                            <p>No need to add any other dependency to design the Web UI.</p>
+                            <h4>순수 UI 컴포넌트</h4>
+                            <p>웹UI를 구성하기 위해 디자인에 구애 받을 필요가 없습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Open Architecture</h4>
-                            <p>Adapt the platform to your needs with unrestricted access to low level code, wide use of the open inheritance pattern and the unique Extensions feature.</p>
+                            <h4>열린 구조</h4>
+                            <p>소스코드에 대한 무제한 접근, 공개 상속 패턴의 광범위한 사용 및 고유 확장 기능을 이용해 필요에 따라 플랫폼을 수정할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>No Restricted Development Environment</h4>
-                            <p>Environment, User-Friendly IDE can be used.</p>
+                            <h4>개발환경의 자유</h4>
+                            <p>익숙한 IDE를 사용할 수 있는 환경</p>
                             <div class="axu-h20"></div>
                         
                     </div>
@@ -456,18 +471,18 @@
                 <div class="axu-col-4 feature-column">
                     <div class="axu-unit">
                         <img src="/assets/images/axboot-feature-4@2x.png" style="width:64px; height:64px;" />
-                        <h3>Productive</h3>
+                        <h3>생산성</h3>
                         
-                            <h4>Easy to Start</h4>
-                            <p>AXBoot Initialzr provides a complete form of Application Source Set and a user can start the server by importing a downloaded IDE then using spring-boot:run command.</p>
+                            <h4>빠르게 시작</h4>
+                            <p>액스부트 초기설정기는 완전한 형태의 애플리케이션 소스 세트를 제공하며 사용자는 자신의 IDE로 다운로드한 파일로 실행하여 서버를 시작할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Fast CRUD Implementation</h4>
-                            <p>A user can easily materialize CRUD Logic with CRUD scaffolding tool.</p>
+                            <h4>손쉬운 CRUD 구현</h4>
+                            <p>사용자는 CRUD 스캔 폴딩 도구로 CRUD 로직을 쉽게 구현할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Quick to Master</h4>
-                            <p>provides high quality documentation along with Korean version documents for Korean developers. In addition, the most adequate practices are provided based on case studies, this allows the users to solve problems that may occur during business application development.</p>
+                            <h4>빠르게 숙련 가능</h4>
+                            <p>한국 개발자를 위한 한국어로 된 양질의 문서를 제공합니다. 또한 사례 연구를 통해 가장 적절한 방법도 제공되오니 비즈니스 애플리케이션 개발 중 발생할 수 있는 문제를 해결할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
                     </div>
@@ -477,18 +492,18 @@
                 <div class="axu-col-4 feature-column">
                     <div class="axu-unit">
                         <img src="/assets/images/axboot-feature-5@2x.png" style="width:64px; height:64px;" />
-                        <h3>Enterprise Ready</h3>
+                        <h3>준비된 엔터프라이즈</h3>
                         
-                            <h4>Scalable</h4>
-                            <p>Easy to Expand in parallel and processing large scale traffic with fine-tuning database pooling, data caching option and resource optimization.</p>
+                            <h4>확장성</h4>
+                            <p>데이터베이스 풀링, 데이터 캐싱 옵션 및 리소스 최적화의 미세 조정을 통해 병렬로 확장하고 대규모 트래픽을 처리하기 쉽습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Smart Error Detecting</h4>
-                            <p>An up-to-date slow business logic and slow query can be detected and aggregated in Error Log, while aggregated data can be send through email, texting, messenger, Webhook and, etc.</p>
+                            <h4>똑똑한 에러 검출</h4>
+                            <p>슬로우 비즈니스 로직 및 쿼리 지연 오류를 로그에서 감지, 집계할 수 있으며 수집된 데이터는 이메일, 문자 메시지, 메신저 웹훅 등을 통해 보낼 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Reference</h4>
-                            <p>The system has been proven, and its impressive portfolio includes list of large enterprise system usage including: Incheon Airport POS Concession System (Over 1 million times used per day, 25TPS), DAELIM Corporation Global Logistics Management System, and JTNET Van Administration System.</p>
+                            <h4>레퍼런스</h4>
+                            <p>액스부트는 인천공항 POS 할인 시스템(하루 1백만회 이상 사용 25TPS), 대림 글로벌 물류 관리 시스템 및 JTNet 관리 시스템을 포함한 유수 대기업에서 사용되어지고 있습니다.</p>
                             <div class="axu-h20"></div>
                         
                     </div>
@@ -498,18 +513,18 @@
                 <div class="axu-col-4 feature-column">
                     <div class="axu-unit">
                         <img src="/assets/images/axboot-feature-6@2x.png" style="width:64px; height:64px;" />
-                        <h3>Maintainable</h3>
+                        <h3>유지관리</h3>
                         
-                            <h4>Separation of concern</h4>
-                            <p>There is clear separation between View and API. HTTP and JSON(RESTful API) are used for transmission, ensuring effective coding expansion and maintenance.</p>
+                            <h4>걱정마세요</h4>
+                            <p>뷰와 API는 명확하게 분리되어 있습니다. HTTP 및 JSON(RESTful API)은 전송에 사용되어 효과적인 코드 확장 및 유지 관리가 보장됩니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Layered Architecture</h4>
-                            <p>By utilizing MVC’s Layer Architecture, role and logic have been cleared defined from layer to layer. That allows a user to expand and fix an error through coding quickly.</p>
+                            <h4>계층화된 구조</h4>
+                            <p>MVC의 레이어 구조를 활용하여 역할과 논리가 레이어별로 정의되어 있습니다. 이를 통해 사용자는 코드를 통해 오류를 확장, 수정할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
-                            <h4>Support Dev&Ops</h4>
-                            <p>Zero Downtime Deployment has been made possible through Customized Jenkins and Ansible which is fully compatible with AXBoot. This allows the system to quicken the code lifecycle which makes high number of distribution possible.</p>
+                            <h4>개발, 운영 지원</h4>
+                            <p>젠킨스와 앤서블을 통해 배포하기 때문 다수 배포를 가능케 하는 코드 라이프 사이클을 실행할 수 있습니다.</p>
                             <div class="axu-h20"></div>
                         
                     </div>
@@ -527,7 +542,7 @@
     <div id="AXUVideos">
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Video</span></h3>
+                <h3><span>비디오</span></h3>
             </div>
         </div>
         <div class="mp-gallery">
@@ -536,32 +551,32 @@
 
                     
                     <div class="axu-col-4 video-column">
-                        <a href="https://www.youtube.com/watch?v=7CbEWftw0eo" class="video-card mfp-iframe" title="AXBoot New Feature">
+                        <a href="https://www.youtube.com/watch?v=7CbEWftw0eo" class="video-card mfp-iframe" title="액스부트의 새로운 특징">
                             <div class="btn-box">
                                 <div class="btn-play"></div>
                             </div>
                             <img src="/assets/images/axboot-video-1.png" />
-                            <div class="video-title">AXBoot New Feature</div>
+                            <div class="video-title">액스부트의 새로운 특징</div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 video-column">
-                        <a href="https://www.youtube.com/watch?v=7HDo_nVNQuc" class="video-card mfp-iframe" title="AXBoot UI Framework Introduction">
+                        <a href="https://www.youtube.com/watch?v=7HDo_nVNQuc" class="video-card mfp-iframe" title="액스부트 UI 프레임워크 소개">
                             <div class="btn-box">
                                 <div class="btn-play"></div>
                             </div>
                             <img src="/assets/images/axboot-video-2.png" />
-                            <div class="video-title">AXBoot UI Framework Introduction</div>
+                            <div class="video-title">액스부트 UI 프레임워크 소개</div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 video-column">
-                        <a href="https://www.youtube.com/watch?v=XXXn7Fw_DL8" class="video-card mfp-iframe" title="AXBoot Theme">
+                        <a href="https://www.youtube.com/watch?v=XXXn7Fw_DL8" class="video-card mfp-iframe" title="액스부트 테마">
                             <div class="btn-box">
                                 <div class="btn-play"></div>
                             </div>
                             <img src="/assets/images/axboot-video-3.png" />
-                            <div class="video-title">AXBoot Theme</div>
+                            <div class="video-title">액스부트 테마</div>
                         </a>
                     </div>
                     
@@ -579,7 +594,7 @@
     <div id="AXUDocuments">
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Document</span></h3>
+                <h3><span>기술문서</span></h3>
             </div>
         </div>
         <div class="axu-layer">
@@ -588,11 +603,11 @@
                 <div class="axu-col-6 docu-column">
                     <div class="docu-card">
                         <img src="/assets/images/axboot-doc-1@2x.png" />
-                        <h3>Getting Started</h3>
-                        <p>Check Quick Start & AXBoot Documentation</p>
+                        <h3>액스부트 시작하기</h3>
+                        <p>빠른 시작 설명서와 액스부트 기술문서</p>
                         <a href="http://api.axboot.com" class="btn" target="_blank">API.AXBOOT.COM</a>
                         
-                        <a href="http://facebook.com/group/axboot" target="_blank">AXBOOT USER GROUP</a>
+                        <a href="http://facebook.com/group/axboot" target="_blank">액스부트 사용자 그룹</a>
                         
                     </div>
                 </div>
@@ -600,7 +615,7 @@
                 <div class="axu-col-6 docu-column">
                     <div class="docu-card">
                         <img src="/assets/images/axboot-doc-2@2x.png" />
-                        <h3>UI Framework Demo</h3>
+                        <h3>UI 프레임워크 데모</h3>
                         <p>AX5UI Framework Demo & Documentation</p>
                         <a href="http://ax5.io" class="btn" target="_blank">AX5.IO</a>
                         
@@ -618,84 +633,84 @@
     <div id="AXUThemes">
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Theme</span></h3>
+                <h3><span>테마</span></h3>
             </div>
         </div>
         <div class="axu-layer">
             <div class="axu-wrap">
                 <div class="theme-link">
-                    <a href="http://github.com/axboot/ax-boot-themes" target="_blank">GET AXBOOT THEMES</a>
+                    <a href="http://github.com/axboot/ax-boot-themes" target="_blank">액스부트 테마 바로가기</a>
                 </div>
                 <div class="mp-gallery">
 
                     
                     <div class="axu-col-4 theme-column">
-                        <a href="/assets/images/axboot-theme-1.jpg" class="theme-card" title="AXBoot Main, ARONGI THEME">
+                        <a href="/assets/images/axboot-theme-1.jpg" class="theme-card" title="액스부트 메인, 아롱이 테마">
                             <img src="/assets/images/axboot-theme-1.jpg" />
                             <div class="theme-overlay">
                                 <div class="to-content">
-                                    <h4>ARONGI THEME</h4>
-                                    <p>AXBoot Main</p>
+                                    <h4>아롱이 테마</h4>
+                                    <p>액스부트 메인</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 theme-column">
-                        <a href="/assets/images/axboot-theme-2.jpg" class="theme-card" title="AXBoot Project Manager, ARONGI THEME">
+                        <a href="/assets/images/axboot-theme-2.jpg" class="theme-card" title="액스부트 프로젝트 관리자, 아롱이 테마">
                             <img src="/assets/images/axboot-theme-2.jpg" />
                             <div class="theme-overlay">
                                 <div class="to-content">
-                                    <h4>ARONGI THEME</h4>
-                                    <p>AXBoot Project Manager</p>
+                                    <h4>아롱이 테마</h4>
+                                    <p>액스부트 프로젝트 관리자</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 theme-column">
-                        <a href="/assets/images/axboot-theme-3.jpg" class="theme-card" title="AXBoot Menu Management, DOBERMAN THEME">
+                        <a href="/assets/images/axboot-theme-3.jpg" class="theme-card" title="액스부트 메뉴 관리, 도베르만 테마">
                             <img src="/assets/images/axboot-theme-3.jpg" />
                             <div class="theme-overlay">
                                 <div class="to-content">
-                                    <h4>DOBERMAN THEME</h4>
-                                    <p>AXBoot Menu Management</p>
+                                    <h4>도베르만 테마</h4>
+                                    <p>액스부트 메뉴 관리</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 theme-column">
-                        <a href="/assets/images/axboot-theme-4.jpg" class="theme-card" title="AXBoot User Management, DOBERMAN THEME">
+                        <a href="/assets/images/axboot-theme-4.jpg" class="theme-card" title="액스부트 사용자 관리, 도베르만 테마">
                             <img src="/assets/images/axboot-theme-4.jpg" />
                             <div class="theme-overlay">
                                 <div class="to-content">
-                                    <h4>DOBERMAN THEME</h4>
-                                    <p>AXBoot User Management</p>
+                                    <h4>도베르만 테마</h4>
+                                    <p>액스부트 사용자 관리</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 theme-column">
-                        <a href="/assets/images/axboot-theme-5.jpg" class="theme-card" title="AXBoot Common Code Management, DOBERMAN THEME">
+                        <a href="/assets/images/axboot-theme-5.jpg" class="theme-card" title="액스부트 공통코드 관리, 도베르만 테마">
                             <img src="/assets/images/axboot-theme-5.jpg" />
                             <div class="theme-overlay">
                                 <div class="to-content">
-                                    <h4>DOBERMAN THEME</h4>
-                                    <p>AXBoot Common Code Management</p>
+                                    <h4>도베르만 테마</h4>
+                                    <p>액스부트 공통코드 관리</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="axu-col-4 theme-column">
-                        <a href="/assets/images/axboot-theme-6.jpg" class="theme-card" title="AXBoot Error Log Management, DOBERMAN THEME">
+                        <a href="/assets/images/axboot-theme-6.jpg" class="theme-card" title="액스부트 에러로그 관리, 도베르만 테마">
                             <img src="/assets/images/axboot-theme-6.jpg" />
                             <div class="theme-overlay">
                                 <div class="to-content">
-                                    <h4>DOBERMAN THEME</h4>
-                                    <p>AXBoot Error Log Management</p>
+                                    <h4>도베르만 테마</h4>
+                                    <p>액스부트 에러로그 관리</p>
                                 </div>
                             </div>
                         </a>
@@ -713,22 +728,22 @@
         <div class="axu-layer contact-layer">
 
             <div class="axu-section-title">
-                <h3><span>Contact</span></h3>
+                <h3><span>컨설팅</span></h3>
             </div>
             <div class="axu-wrap">
 
                 <div class="axu-col-6 cont-column">
                     <div class="cont-card">
                         <img src="/assets/images/axboot-contact-1@2x.png" />
-                        <h3>Need a AXBoot Consulting?</h3>
-                        <p>Our core team is able to offer expert consulting on both large and small AXBoot applications. Be confident in your success with the knowledge that your projects are being built by the experts. The best expert in field solves whatever problems you have including application architecture, continuous delivery, learning subscription.</p>
+                        <h3>도움이 필요하신가요?</h3>
+                        <p>핵심 팀원들은 크고 작은 액스부트의 이슈에 대한 전문적인 컨설팅을 해드립니다. 전문가들이 만들고 제공하는 지식과 경험으로 성공을 경험하세요. 분야별 최고의 전문가로 애플케이션 아키텍처, 지속적 관계유지 및 구독 등을 통해 가능합니다.</p>
                     </div>
                 </div>
                 <div class="axu-col-6 cont-column">
                     <div class="cont-card">
                         <img src="/assets/images/axboot-contact-2@2x.png" />
-                        <h3>PM 01-07 / Monday-Friday</h3>
-                        <p>If you have any questions about consulting, you can contact our team.</p>
+                        <h3>오후 01-07 / 월요일-금요일</h3>
+                        <p>컨설팅에 대한 문의 사항이 있으시면 아래의 담당자에게 문의하세요.</p>
                         <a href="mailto:tom@axisj.com" class="btn">tom@axisj.com</a>
                         <a href="tel:82-10-8881-9137">82-10-8881-9137</a>
                     </div>
@@ -745,7 +760,7 @@
     <div id="AXUMembers">
         <div class="axu-layer member-layer">
             <div class="axu-section-title">
-                <h3><span>Team</span></h3>
+                <h3><span>팀</span></h3>
             </div>
             <div class="axu-wrap">
                 
@@ -761,11 +776,11 @@
                                 <span>Web UI Expert</span>
                                 <ul>
                                     
-                                    <li><a href="http://github.com/thomasjang">Github</a></li>
+                                    <li><a href="https://github.com/thomasjang">Github</a></li>
                                     
-                                    <li><a href="http://blog.axisj.com">Blog</a></li>
+                                    <li><a href="https://medium.com/chequer">Blog</a></li>
                                     
-                                    <li><a href="http://facebook.com/axisjtom">Facebook</a></li>
+                                    <li><a href="https://www.facebook.com/axisjtom">Facebook</a></li>
                                     
                                 </ul>
                                 <div class="axu-clear"></div>
@@ -786,6 +801,8 @@
                                     
                                     <li>The Winner of Super Developer K3 Award- NIA</li>
                                     
+                                    <li>OSS World Challenge 2016 first prize</li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -804,13 +821,13 @@
                                 <span>Java & Server Expert</span>
                                 <ul>
                                     
-                                    <li><a href="http://github.com/brant-hwang">Github</a></li>
+                                    <li><a href="https://github.com/brant-hwang">Github</a></li>
                                     
-                                    <li><a href="http://brantiffy.axisj.com/about-me">Blog</a></li>
+                                    <li><a href="https://medium.com/chequer">Blog</a></li>
                                     
-                                    <li><a href="http://facebook.com/tjdus3361">Facebook</a></li>
+                                    <li><a href="https://www.facebook.com/tjdus3361">Facebook</a></li>
                                     
-                                    <li><a href="http://linkedin.com/in/ishwang">LinkedIn</a></li>
+                                    <li><a href="https://www.linkedin.com/in/ishwang/">LinkedIn</a></li>
                                     
                                 </ul>
                                 <div class="axu-clear"></div>
@@ -837,6 +854,8 @@
                                     
                                     <li>Spring Boot in Action Korean version translator - Spring Boot Coding Factory</li>
                                     
+                                    <li>OSS World Challenge 2016 first prize</li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -858,9 +877,9 @@
                     <span class="copy">© AXISJ 2014-2017</span>
                     <ul class="lang">
                         
-                        <li><a class="on" href=" /axboot/ ">EN</a></li>
+                        <li><a  href=" /en/axboot/ ">EN</a></li>
                         
-                        <li><a  href=" /ko/axboot/ ">KO</a></li>
+                        <li><a class="on" href=" /axboot/ ">KO</a></li>
                         
                     </ul>
                 </div>

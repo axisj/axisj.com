@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="en" href="http://localhost:4000" />
-<link rel="alternate" i18n="ko" href="http://localhost:4000/ko" />
+    <meta http-equiv="Content-Language" content="ko"><link rel="alternate" i18n="ko" href="http://localhost:4000" />
+<link rel="alternate" i18n="en" href="http://localhost:4000/en" />
 
     <title>
         
@@ -63,6 +63,21 @@
                 });
 
                 //Timeago
+                
+                jQuery.timeago.settings.strings.suffixAgo = "전";
+                jQuery.timeago.settings.strings.suffixFromNow = "지금부터";
+                jQuery.timeago.settings.strings.inPast = "지금";
+                jQuery.timeago.settings.strings.seconds = "1분 이내";
+                jQuery.timeago.settings.strings.mintue = "약 1분";
+                jQuery.timeago.settings.strings.mintues = "%d분";
+                jQuery.timeago.settings.strings.hour = "약 1시간";
+                jQuery.timeago.settings.strings.hours = "약 %d시간";
+                jQuery.timeago.settings.strings.day = "약 1시간";
+                jQuery.timeago.settings.strings.days = "%d시간";
+                jQuery.timeago.settings.strings.month = "약 1달";
+                jQuery.timeago.settings.strings.months = "%d달";
+                jQuery.timeago.settings.strings.year = "약 1년";
+                jQuery.timeago.settings.strings.years = "%d년";
                 
 
                 jQuery.timeago.settings.allowFuture = true;
@@ -178,7 +193,7 @@
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/assets/css/lang_ko.css">
     <link rel="stylesheet" href="/assets/css/layout_axisj.css">
     <link rel="stylesheet" href="/assets/css/contents_axisj.css">
     <link rel="stylesheet" href="/assets/css/highlightjs/androidstudio.css">
@@ -208,17 +223,17 @@
             
             <ul class="top-menu">
                 
-                <li><a href="/" class=""><span class="bullet"></span>Timeline</a></li>
+                <li><a href="/" class=""><span class="bullet"></span>타임라인</a></li>
                 
-                <li><a href="/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                <li><a href="/axboot/" class=""><span class="bullet"></span>액스부트</a></li>
                 
-                <li><a href="/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                <li><a href="/ax5/" class=""><span class="bullet"></span>액스5</a></li>
                 
-                <li><a href="/99nerds/" class=""><span class="bullet"></span>99Nerds</a></li>
+                <li><a href="/99nerds/" class=""><span class="bullet"></span>99너드</a></li>
                 
-                <li><a href="/axicon/" class=""><span class="bullet"></span>AXIcon</a></li>
+                <li><a href="/axicon/" class=""><span class="bullet"></span>액시콘</a></li>
                 
-                <li><a href="/jsongum/" class=""><span class="bullet"></span>JSONGum</a></li>
+                <li><a href="/jsongum/" class=""><span class="bullet"></span>제이슨껌</a></li>
                 
             </ul>
             
@@ -226,11 +241,11 @@
             
             <ul class="option-menu">
                 
-                <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                 
-                <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                 
-                <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                 
 
 
@@ -238,7 +253,7 @@
                 
 
                 
-                <li><a href=" /ko/page2/ "><span class="en"></span>한국어로</a></li>
+                <li><a href=" /ko/page2/ "><span class="ko"></span>To English</a></li>
                 
             </ul>
             
@@ -277,17 +292,17 @@
                     
                     <ul class="top-menu">
                         
-                        <li><a href="/" class="">Timeline</a></li>
+                        <li><a href="/" class="">타임라인</a></li>
                         
-                        <li><a href="/axboot/" class="">AXBoot</a></li>
+                        <li><a href="/axboot/" class="">액스부트</a></li>
                         
-                        <li><a href="/ax5/" class="">AX5</a></li>
+                        <li><a href="/ax5/" class="">액스5</a></li>
                         
-                        <li><a href="/99nerds/" class="">99Nerds</a></li>
+                        <li><a href="/99nerds/" class="">99너드</a></li>
                         
-                        <li><a href="/axicon/" class="">AXIcon</a></li>
+                        <li><a href="/axicon/" class="">액시콘</a></li>
                         
-                        <li><a href="/jsongum/" class="">JSONGum</a></li>
+                        <li><a href="/jsongum/" class="">제이슨껌</a></li>
                         
                     </ul>
                     
@@ -295,16 +310,16 @@
                     
                     <ul class="option-menu">
                         
-                            <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                         
-                            <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                            <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                         
-                            <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                            <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                         
                     </ul>
                     
                     
-                    <a href=" /ko/page2/ " class="lang-menu en"><span> en</span></a>
+                    <a href=" /en/page2/ " class="lang-menu ko"><span> ko</span></a>
                 </div>
             </div>
             <div class="axu-clear"></div>
@@ -321,30 +336,34 @@
         <div class="welcome">
             <div class="axu-layer welcome-layer">
                 <div class="axu-wrap">
-                    <h1>Hello Developers, Welcome.</h1>
+                    <h1>반가워요, 개발자님</h1>
                     <h2><span id="typed"></span></h2>
                     <div id="typed-msgs">
                         
                         
                         
                         
-                        <p>Don’t worry if it doesn’t work right.<br /> If everything did, you’d be out of a job.</p>
+                        <p>나는 코딩한다, 고로 나는 존재한다.</p>
                         
                         
                         
-                        <p>Talk is cheap. Show me the code.</p>
+                        <p>내일 정전이 된다해도 나는 오늘 한 줄의 코드를 쓰겠다.</p>
                         
                         
                         
-                        <p>In theory, theory and practice are the same.<br /> In practice, they’re not.</p>
+                        <p>스스로 돌아봐서 에러가 없다면 천만인이 가로막아도 나는 컴파일하리라.</p>
                         
                         
                         
-                        <p>Beware of bugs in the above code; I have only proved it correct, not tried it</p>
+                        <p>나는 하루라도 코드를 쓰지 않으면 입안에 가시가 돋는다.</p>
                         
                         
                         
-                        <p>To iterate is human, to recurse divine</p>
+                        <p>가장 커다란 에러는 컴파일의 순간에 도사린다.</p>
+                        
+                        
+                        
+                        <p>대박 프로그램은 1%의 영감과 99%의 노가다로 이루어진다.</p>
                         
                         
                     </div>
@@ -376,7 +395,7 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel tag">
                             <div class="timeline-body">
-                                <p>The <strong>AXISJ</strong> is open source groups.</p>
+                                <p><strong>액시스제이</strong>는 오픈소스 개발탐험대입니다.</p>
                             </div>
                         </div>
                     </li>
@@ -387,10 +406,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>AXBoot OSS World Challenge 2016</h4>
+                                <h4>제10회 공개소프트웨어 개발자대회 금상 - 액스부트</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>AXBoot OSS World Challenge 2016</p>
+                                <p><p>제10회 공개소프트웨어 개발자대회 금상 - 액스부트</p>
 
 <p><img src="/assets/images/2016-12-OSS-1.jpg" alt="oss-1" class="gallery" />
 <img src="/assets/images/2016-12-OSS-2.jpg" alt="oss-2" class="gallery" />
@@ -430,10 +449,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching AXBoot and AX5UI</h4>
+                                <h4>AXBoot, AX5UI 런칭</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Launching AXBoot and AX5UI</p>
+                                <p><p>AXBoot, AX5UI 런칭</p>
 
 <p><img src="/assets/images/mem-axboot.png" alt="axboot" class="logo" />
 <img src="/assets/images/mem-ax5.png" alt="ax5" class="logo" /></p>
@@ -461,10 +480,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>AX5UI 2016 KOSS Hackathon Winner</h4>
+                                <h4>공개SW 해커톤 AX5UI 최우수상 수상</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>AX5UI 2016 KOSS Hackathon Winner</p>
+                                <p><p>공개SW 해커톤 AX5UI 최우수상 수상</p>
 
 <p><img src="/assets/images/2016-koss-1.jpg" alt="koss-1" class="gallery" />
 <img src="/assets/images/2016-koss-2.jpg" alt="koss-2" class="gallery" />
@@ -494,10 +513,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>KBS TV people and the people</h4>
+                                <h4>KBS TV 사람과 사람들</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Special round-the-world of this couple (designer couple Cast)</p>
+                                <p><p>이 부부의 특별한 세계일주 (디자이너 베짱이 부부출연)</p>
 
 <p><img src="/assets/images/2016-fb-1.jpg" alt="fb-1" class="gallery" />
 <img src="/assets/images/2016-fb-2.jpg" alt="fb-2" class="gallery" /></p>
@@ -525,10 +544,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2015 OpenSource SW Development Center Conference</h4>
+                                <h4>2015년 공개 SW 개발자센터 컨퍼런스</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Creating once content of the web + app</p>
+                                <p><p>웹+앱 컨텐츠 한번에 만들기</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -564,10 +583,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Standard frame open community 54 times technology</h4>
+                                <h4>표준프레임워크 오픈커뮤니티 54차 기술세미나 강연</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>AXU and I just was (handshake) once was, and designer orchid break up Nante</p>
+                                <p><p>AXU(악수)한번 했을 뿐인데 디자이너랑 헤어지다니</p>
 
 <p><img src="/assets/images/2015-axu-1.jpg" alt="AXU-1" class="gallery" />
 <img src="/assets/images/2015-axu-2.jpg" alt="AXU-2" class="gallery" /></p>
@@ -595,10 +614,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Super developer K3 Championship</h4>
+                                <h4>슈퍼 개발자K3 우승</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>2014 Korea e-government framework Competition</p>
+                                <p><p>안전행정부 주최 2014 전자정부프레임워크 기능공모전</p>
 
 <p><img src="/assets/images/2014-ss4-1.jpg" alt="SSK3-1" class="gallery" />
 <img src="/assets/images/2014-ss4-2.jpg" alt="SSK3-2" class="gallery" />
@@ -640,10 +659,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Website Renewal AXISJ</h4>
+                                <h4>액시스제이 웹사이트 리뉴얼</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Was completely rebuilt new everything.</p>
+                                <p><p>모든 것을 완전히 새롭게 재 구축 하였습니다.</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -668,10 +687,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching JSONGum</h4>
+                                <h4>제이슨껌 런칭</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>A JSON viewer to analyze and edit JSON data. JSON is now a piece of a gum.</p>
+                                <p><p>JSON 데이터를 분석하고 편집가능한 제이슨 뷰어. 이제 JSON은 씹어서 분석하세요.</p>
 
 <p><img src="/assets/images/mem-jsongum.png" alt="jsongum" class="logo" /></p>
 </p>
@@ -698,10 +717,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching AXIcon</h4>
+                                <h4>액시콘 런칭</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Opensource Webfont icon - Give wings to your web application</p>
+                                <p><p>오픈소스 웹폰트 아이콘 - 당신의 웹애플리케이션에 날개를 달아주세요</p>
 
 <p><img src="/assets/images/mem-axicon.png" alt="axicon" class="logo" /></p>
 </p>
@@ -728,10 +747,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Nominated for Global Open Frontier</h4>
+                                <h4>글로벌 오픈프론티어 선정</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Selected for “Global Open Frontier 2nd” held by IPA(Korea IT Business Promotion Association)</p>
+                                <p><p>IPA(한국IT비즈니스진흥협회 koipa.or.kr)에서 주관하는 “글로벌 오픈프론티어 2기” 선정</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -756,10 +775,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Joined Google DevFest 2014</h4>
+                                <h4>구글 데브페스트 2014 참가</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Joined “Google DevFest 2014”</p>
+                                <p><p>SQLGate 양용성 대표와 함께 AXISJ와 SQLGate를 Chromewebkit으로 녹여낸 애플리케이션 소개 발표</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -784,10 +803,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Developing AXGate</h4>
+                                <h4>액스게이트 개발</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>AXISJ and SQLGate built a DB query tool prototype for Web browser use. We could see the immense potentials of AXISJ.</p>
+                                <p><p>AXISJ와 SQLGate는 함께 웹브라우저용 DB 쿼리툴 프로토타입을 제작하였다. 액시스제이의 무한한 가능성을 엿볼 수 있었다.</p>
 
 <p><img src="/assets/images/mem-axgate.png" alt="axgate" class="logo" /></p>
 </p>
@@ -814,10 +833,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Javascript Practice Workshop Lecture</h4>
+                                <h4>자바스크립트 실전 워크샵 강연</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>“Building Javascript Web Application Practice Workshop” Lecture. It was good chance for beginners and new learners to understand basic Javascript and AXISJ.</p>
+                                <p><p>“함께 만드는 자바스크립트 웹 애플리케이션 실전 워크샵” 강연. 일반인들도 자바스크립트와 액시스제이를 이해하는 시간이 되었다.</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -842,10 +861,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>OKJSP Javascript Conference Lecture</h4>
+                                <h4>OKJSP 자바스크립트 컨퍼런스 강연</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>A good time to introduce and talk about Javascript and AXISJ with lots of distinguished Javascript programmers.</p>
+                                <p><p>국내 유수 자바스크립트의 고수들과 함께 자바스크립트의 이야기와 액시스제이를 소개할 수 있었던 시간</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -870,10 +889,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching AXU Barracks</h4>
+                                <h4>악수 배럭스 런칭</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>AXU is a front-end framework to build up responsive web application easily and quickly.</p>
+                                <p><p>악수(AXU)는 반응형 웹 애플리케이션을 제작을 위한 프론트-엔드 프레임워크</p>
 
 <p><img src="/assets/images/mem-axu.png" alt="axu" class="logo" /></p>
 </p>
@@ -900,10 +919,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Met 'Samyoung' and 'Brant'</h4>
+                                <h4>삼영과 브랜트를 만나다</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>If you will meet them in the most fortunate event.</p>
+                                <p><p>이번 행사의 가장 큰 행운이라면 이들을 만난 것이다.</p>
 
 <p><img src="/assets/images/tm-sam.png" alt="Sam" class="member" />
 <img src="/assets/images/tm-brant.png" alt="Brant" class="member" /></p>
@@ -931,10 +950,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Daum DevOn 2013 event</h4>
+                                <h4>다음 디브온 2013 행사 참여</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>We got shortlisted for the big programmer event by Daum. Meeting many nice people there. Still exciting</p>
+                                <p><p>다음(Daum)에서 주최한 개발자 행사에 선정되어 부스에서 행사를 하였다. 좋은 만남이 가득했던 현장. 지금도 두근두근</p>
 
 <p><img src="/assets/images/2013-devon-1.jpg" alt="do-1" class="gallery" />
 <img src="/assets/images/2013-devon-2.jpg" alt="do-2" class="gallery" />
@@ -974,10 +993,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Met CEO 'Yang'</h4>
+                                <h4>양대표를 만나다</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Yang as CEO of SQLGate recognized the potentials of AXISJ straight away. After using various kinds of UI, he couldn’t find any better one than AXISJ and plays an active role in AXISJ now.</p>
+                                <p><p>SQLGate 대표인 양 대표는 액시스제이의 진가를 바로 알아봤다. 다양한 UI를 사용해 본 그는 액시스제이의 무한한 가능성을 보고 적극적으로 활동하고 있다.</p>
 
 <p><img src="/assets/images/tm-benjamin.png" alt="Benjamin" class="member" /></p>
 </p>
@@ -1004,10 +1023,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching AXISJ</h4>
+                                <h4>액시스제이 런칭</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Code re-factoring and enhancement based on our experience and know-how. UI was improved and launched as a new version.</p>
+                                <p><p>그 동안의 노하우를 기반으로 코드 리팩토링 및 고도화. UI를 개선하여 새롭게 런칭하였다</p>
 
 <p><img src="/assets/images/mem-axisj.png" alt="axisj" class="logo" /></p>
 </p>
@@ -1034,10 +1053,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Met a handsome boy 'Young'</h4>
+                                <h4>핸섬가이 영을 만나다</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Initially he visited AXISJ to learn coding but after finding the charm of AXISJ he could not fo back to UK. The one who enjoys working with AXISJ</p>
+                                <p><p>프로그램을 배우기 위해 찾았던 그는 다시는 영국으로 돌아갈 수 없었다. 액시스제이와 함께 하는 일이 즐겁다는 그 사람</p>
 
 <p><img src="/assets/images/tm-young.png" alt="Young" class="member" /></p>
 </p>
@@ -1064,10 +1083,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Join 'Raniel'</h4>
+                                <h4>라니엘이 참여하다</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>He could not find his way in programming but saw his vision after facing AXISJ. He made a commitment to AXASP.</p>
+                                <p><p>프로그래밍의 방황의 끝에 액시스제이를 만나 광명을 보았다. 훗날 AXASP에 기여하게 된다.</p>
 
 <p><img src="/assets/images/tm-raniel.png" alt="Raniel" class="member" /></p>
 </p>
@@ -1094,10 +1113,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching Axmods</h4>
+                                <h4>액스모즈</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Brand name changed for marketing. Editor and uploader completed. Grid function developed.</p>
+                                <p><p>마케팅 일환으로 브랜드명 변경. 에디터와 업로더 완성, 그리드 기능 개발</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -1133,10 +1152,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Met 'Jikook' and 'HW Shin'</h4>
+                                <h4>지쿡과 신과장을 만나다</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>After experiencing the power of Modsax, he actively uses it for his projects and Javascript UI for practice.</p>
+                                <p><p>모즈액스의 매력을 단번에 간파하고 적극적으로 자신의 프로젝트에 도입하여 자바스크립트 UI를 실전에 사용하고 있다.</p>
 
 <p><img src="/assets/images/tm-jikook.png" alt="Jikook" class="member" />
 <img src="/assets/images/tm-hwshin.png" alt="HW Shin" class="member" /></p>
@@ -1175,10 +1194,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching Modsax</h4>
+                                <h4>모즈액스</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Framework was changed from Prototype JS to JQuery methods. Additional extension of OPP methods which JQuery does not support.</p>
+                                <p><p>프로토타입 JS에서 제이쿼리 방식으로 프레임워크 변경. 제이쿼리에서 지원하지 않는 OPP 방식을 추가 확장, UI 안정화 작업</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -1203,10 +1222,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching Hivescript</h4>
+                                <h4>하이브스크립트</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Based on the prototype JS, we created the first JavaScript library. Basic development such as list, window, tree, date. Look at the possibilities of JavaScript UI</p>
+                                <p><p>아리아모듈의 코드를 모두 배제하고 새롭게 개발된 라이브러리. 이후 “모즈액스”의 초석이 됨</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -1245,7 +1264,7 @@
                                 <h4>GrooveDK joins in AXISJ</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>I learned Tom’s development know-how and Tom’s script is better than anyone. He loves alcohol.</p>
+                                <p><p>톰에게 개발 노하우를 배우며 누구보다도 톰의 스크립트 이해가 좋은 친구. 술을 좋아한다.</p>
 
 <p><img src="/assets/images/tm-groovedk.png" alt="DK" class="member" /></p>
 </p>
@@ -1272,10 +1291,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Stop working and declare independece</h4>
+                                <h4>직장을 그만두고 독립선언</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>I will leave my job in good condition and turn to freelance to develop a platform to focus on UI development</p>
+                                <p><p>좋은 조건의 직장을 그만두고 프리랜서로 전향하여 UI개발에 전념할 수 있는 발판을 마련하다</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -1303,7 +1322,7 @@
                                 <h4>BSimpson joined.</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Designer BSimpson was Tom’s co-worker in previous company and open a new office together.</p>
+                                <p><p>톰의 직장동료였던 디자이너 BSimpson과 함게 사무실을 차리다.</p>
 
 <p><img src="/assets/images/tm-bsimpson.png" alt="BSimpson" class="member" /></p>
 </p>
@@ -1341,10 +1360,10 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Launching AriaModule</h4>
+                                <h4>아리아 모듈 런칭</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Based on the prototype JS, we created the first JavaScript library. Basic development such as list, window, tree, date. Look at the possibilities of JavaScript UI</p>
+                                <p><p>프로토타입 JS를 기반으로 자바스크립트 UI 라이브러리 최초 제작. 리스트, 윈도우, 트리, 데이트 등의 기본 개발. 자바스크립트 UI의 가능성을 내다보다</p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -1369,13 +1388,13 @@
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>The First time the AXISJ</h4>
+                                <h4>액시스제이의 시작</h4>
                             </div>
                             <div class="timeline-body">
-                                <p><p>Fate ‘Thomas’ and ‘Jowrney’ met each other.</p>
+                                <p><p>운명적으로 ‘톰’과 ‘저니’가 만나다.</p>
 
-<p><img src="/assets/images/tm-tom.png" alt="Thomas" class="member" />
-<img src="/assets/images/tm-jowrney.png" alt="Jowrney" class="member" /></p>
+<p><img src="/assets/images/tm-tom.png" alt="토마스" class="member" />
+<img src="/assets/images/tm-jowrney.png" alt="저니" class="member" /></p>
 </p>
                             </div>
                             <div class="timeline-footer">
@@ -1420,7 +1439,7 @@
         <div class="axu-layer title-layer">
             <div class="axu-wrap">
                 <div class="title-line"></div>
-                <h3>AXISJ Open Source</h3>
+                <h3>액시스제이 오픈소스</h3>
             </div>
         </div>
         <div class="axu-layer product-layer">
@@ -1431,8 +1450,8 @@
                     <div class="axu-unit">
 
                         <div class="pimg"><a href="/"><img src="/assets/images/symbolic_axisj_256.png" style="width:100px; height:100px;" /></a></div>
-                        <h3 class="pname"><a href="/">AXISJ</a></h3>
-                        <p class="pdesc">AXISJ(from below 'We') is a group and online community developing open-source projects based on Javascript UI framework AXISJ(axis of javascript</p>
+                        <h3 class="pname"><a href="/">액시스제이</a></h3>
+                        <p class="pdesc">오픈소스 자바스크립트 UI프레임워크로 다양한 오픈소스 프로젝트를 운영하고 서비스하는 조직이자 온라인커뮤니티입니다.</p>
                     </div>
                 </div>
                 
@@ -1440,8 +1459,8 @@
                     <div class="axu-unit">
 
                         <div class="pimg"><a href="/axboot"><img src="/assets/images/symbolic_axboot_256.png" style="width:100px; height:100px;" /></a></div>
-                        <h3 class="pname"><a href="/axboot">AXBoot</a></h3>
-                        <p class="pdesc">asy to build web applications with Java & HTML5. Repeatable and noise development process are resolved by AXBoot.</p>
+                        <h3 class="pname"><a href="/axboot">액스부트</a></h3>
+                        <p class="pdesc">자바 스프링를 기반으로 하는 풀 스택 웹 애플리케이션 개발 프레임워크이다.</p>
                     </div>
                 </div>
                 
@@ -1449,8 +1468,8 @@
                     <div class="axu-unit">
 
                         <div class="pimg"><a href="/ax5"><img src="/assets/images/symbolic_ax5_256.png" style="width:100px; height:100px;" /></a></div>
-                        <h3 class="pname"><a href="/ax5">AX5</a></h3>
-                        <p class="pdesc">AX5UI is an HTML5 web standard Javascript UI plugin for use with jQuery / Bootstrap.</p>
+                        <h3 class="pname"><a href="/ax5">액스5</a></h3>
+                        <p class="pdesc">UI 프레임워크와 부트스트랩을 연동한 프런트-엔드의 끝판왕</p>
                     </div>
                 </div>
                 
@@ -1458,8 +1477,8 @@
                     <div class="axu-unit">
 
                         <div class="pimg"><a href="/99nerds"><img src="/assets/images/symbolic_99nerds_256.png" style="width:100px; height:100px;" /></a></div>
-                        <h3 class="pname"><a href="/99nerds">99Nerds</a></h3>
-                        <p class="pdesc">Opensoure Sticker Shoppingmall</p>
+                        <h3 class="pname"><a href="/99nerds">구구너드</a></h3>
+                        <p class="pdesc">오픈소스 스티커 쇼핑몰, 구매할 때마다 오픈소스 프로젝트를 후원합니다</p>
                     </div>
                 </div>
                 
@@ -1467,8 +1486,8 @@
                     <div class="axu-unit">
 
                         <div class="pimg"><a href="/axicon"><img src="/assets/images/symbolic_axicon_256.png" style="width:100px; height:100px;" /></a></div>
-                        <h3 class="pname"><a href="/axicon">AXICon</a></h3>
-                        <p class="pdesc">Web application can be built more easily and quickly with more than 900 vector icons.</p>
+                        <h3 class="pname"><a href="/axicon">액시콘</a></h3>
+                        <p class="pdesc">900개가 넘는 벡터 아이콘으로 보다 쉽고 빠르게 웹 애플리케이션을 구축할 수 있습니다</p>
                     </div>
                 </div>
                 
@@ -1476,8 +1495,8 @@
                     <div class="axu-unit">
 
                         <div class="pimg"><a href="/jsongum"><img src="/assets/images/symbolic_jsongum_256.png" style="width:100px; height:100px;" /></a></div>
-                        <h3 class="pname"><a href="/jsongum">JSONGum</a></h3>
-                        <p class="pdesc">It can be useful when you want to analyze JSON data structure and find the data you want.</p>
+                        <h3 class="pname"><a href="/jsongum">제이슨껌</a></h3>
+                        <p class="pdesc">JSON 데이터의 구조를 분석하거나 원하는 데이터를 취하고 쉽을 때 편리하게 이용할 수 있습니다.</p>
                     </div>
                 </div>
                 
@@ -1534,9 +1553,9 @@
                     <span class="copy">© AXISJ 2014-2017</span>
                     <ul class="lang">
                         
-                        <li><a class="on" href=" /page2/ ">EN</a></li>
+                        <li><a  href=" /en/page2/ ">EN</a></li>
                         
-                        <li><a  href=" /ko/page2/ ">KO</a></li>
+                        <li><a class="on" href=" /page2/ ">KO</a></li>
                         
                     </ul>
                 </div>

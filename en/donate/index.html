@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="ko" href="/en/donate/" />
+<link rel="alternate" i18n="en" href="/en/en/donate/" />
+
+    <title>
+        
+         &middot; AXISJ
+        
+    </title>
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/en/atom.xml">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/en/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/en/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/en/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/en/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/en/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/en/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/en/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/en/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/en/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/en/assets/favicons/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/en/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/en/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/en/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="/assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.timeago.js" type="text/javascript"></script>
+    <script src="/assets/js/typed.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/en/assets/css/justifiedGallery.min.css">
+    <script src="/assets/js/jquery.justifiedGallery.min.js"></script>
+
+    <script src="/assets/js/highlight.pack.js"></script>
+
+    <link rel="stylesheet" href="/en/assets/css/magnific-popup.css">
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+
+    <script type="text/javascript">
+        var fnObj = {
+            pageStart: function(){
+                //Hamburger menu
+                jQuery(".hamburger-menu").click(function(){
+
+                    jQuery(".hamburger").toggleClass('is-active');
+                    jQuery(".mx-header-overay").toggleClass('open');
+
+                });
+
+                //Timeago
+                
+
+                jQuery.timeago.settings.allowFuture = true;
+                jQuery("time.timeago").timeago();
+
+                //Typed...
+                Typed.new('#typed', {
+                    //strings:typed_strings,
+                    stringsElement: document.getElementById('typed-msgs'),
+                    contentType: 'html',
+                    shuffle: true,
+                    typeSpeed: 100,
+                    startDelay: 500,
+                    backDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                });
+
+                //Code Highlighting...
+                hljs.initHighlightingOnLoad();
+                var aCodes = document.getElementsByTagName('pre code');
+                for (var i=0; i < aCodes.length; i++) {
+                    hljs.highlightBlock(aCodes[i]);
+                }
+                /*
+                jQuery('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+                */
+
+                //Markdown 타임라인용 갤러리 지원
+                jQuery('.gallery').each(function() {
+                    if (jQuery(this.parentNode).hasClass('flex-images')) return;
+                    jQuery(this).nextUntil(':not(.gallery)').addBack().wrapAll("<div class='flex-images mp-gallery'>");
+                });
+
+                jQuery('.flex-images').find('.gallery').each(function(){
+                    var src = jQuery(this).prop("src");
+                    jQuery(this).wrap("<a href='"+src+"' >");
+                    //console.log(src);
+                });
+                jQuery(".flex-images").justifiedGallery({
+                    rowHeight : 80,
+                    lastRow : 'justify',
+                    margins : 0,
+                    captions:false,
+                    randomize:true
+                });
+
+
+                //Magnific popup
+                jQuery('.mp-gallery').each(function() { // the containers for all your galleries
+                    jQuery(this).magnificPopup({
+                        delegate: 'a', // the selector for gallery item
+                        type: 'image',
+                        gallery: {
+                            enabled:true
+                        }
+                    });
+                });
+
+
+
+                //jQuery('.flex-images').find('.gallery').wrap("<a href='"+jQuery(this).attr('src')+"' >");
+
+
+                //Flex Images...
+
+                //jQuery("#AXUTimeline img[class^='gallery']").wrap("<div class='flex-images' />");
+                //var first_evt = jQuery("#AXUTimeline").find(".flex-image").find(".gallery").wrap("<a href='#' />");
+
+                /*
+                jQuery.when.apply(this, first_evt).done(function(){
+                    second_evt;
+                });
+                */
+
+                //jQuery("#AXUTimeline").find(".gallery").wrapAll("<div class='flex-images' />");
+
+            },
+            //When scrolling add bar shadow class...
+            pageScroll:function(){
+
+                if(jQuery(this).scrollTop()) {
+                    jQuery('#AXUHeader .header-bar').addClass('scrolled');
+                    jQuery('#AXUHeader .mx-header-bar').addClass('scrolled');
+                } else {
+                    jQuery('#AXUHeader .header-bar').removeClass('scrolled');
+                    jQuery('#AXUHeader .mx-header-bar').removeClass('scrolled');
+                }
+            },
+            //Random Timeline Images..
+            pageResize: function(){
+
+            }
+        }
+
+        jQuery(document.body).ready(function(){
+
+            if (!window.getComputedStyle) {
+                window.getComputedStyle = function(element) {
+                    return element.currentStyle;
+                }
+            }
+            fnObj.pageStart();
+            jQuery(window).resize(fnObj.pageResize);
+            jQuery(window).scroll(fnObj.pageScroll);
+        });
+
+
+
+
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/en/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/en/assets/css/layout_common.css">
+    <link rel="stylesheet" href="/en/assets/css/contents_common.css">
+
+</head>
+
+<body>
+
+<div id="AXUBody">
+    
+
+<div id="AXUHeader">
+    <div class="header-bar-fixed"></div>
+    <div class="axu-layer mx-header-hamburger">
+        <div class="axu-wrap">
+            <a href="#axu" class="hamburger-menu">
+                <div class="hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="axu-layer mx-header-overay">
+        <nav>
+            
+            
+            <ul class="top-menu">
+                
+                <li><a href="/en/" class=""><span class="bullet"></span>Timeline</a></li>
+                
+                <li><a href="/en/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                
+                <li><a href="/en/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                
+                <li><a href="/en/99nerds/" class=""><span class="bullet"></span>99Nerds</a></li>
+                
+                <li><a href="/en/axicon/" class=""><span class="bullet"></span>AXIcon</a></li>
+                
+                <li><a href="/en/jsongum/" class=""><span class="bullet"></span>JSONGum</a></li>
+                
+            </ul>
+            
+            
+            
+            <ul class="option-menu">
+                
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>Medium</a></li>
+                
+                <li><a href="/en/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                
+                <li><a href="/en/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                
+
+
+                <!-- 언어 역으로 구해야함 -->
+                
+
+                
+                <li><a href=" /donate/ "><span class="en"></span>한국어로</a></li>
+                
+            </ul>
+            
+            
+
+        </nav>
+    </div>
+    <div class="axu-layer mx-header-bar">
+        <div class="axu-wrap">
+            <div class="axu-unit">
+                <div class="header-logo">
+                         <a href="/en/" target="_self" >
+                             <span class="symbolic axisj"></span>
+                             <div class="descript">AXISJ &#58; Open Source Group</div>
+                         </a>
+                     </div>
+            </div>
+        </div>
+     </div>
+
+    <div class="axu-layer header-bar">
+        <div class="axu-wrap">
+            <div class="axu-left">
+                <div class="axu-unit">
+                    <div class="header-logo">
+                        <a href="/en/" target="_self" >
+                            <span class="symbolic axisj"></span>
+                            <div class="descript">AXISJ &#58; Open Source Group</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="axu-right">
+                <div class="axu-unit">
+                    
+                    
+                    <ul class="top-menu">
+                        
+                        <li><a href="/en/" class="">Timeline</a></li>
+                        
+                        <li><a href="/en/axboot/" class="">AXBoot</a></li>
+                        
+                        <li><a href="/en/ax5/" class="">AX5</a></li>
+                        
+                        <li><a href="/en/99nerds/" class="">99Nerds</a></li>
+                        
+                        <li><a href="/en/axicon/" class="">AXIcon</a></li>
+                        
+                        <li><a href="/en/jsongum/" class="">JSONGum</a></li>
+                        
+                    </ul>
+                    
+                    
+                    
+                    <ul class="option-menu">
+                        
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>Medium</a></li>
+                        
+                            <li><a href="/en/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                        
+                            <li><a href="/en/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                        
+                    </ul>
+                    
+                    
+                    <a href=" /donate/ " class="lang-menu en"><span> en</span></a>
+                </div>
+            </div>
+            <div class="axu-clear"></div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div id="AXUContents">
+
+    <!-- s.AXUVisual -->
+    <div id="AXUVisual">
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <h1>Donation</h1>
+                <h2><span id="typed"></span></h2>
+                <div id="typed-msgs">
+                    
+                    <p>Develop and write together.</p>
+                    
+                    <p>We run today for great development</p>
+                    
+                    <p>A small donation brings together a beautiful application.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- e.AXUVisual -->
+
+    <div id="AXUSupport">
+
+        <div class="axu-layer support-layer">
+            <div class="axu-wrap">
+                <div class="axu-unit">
+                    
+                    <div class="msg-1">We do our best to make a valuable open-source of AXISJ, not a free and low-quality one.</div>
+                    
+                    <div class="msg-2">We are doing open-source projects and services from Javascript UI library 'AXISJ', responsive web application template package 'AXU', web icon font package 'AXIcon' and etc.</div>
+                    
+                    <div class="msg-3">We are looking for someone who can help AXISJ. You can support through the following ways.</div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>How to support</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                
+                <div class="axu-col-4 how-column">
+                    <div class="axu-unit">
+                        <div class="support-card bank">
+                            <div class="support-img"><img src="/assets/images/donate-how-bank.png" /></div>
+                            <h3>Bank transfer</h3>
+                            <div class="support-method">
+
+                                    
+                                    
+                                        <!-- bank -->
+                                        <p class="desc">
+                                        
+                                        Woori bank<br />
+                                        
+                                        1005-402-375399<br />
+                                        
+                                        AXISJ<br />
+                                        
+                                        </p>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-4 how-column">
+                    <div class="axu-unit">
+                        <div class="support-card paypal">
+                            <div class="support-img"><img src="/assets/images/donate-how-paypal.png" /></div>
+                            <h3>Paypal</h3>
+                            <div class="support-method">
+
+                                    
+                                    
+
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="6QJZZ5W98K2UA">
+                                        <input type="hidden" name="on0" value="donate">
+                                        <select name="os0">
+                                            
+                                            <option value="LV1">3 USD</option>
+                                            
+                                            <option value="LV2">100 USD</option>
+                                            
+                                            <option value="LV3">200 USD</option>
+                                            
+                                            <option value="LV4">400 USD</option>
+                                            
+                                        </select>
+                                        <input type="hidden" name="currency_code" value="USD">
+                                        <button>Donation</button>
+                                    </form>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-4 how-column">
+                    <div class="axu-unit">
+                        <div class="support-card jsongum">
+                            <div class="support-img"><img src="/assets/images/donate-how-jsongum.png" /></div>
+                            <h3>Purchase JSONGum</h3>
+                            <div class="support-method">
+
+                                    
+                                    
+                                    <a href="/en/jsongum" target="_blank">Only $4.99</a>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="support-desc">
+                    <div class="axu-unit">
+                    <p>You will be registered in our hero list with the information of your paypal account if you make a donation by paypal. If you prefer bank transfer, please let us know through email at tom@axisj.com or call +82-10-8881-9137 after making your transaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>Support regularly</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                
+                <div class="axu-col-4 how-column">
+                    <div class="axu-unit">
+                        <div class="support-card bank">
+                            <div class="support-img"><img src="/assets/images/donate-how-bank.png" /></div>
+                            <h3>Bank transfer</h3>
+                            <div class="support-method">
+
+                                    
+                                    
+                                        <!-- bank -->
+                                        <p class="desc">
+                                        
+                                        Woori bank<br />
+                                        
+                                        1005-402-375399<br />
+                                        
+                                        AXISJ<br />
+                                        
+                                        </p>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-4 how-column">
+                    <div class="axu-unit">
+                        <div class="support-card paypal">
+                            <div class="support-img"><img src="/assets/images/donate-how-paypal.png" /></div>
+                            <h3>Paypal Reguarly</h3>
+                            <div class="support-method">
+
+                                    
+                                    
+
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="6QJZZ5W98K2UA">
+                                        <input type="hidden" name="on0" value="donate">
+                                        <select name="os0">
+                                            
+                                            <option value="LV1">12 USD</option>
+                                            
+                                            <option value="LV2">36 USD</option>
+                                            
+                                            <option value="LV3">120 USD</option>
+                                            
+                                            <option value="LV4">360 USD</option>
+                                            
+                                            <option value="LV5">1000 USD</option>
+                                            
+                                        </select>
+                                        <input type="hidden" name="currency_code" value="USD">
+                                        <button>Donation</button>
+                                    </form>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-4 how-column">
+                    <div class="axu-unit">
+                        <div class="support-card github">
+                            <div class="support-img"><img src="/assets/images/donate-how-github.png" /></div>
+                            <h3>Join Github contributor</h3>
+                            <div class="support-method">
+
+                                    
+                                    
+                                    <a href="https://github.com/axisj" target="_blank">Go Github.com</a>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="support-desc">
+                    <div class="axu-unit">
+                    <p>Regular supporters(who donate annually or monthly) will be registered as our sponsor hero. gitHub contributors will be registered as Q&A hero or Bugging hero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span></span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+            
+            <div class="axu-clear"></div>
+            </div>
+        </div>
+
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>Heroes</span></h3>
+            </div>
+        </div>
+
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Sanghee Park</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-jikook.png" class="photo" />
+                            
+                            <h4>Jikook</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Jaesung Ryu</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Taeseong Kwon</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Ingu Heo</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Jaemin Kim</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Chul Won Park</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Sunghoon Yun</h4>
+                            <div class="cate">
+                                
+                                <a href="http://ndotcom.com" class="homepage">ndotcom.com</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Keis</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Se hyun Park</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-moon.png" class="photo" />
+                            
+                            <h4>Moonchang Chae</h4>
+                            <div class="cate">
+                                
+                                <a href="http://mcchae.egloos.com" class="homepage">mcchae.egloos.com</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Jahong Lim</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Kisang Kim</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Kuk Hee Lee</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Mingyu Jo</h4>
+                            <div class="cate">
+                                
+                                <a href="http://blog.minbyul.cat" class="homepage">blog.minbyul.cat</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-brant.png" class="photo" />
+                            
+                            <h4>Inseo Hwang</h4>
+                            <div class="cate">
+                                
+                                
+                                <div class="desc">Kakao</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Inho Lee</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Manho Jeon</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Insuk Bae</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>Wooseok Seo</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                
+                
+                
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+    <div id="AXUFooter">
+    <div class="axu-layer footer-1">
+        <div class="axu-wrap">
+            <div class="axu-col-6 left">
+                <div class="axu-unit">
+                    <span class="copy">© AXISJ 2014-2017</span>
+                    <ul class="lang">
+                        
+                        <li><a class="on" href=" /en/donate/ ">EN</a></li>
+                        
+                        <li><a  href=" /donate/ ">KO</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="axu-col-6 right">
+                <div class="ax-unit">
+                    <ul class="bottom_menu">
+                        <li><a href="portal/">Timeline</a></li>
+                        <li><a href="axboot/">AXBoot</a></li>
+                        <li><a href="ax5/">AX5</a></li>
+                        <li><a href="axicon/">AXIcon</a></li>
+                        <li><a href="jsongum/">JSONGum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="axu-clear"></div>
+        </div>
+    </div>
+    <div class="axu-layer footer-2">
+        <div class="axu-wrap">
+            <div class="ax-unit">
+                <h4>SPONSORED</h4>
+                <ul>
+                    <li><a href="http://www.mondo.co.kr" target="_blank">MONDO</a></li>
+                    <li><a href="http://www.flybasket.com" target="_blank">Flybasket</a></li>
+                    <li><a href="http://www.setuh.com" target="_blank">SETUH</a></li>
+                    <li><a href="http://www.dnsever.com" target="_blank">DNSEver</a></li>
+                    <li><a href="http://www.anybuild.co.kr" target="_blank">AnyBuild</a></li>
+                    <li><a href="http://www.antwiz.com" target="_blank">Antwiz</a></li>
+                </ul>
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>
