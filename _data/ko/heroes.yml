@@ -1,23 +1,23 @@
 hero_page:
   label: "영웅들"
-  desc: "액시스제이에 기여하신 분을 영웅으로 모십니다.
-           주변에서 액시스제이에 관한 숨은 영웅이 있으시면 이메일(tom@axisj.com)로 제보해주세요^^"
+  desc: "AXISJ 오픈 소스에 기여도가 크신분들을 영웅으로 등재합니다..
+           숨은 AXISJ 오픈 소스 영웅이 있으시면 이메일(tom@axisj.com)로 제보해주세요^^"
 
 hero_list:
   - label: "개발영웅"
     prefix: "dev"
-    desc: "개발코드 컷밋, 깃헙 이슈트래커 답변처리, 액시스제이 개발 강연 등 다양한 형태로 액시스제이 개발을 알리고 힘쓰는 사람에게 주어주는 영웅입니다."
+    desc: "AXISJ이 오픈 소스를 개발하는 영웅들 입니다."
     heroes:
-      - name: "토마스(Thomas)"
+      - name: "장기영"
         img: "/assets/images/hero-tom.png"
         email: "Thomas Jang"
         homepage: "http://axisj.com"
-        desc: "액시스제이 창시자"
-      - name: "브랜트(Brant)"
+        desc: "AXISJ Founder"
+      - name: "황인서"
         img: "/assets/images/hero-brant.png"
         email: ""
-        homepage: "chequer.io"
-        desc: "Chequer"
+        homepage: "http://chequer.io"
+        desc: "CHEQUER Founder & CEO"
       - name: "박현준"
         img: "/assets/images/hero-hyunjun.png"
         email: "hyunjun@axisj.com"
@@ -25,7 +25,7 @@ hero_list:
         desc: ""
   - label: "디자인 영웅"
     prefix: "design"
-    desc: "액시스제이 UI디자인, CSS개선 등의 디자인에 기여하신 분에게 주어지는 영웅입니다."
+    desc: "AXISJ의 오픈 소스 제품 디자인을 개선하는 영웅들 입니다."
     heroes:
       - name: "저니(Jowrney)"
         img: "/assets/images/hero-jowrney.png"
@@ -44,7 +44,7 @@ hero_list:
         desc: "대성보일러"
   - label: "홍보 영웅"
     prefix: "marketing"
-    desc: "액시스제이를 소개 강연, 소셜 소식 전하기 등 적극적으로 홍보를 하여 기여하신 분에게 주어지는 영웅입니다."
+    desc: "AXISJ 오픈 소스를 홍보해주시는 영웅들 입니다."
     heroes:
       - name: "Benjamin Yang"
         img: "/assets/images/hero-benjamin.png"
@@ -53,7 +53,7 @@ hero_list:
         desc: "SQLGate"
   - label: "후원 영웅"
     prefix: "donate"
-    desc: "액시스제이의 금전적 물질적으로 후원을 해 주신 분들에게 주어지는 영웅입니다."
+    desc: "AXISJ 오픈 소스에 후원 하신 영웅들 입니다."
     heroes:
       - name: "박상희"
         img: ""
@@ -157,7 +157,7 @@ hero_list:
         desc: ""
   - label: "기업 후원"
     prefix: "company"
-    desc: "액시스제이를 후원 해주신 기업들입니다."
+    desc: "AXISJ 오픈 소스에 후원 하신 기업들입니다."
     heroes:
       - name: "(주)우리테크"
         img: "/assets/images/hero-com-realgrid.png"
