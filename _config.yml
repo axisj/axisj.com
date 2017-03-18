@@ -29,7 +29,7 @@ gems: [jekyll-polyglot, jekyll-paginate]
 permalink : pretty
 
 #include  : []
-exclude   : ['Gemfile','Gemfile.lock','CNAME','axisj.github.io.iml']
+exclude   : ['Gemfile','Gemfile.lock','CNAME']
 
 # Setup
 title   :   AXISJ
@@ -37,11 +37,11 @@ tagline : 'Open Source Group'
 paginate: 5
 version : 1.2.4
 github  :
-  repo: https://github.com/axisj
+  repo: https://github.com/axisj/axisj.com
 
 #Polyglot
 languages     : ["en", "ko"]
-default_lang  : "en"
+default_lang  : "ko"
 
 exclude_from_localization: ["javascript", "images", "css"]
 
