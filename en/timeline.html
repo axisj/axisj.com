@@ -6,65 +6,6 @@
 </head>
 <body>
 
-<div id="AXUTimeline">
-    <div class="axu-layer">
-        <div class="axu-wrap">
-            <ul class="timeline">
 
-                <li class="timeline-right">
-                    <div class="timeline-badge"></div>
-                    <div class="timeline-panel tag">
-                        <div class="timeline-body">
-                            <p>{{ site.data.vars.define_axisj }}</p>
-                        </div>
-                    </div>
-                </li>
-
-                {% for post in site.categories["timeline"] %}
-                <!-- s.timeline one -->
-                <li class="timeline-{{ post.type }}">
-                    <div class="timeline-badge"></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>{{ post.title }}</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p>{{ post.content }}</p>
-                        </div>
-                        <div class="timeline-footer">
-                            <p class="text-right">
-                                <time class="timeago" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-                                <span class="date">({{ post.date | date_to_string }})</span>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <!-- e.timeline one -->
-
-                <!-- s.timecard year -->
-                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-                {% if year != nyear %}
-                <a name="{{ year }}"></a>
-                <li class="timeline-right">
-                    <div class="timeline-badge"></div>
-                    <div class="timeline-panel year">
-                        <div class="timeline-body">
-                            <p>{{ year }}</p>
-                        </div>
-                    </div>
-                </li>
-                <!--li class="year-title"><div class="title">{{ year }}</div></li-->
-                {% endif %}
-                <!-- e.timecard year -->
-
-                {% endfor %}
-
-
-                <li class="clearfix no-float"></li>
-            </ul>
-        </div>
-    </div>
-</div>
 </body>
 </html>
