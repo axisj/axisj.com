@@ -49,8 +49,10 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
         </div>
         <div class="axu-layer visual-desc-layer">
             <div class="axu-wrap">
+                <!--
                 <h3>{{ site.data.vars.page_jsongum_desc[0].msg }}</h3>
                 <p>{{ site.data.vars.page_jsongum_desc[1].msg }}</p>
+                -->
                 <div class="btns">
                     {% for btn in site.data.vars.page_jsongum_btns %}
                     <a href="{{ btn.link }}" class="btn-{{forloop.index}}">{{ btn.label }}</a>
@@ -88,6 +90,7 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
     </div>
 
 
+    <!--
     <a name="feature"></a>
     <div id="AXUFeatures">
         <div class="axu-layer">
@@ -113,6 +116,7 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
         </div>
         <div class="axu-h30"></div>
     </div>
+    -->
 
     <a name="download"></a>
     <div id="AXUInstall">
@@ -133,6 +137,7 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
                 <div class="axu-clear"></div>
             </div>
         </div>
+        <!--
         <div class="axu-layer buy-layer">
             <div class="axu-wrap">
                 {% for buy in site.data.vars.page_jsongum_buy %}
@@ -150,6 +155,7 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
                 <div class="axu-clear"></div>
             </div>
         </div>
+        -->
         <div class="axu-h30"></div>
     </div>
 
@@ -166,6 +172,7 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
                 <div class="search-card">
                     <div class="axu-unit">
                         <p class="desc">{{ site.data.vars.page_jsongum_license.desc }}</p>
+                        <!--
                         <form name="find-form" method="post" onsubmit="return fn_check_license();">
                             <label>
                                 <span>{{ site.data.vars.strings.email }}</span>
@@ -173,7 +180,7 @@ bar_logo_link: '/assets/jsongum/JSONGum.dmg'
                                 <button>{{ site.data.vars.strings.submit }}</button>
                             </label>
                         </form>
-                        <div class="caution">{{ site.data.vars.page_jsongum_license.caution }}</div>
+                        -->
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@ opensources:
     link: "/ax5"
 
   - name: "AXICON"
-    desc: "한국판 Font-Awesome. 웹 애플리케이션에 필요한 700여 가지의 폰트 아이콘을 무료로 사용하세요!"
+    desc: "한국판 Font-Awesome. 웹 애플리케이션에 필요한 900여 가지의 폰트 아이콘을 무료로 사용하세요!"
     img256: "/assets/images/symbolic_axicon_256.png"
     link: "/axicon"
 
@@ -39,7 +39,7 @@ opensources:
     link: "/99nerds"
 
   - name: "X-JSON"
-    desc: "세상에서 가장 쉽고 빠른 JSON 뷰어"
+    desc: "세상에서 가장 빠른 JSON 뷰어"
     img256: "/assets/images/symbolic_jsongum_256.png"
     link: "/jsongum"
 
@@ -253,17 +253,17 @@ page_99nerds_btns:
     link: "mailto:bill@chequer.io"
 
 # Page - AXIcon ########################
-page_axicon_name: "액시콘"
+page_axicon_name: "AXICON"
 page_axicon_type:
   - msg: "개발자도 디자이너도 모두 필요한 도구"
   - msg: "고해상도 스크린에서도 깨끗하게. 선명하게."
   - msg: "아이콘 검색도구로 편리하게."
 
 page_axicon_desc:
-  - msg: "웹 아이콘 폰트 패키지, 액시콘"
+  - msg: "웹 아이콘 폰트 패키지, AXICON"
   - msg: "당신의 웹 애플리케이션 프로젝트에 벡터 아이콘을 사용해보세요.
           900개가 넘는 벡터 아이콘으로 보다 쉽고 빠르게 웹 애플리케이션을 구축할 수 있습니다.
-          기획자도, 프로그래머도, 디자이너도 액시콘이 답입니다."
+          기획자도, 프로그래머도, 디자이너도 AXICON이 답입니다."
 
 page_axicon_btns:
   - label: "다운로드"
@@ -275,29 +275,26 @@ page_axicon_features:
   - label: "벡터 폰트 아이콘"
     desc: "하나의 폰트에 900개의 픽토그래픽 아이콘이 가득합니다. 또한 벡터방식으로 사이즈를 변경해도 깨끗한 이미지를 보여줍니다. 특히 레티나 디스플레이에 완벽하게 보여집니다."
   - label: "빠르고 쉽다"
-    desc: "자바스크립트 없이 CSS만으로 조작이 가능합니다. 간단히 태그만으로 쉽게 아이콘을 추가합니다. 특히 “악수(AXU, 반응형 디자인 프레임워크)”과 함께라면 빠르고 쉽게 근사한 결과물을 만들 수 있습니다."
+    desc: "자바스크립트 없이 CSS만으로 조작이 가능합니다. 간단한 태그만으로 쉽게 아이콘을 추가합니다."
   - label: "아이콘 검색 도구"
-    desc: "수 많은 아이콘을 일일이 확인하며 찾을 필요가 없습니다. 액시콘은 편리한 검색도구를 제공합니다. 빠르게 검색하고 용도에 맞게 복사하여 붙여넣어 사용하십시오."
-    link: "액시콘 검색하기"
+    desc: "수 많은 아이콘을 일일이 확인하며 찾을 필요가 없습니다. AXICON은 편리한 검색도구를 제공합니다. 빠르게 검색하고 용도에 맞게 복사하여 붙여넣어 사용하십시오."
+    link: "AXICON 검색하기"
 
 
 # Page - JSONGum ########################
-page_jsongum_name: "제이슨껌"
+page_jsongum_name: ""
 page_jsongum_type:
-  - msg: "껌은 역시 제이슨 껌!"
-  - msg: "이제 JSON 데이터를 분석하기 위해 인상 쓸 필요가 없다"
-  - msg: "껌은 씹어야 제맛이죠!"
+  - msg: "세상에서 가장 빠른 JSON 뷰어"
+  - msg: "설치형 JSON 뷰어, X-JSON"
 
 page_jsongum_desc:
-  - msg: "제이슨 데이터 포맷 뷰어, 제이슨껌"
-  - msg: "JSON 데이터의 구조를 분석하거나 원하는 데이터를 취하고 쉽을 때 편리하게 이용할 수 있습니다.
-          자바스크립트 고수 톰이 자신의 불편함을 해결하기 위해 만들어진 “제이슨껌”
-          껌은 씹어야 제맛이죠! JSON을 씹어 드립니다."
+  - msg: "세상에서 가장 빠른 JSON 뷰어 X-JSON"
+  - msg: ""
 
 page_jsongum_btns:
-  - label: "설치하기(Win)"
+  - label: "Windows"
     link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe.zip"
-  - label: "설치하기(OS X)"
+  - label: "Mac OSX"
     link: "/assets/jsongum/JSONGum.dmg"
 
 page_jsongum_capture:
@@ -308,25 +305,26 @@ page_jsongum_capture:
   - label: "JSON 변환"
   - label: "HTML지원"
   - label: "HTML에서 JSON으로"
-  - label: "제이슨껌"
+  - label: "X-JSON"
 
 page_jsongum_features:
-  - label: "대박~ 이뻐!"
-    desc: "JSON 코드 하이라이트는 기본코드 블럭 들여쓰기 정렬을 통해 깔끔하고 이쁘게 JSON을 보여준다구!"
-  - label: "완전 유용해"
-    desc: "JSON을 트리형 리스트로 보여주니 깔끔하고 원하는 부분만 집중해서 볼 수 있으니 얼마나 유용해! 게다가 HTML이나 XML도 JSON형태로 변형해주는 기능도 있다구!"
+  - label: "성능"
+    desc: "X-JSON은 많은 양의 JSON도 빠르게 처리합니다"
+  - label: "충실한 기능"
+    desc: "JSON을 트리형태로 보여주 HTML, XMLJSON을 트리형 리스트로 보여주니 깔끔하고 원하는 부분만 집중해서 볼 수 있으니 얼마나 유용해! 게다가 HTML이나 XML도 JSON형태로 변형해주는 기능도 있다구!"
   - label: "졸라~ 간단해"
     desc: "키 값에 꼭 코테이션으로 감싸줘야 된다구? 왜 그렇게 까탈스러운거야! 제이슨껌은 그냥 알아서 인식한다구. 어서 코드 분석하자구!"
 
 page_jsongum_install:
-  - msg: "AXISJ는 자바스크립트 UI, 웹폰트아이콘, 반응형템플릿 등 다양한 오픈 소스 프로젝트를 만들고 있습니다."
-  - msg: "AXISJ는 앞으로도 오픈 소스로 세상에 기여하는 일에 최선을 다하려고 합니다."
-  - msg: "AXISJ가 건강하게 오픈 소스를 개발하기 위한 방법으로 JSONGum을 팔기로 했습니다."
-  - msg: "지금 이 순간 당신의 껌 값 $4.99로 대한민국의 개발자에게 희망을 주세요."
+  - msg: "X-JSON은 프리웨어 입니다"
+  - msg: "하지만 정품 구매시 AXISJ 오픈 소스 그룹 후원자로 등록됩니다."
+  - msg: "또한 정품 인증 창 업이 더 빠르게 X-JSON을 사용할 수 있습니다."
+  - msg: "$4.99로 오픈 소스 후원자가 되어보세요!"
+  - msg: "지금 구매하러 가기!"
 
 page_jsongum_buy:
-  - label: "다운로드"
-    desc: "제이슨껌은 정품 라이센스가 없어도 사용할 수 있습니다. 다만 정품 라이센스가 없으면 정품 사용자에 비해 몇번의 클릭을 더 하셔야 합니다."
+  - label: "구매하기"
+    desc: "X-JSON 프리웨어 입니다. 하지만 라이선스를 구매하시면 AXISJ 오픈 소스 그룹 후원자가 됨과 동시에 X-JSON 정품인증 창 없이 빠르게 사용할 수 있습니다."
     btns:
       - label: "OSX 버전 다운로드"
         link: "location.href = '/assets/jsongum/JSONGum.dmg';"
@@ -340,8 +338,8 @@ page_jsongum_buy:
 
 page_jsongum_license:
   label: "라이선스"
-  desc: "JSONGum 라이선스를 잊으셨나요?<br />
-           구매하셨을 때 입력하신 이메일 주소를 입력해주세요"
+  desc: "X-JSON 라이선스를 잊으셨나요?<br /><br />
+           <a href='mailto:tom@axisj.com'>tom@axisj.com</a> 으로 라이센스 확인을 요청해 주세요."
   caution: "구매 당시 사용하신 이메일 주소가 명확하지 않은 경우에는 라이선스 찾기가 어려울 수 있습니다."
 
 # Page - Donate ########################

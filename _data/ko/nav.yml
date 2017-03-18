@@ -59,11 +59,9 @@ menu_axicon:
     link: "http://axicon.axisj.com"
 
 menu_jsongum:
-  - name: "미리보기"
+  - name: "기능"
     link: "preview"
-  - name: "특징"
-    link: "feature"
-  - name: "다운로드"
+  - name: "구매하기"
     link: "download"
   - name: "라이선스"
     link: "license"
