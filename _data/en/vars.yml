@@ -5,7 +5,7 @@ languages:
       - en: "English"
         ko: "Korean"
 
-define_axisj: "The <strong>AXISJ</strong> is open source groups."
+define_axisj: "The <strong>AXISJ</strong> is open source development expedition."
 products_str: "AXISJ Open Source"
 
 strings:
@@ -14,7 +14,7 @@ strings:
 
 opensources:
   - name: "AXISJ"
-    desc: "AXISJ(from below 'We') is a group and online community developing open-source projects based on Javascript UI framework AXISJ(axis of javascript"
+    desc: "AXISJ(from below 'We') is a group and online community developing open-source projects based on Javascript UI framework AXISJ(axis of javascript)"
     img256: "/assets/images/symbolic_axisj_256.png"
     link: "/"
 
@@ -66,11 +66,11 @@ page_axboot_desc:
 
 page_axboot_btns:
   - label: "demo"
-    link: "/"
+    link: "http://demo.axboot.com/"
   - label: "Github"
-    link: "/"
+    link: "https://github.com/axboot"
   - label: "Initialzr"
-    link: "/"
+    link: "http://start.axboot.com/"
 
 page_axboot_features:
   - label: "FullStack Framework"
@@ -190,7 +190,7 @@ page_ax5_btns:
   - label: "Demo Website"
     link: "http://ax5.io"
   - label: "Github"
-    link: "http://www.github.com/ax5"
+    link: "https://github.com/ax5ui"
 
 page_ax5_intro:
   - label: "AX5 UI"
@@ -222,17 +222,15 @@ page_ax5_features:
   - label: "Useful"
     desc: "API document of class, function, object and prototype is useful for initial introduction of library. Also, the samples prepared for you here can be really useful."
     links:
-      - label: "View development API document"
-        link: ""
       - label: "View sample page"
-        link: ""
+        link: "http://ax5.io/"
   - label: "Powerful"
     desc: "More than 80 components of user interface help you deal with lots of requirements for various displays. Also, it was developed not only to support the latest version of browsers but touch-based devices as well."
   - label: "Faithful"
     desc: "Though AXISJ is a nonprofit open-source project, we try our best to respond to users questions on Github ASAP. We offer various technical products such as visit teaching, remote support, email, call service and custom development for companies to be fully responsible for our project and the source."
     links:
       - label: "View github issue tracker"
-        link: "http://github.com/ax5"
+        link: "https://github.com/ax5ui/ax5ui-kernel/issues"
 
 page_ax5_specials:
   - label: "Productivity"
@@ -279,7 +277,7 @@ page_99nerds_btns:
   - label: "Go Shopping"
     link: "http://www.99nerds.io"
   - label: "Suggest Sticker"
-    link: "mailto:thomas@axisj.com"
+    link: "mailto:tom@axisj.com"
 
 # Page - AXIcon ########################
 page_axicon_name: "AXIcon"
@@ -323,8 +321,10 @@ page_jsongum_desc:
           Let's chew a piece of JSONGum."
 
 page_jsongum_btns:
-  - label: "Install"
-    link: "/"
+  - label: "Install(Win)"
+    link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe"
+  - label: "Install(OS X)"
+    link: "/assets/jsongum/JSONGum.dmg"
 
 page_jsongum_capture:
   - label: "Freeware"
@@ -355,14 +355,14 @@ page_jsongum_buy:
     desc: "JSONGum can be used even without a license. You just have a bit more inconvenience with a pop-up ad."
     btns:
       - label: "OSX Version Download"
-        link: "location.href = 'download/JSONGum.dmg"
+        link: "location.href = '/assets/jsongum/JSONGum.dmg"
       - label: "WIN 32Bit Download"
-        link: "location.href = 'download/jsongum-setup-win32-1-0.exe"
+        link: "location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe"
   - label: "Purchase JSONGum license"
     desc: "If you pay by paypal, the license will be sent to the email address registered on your paypal account."
     btns:
-      - label: "PayPal $4.99"
-        link: "https://www.paypal.com/cgi-bin/webscr"
+      - label: "Coming soon."
+        link: "#"
 
 page_jsongum_license:
   label: "License"
@@ -447,11 +447,11 @@ members:
     email: "tom@axisj.com"
     links:
       - name: "Github"
-        link: "http://github.com/thomasjang"
+        link: "https://github.com/thomasjang"
       - name: "Blog"
-        link: "http://blog.axisj.com"
+        link: "https://medium.com/chequer"
       - name: "Facebook"
-        link: "http://facebook.com/axisjtom"
+        link: "https://www.facebook.com/axisjtom"
     history:
       - text: "HTML5, CSS, JavaScript Expert"
       - text: "Web Application Interface Professional"
@@ -459,6 +459,7 @@ members:
       - text: "Creator of Advanced HTML5 UI Framework"
       - text: "Global Opensource Frontier - NIPA"
       - text: "The Winner of Super Developer K3 Award- NIA"
+      - text: "OSS World Challenge 2016 first prize"
 
   - name: "Brant Hwang"
     desc: "Brant Hwang is a back-end engineer who manages Distributed Processing, Java, Spring Framework"
@@ -467,13 +468,13 @@ members:
     email: "brant@axboot.com"
     links:
       - name: "Github"
-        link: "http://github.com/brant-hwang"
+        link: "https://github.com/brant-hwang"
       - name: "Blog"
-        link: "http://brantiffy.axisj.com/about-me"
+        link: "https://medium.com/chequer"
       - name: "Facebook"
-        link: "http://facebook.com/tjdus3361"
+        link: "https://www.facebook.com/tjdus3361"
       - name: "LinkedIn"
-        link: "http://linkedin.com/in/ishwang"
+        link: "https://www.linkedin.com/in/ishwang/"
     history:
       - text: "Java, Spring Framework, Linux Expert"
       - text: "Former E-Commerce Platform, Commerce Service Developer at KAKAO"
@@ -484,3 +485,4 @@ members:
       - text: "Sun Certified Network, System Engineer & Java Programmer"
       - text: "Certified Linux Server Professional"
       - text: "Spring Boot in Action Korean version translator - Spring Boot Coding Factory"
+      - text: "OSS World Challenge 2016 first prize"

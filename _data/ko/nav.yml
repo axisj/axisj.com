@@ -16,7 +16,7 @@ topmenus:
   - label: 옵션메뉴
     submenus:
     - label: 미디엄
-      url : 'https://medium.com/@axisj'
+      url : 'https://medium.com/chequer'
       target: '_blank'
     - label: 영웅들
       url : '/heroes'

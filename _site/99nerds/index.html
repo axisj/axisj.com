@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="en" href="http://localhost:4000/99nerds/" />
-<link rel="alternate" i18n="ko" href="http://localhost:4000/ko/99nerds/" />
+    <meta http-equiv="Content-Language" content="ko"><link rel="alternate" i18n="ko" href="http://localhost:4000/99nerds/" />
+<link rel="alternate" i18n="en" href="http://localhost:4000/en/99nerds/" />
 
     <title>
         
@@ -63,6 +63,21 @@
                 });
 
                 //Timeago
+                
+                jQuery.timeago.settings.strings.suffixAgo = "전";
+                jQuery.timeago.settings.strings.suffixFromNow = "지금부터";
+                jQuery.timeago.settings.strings.inPast = "지금";
+                jQuery.timeago.settings.strings.seconds = "1분 이내";
+                jQuery.timeago.settings.strings.mintue = "약 1분";
+                jQuery.timeago.settings.strings.mintues = "%d분";
+                jQuery.timeago.settings.strings.hour = "약 1시간";
+                jQuery.timeago.settings.strings.hours = "약 %d시간";
+                jQuery.timeago.settings.strings.day = "약 1시간";
+                jQuery.timeago.settings.strings.days = "%d시간";
+                jQuery.timeago.settings.strings.month = "약 1달";
+                jQuery.timeago.settings.strings.months = "%d달";
+                jQuery.timeago.settings.strings.year = "약 1년";
+                jQuery.timeago.settings.strings.years = "%d년";
                 
 
                 jQuery.timeago.settings.allowFuture = true;
@@ -178,7 +193,7 @@
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/assets/css/lang_ko.css">
     <link rel="stylesheet" href="/assets/css/layout_99nerds.css">
     <link rel="stylesheet" href="/assets/css/contents_99nerds.css">
 
@@ -207,17 +222,17 @@
             
             <ul class="top-menu">
                 
-                <li><a href="/" class=""><span class="bullet"></span>Timeline</a></li>
+                <li><a href="/" class=""><span class="bullet"></span>타임라인</a></li>
                 
-                <li><a href="/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                <li><a href="/axboot/" class=""><span class="bullet"></span>액스부트</a></li>
                 
-                <li><a href="/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                <li><a href="/ax5/" class=""><span class="bullet"></span>액스5</a></li>
                 
-                <li><a href="/99nerds/" class="on"><span class="bullet"></span>99Nerds</a></li>
+                <li><a href="/99nerds/" class="on"><span class="bullet"></span>99너드</a></li>
                 
-                <li><a href="/axicon/" class=""><span class="bullet"></span>AXIcon</a></li>
+                <li><a href="/axicon/" class=""><span class="bullet"></span>액시콘</a></li>
                 
-                <li><a href="/jsongum/" class=""><span class="bullet"></span>JSONGum</a></li>
+                <li><a href="/jsongum/" class=""><span class="bullet"></span>제이슨껌</a></li>
                 
             </ul>
             
@@ -225,11 +240,11 @@
             
             <ul class="option-menu">
                 
-                <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                 
-                <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                 
-                <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                 
 
 
@@ -237,7 +252,7 @@
                 
 
                 
-                <li><a href=" /ko/99nerds/ "><span class="en"></span>한국어로</a></li>
+                <li><a href=" /ko/99nerds/ "><span class="ko"></span>To English</a></li>
                 
             </ul>
             
@@ -276,17 +291,17 @@
                     
                     <ul class="top-menu">
                         
-                        <li><a href="/" class="">Timeline</a></li>
+                        <li><a href="/" class="">타임라인</a></li>
                         
-                        <li><a href="/axboot/" class="">AXBoot</a></li>
+                        <li><a href="/axboot/" class="">액스부트</a></li>
                         
-                        <li><a href="/ax5/" class="">AX5</a></li>
+                        <li><a href="/ax5/" class="">액스5</a></li>
                         
-                        <li><a href="/99nerds/" class="on">99Nerds</a></li>
+                        <li><a href="/99nerds/" class="on">99너드</a></li>
                         
-                        <li><a href="/axicon/" class="">AXIcon</a></li>
+                        <li><a href="/axicon/" class="">액시콘</a></li>
                         
-                        <li><a href="/jsongum/" class="">JSONGum</a></li>
+                        <li><a href="/jsongum/" class="">제이슨껌</a></li>
                         
                     </ul>
                     
@@ -294,16 +309,16 @@
                     
                     <ul class="option-menu">
                         
-                            <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                         
-                            <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                            <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                         
-                            <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                            <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                         
                     </ul>
                     
                     
-                    <a href=" /ko/99nerds/ " class="lang-menu en"><span> en</span></a>
+                    <a href=" /en/99nerds/ " class="lang-menu ko"><span> ko</span></a>
                 </div>
             </div>
             <div class="axu-clear"></div>
@@ -323,15 +338,15 @@
                     <div class="axu-col-2">
                         <div class="logo">
                             <img src="/assets/images/page_logo_99nerds@2x.png" />
-                            <span>99Nerds</span>
+                            <span>구구너드</span>
                         </div>
                     </div>
                     <div class="axu-col-10">
                         <ul class="menu">
                             
-                            <li><a href="#intro">99Nerds!</a></li>
+                            <li><a href="#intro">소개</a></li>
                             
-                            <li><a href="#sticker">Stickers</a></li>
+                            <li><a href="#sticker">스티커</a></li>
                             
                         </ul>
                     </div>
@@ -346,19 +361,19 @@
                     
                     
                     
-                    <p>One sticker changes the world.</p>
+                    <p>한 장의 스티커가 세상을 바꿉니다.</p>
                     
                     
                     
-                    <p>One sticker creates a bright development environment.</p>
+                    <p>한 장의 스티커가 밝은 개발환경을 만듭니다.</p>
                     
                     
                     
-                    <p>One sticker makes the developer laugh.</p>
+                    <p>한 장의 스티커가 개발자를 웃게 합니다.</p>
                     
                     
                 </div>
-                <h2> Each time a sticker is sold, it is 'sponsored as an open source project'</h2>
+                <h2>스티커가 팔릴 때 마다 해당 '오픈소스 프로젝트로 후원'됩니다</h2>
             </div>
         </div>
         <div class="axu-layer visual-image-layer">
@@ -368,13 +383,13 @@
         </div>
         <div class="axu-layer visual-desc-layer">
             <div class="axu-wrap">
-                <h3>Opensource Sticker Mall</h3>
-                <p>If you live the life of a developer, you will be using a lot of open source. Is it only me that I feel great gratitude and joy when the perspiration and effort of other developers are great inspiration and help in my development. On my desk, stick an open source sticker on my laptop. Small practice brightens the future of open source.</p>
+                <h3>오픈소스 스티커몰</h3>
+                <p>개발자의 인생을 살다보면 수 많은 오픈소스의 사용하게 됩니다. 다른 개발자의 땀과 노력이 나의 개발에도 큰 영감과 도움이 될 때 크나큰 감사와 기쁜을 느끼는 것은 비단 저 뿐일까요 내 책상에, 나의 노트북에 오픈소스 스티커를 붙여보세요. 작은 실천이 오픈소스의 미래를 밝게 합니다.</p>
                 <div class="btns">
                     
-                    <a href="http://www.99nerds.io" class="btn-1">Go Shopping</a>
+                    <a href="http://www.99nerds.io" class="btn-1">스티커 쇼핑</a>
                     
-                    <a href="mailto:thomas@axisj.com" class="btn-2">Suggest Sticker</a>
+                    <a href="mailto:tom@axisj.com" class="btn-2">스티커 제안</a>
                     
                 </div>
             </div>
@@ -389,14 +404,14 @@
         <a name="sticker"></a>
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>99Nerds!</span></h3>
+                <h3><span>소개</span></h3>
             </div>
         </div>
         <div class="axu-layer">
             <div class="axu-wrap">
                 <div class="axu-unit">
                     <div class="promo-card">
-                        <img src="/assets/images/99nerds-promo-en.png" />
+                        <img src="/assets/images/99nerds-promo-ko.png" />
                     </div>
                 </div>
             </div>
@@ -404,7 +419,7 @@
         <a name="sticker"></a>
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Stickers</span></h3>
+                <h3><span>스티커</span></h3>
             </div>
         </div>
         <div class="axu-layer">
@@ -846,9 +861,9 @@
                     <span class="copy">© AXISJ 2014-2017</span>
                     <ul class="lang">
                         
-                        <li><a class="on" href=" /99nerds/ ">EN</a></li>
+                        <li><a  href=" /en/99nerds/ ">EN</a></li>
                         
-                        <li><a  href=" /ko/99nerds/ ">KO</a></li>
+                        <li><a class="on" href=" /99nerds/ ">KO</a></li>
                         
                     </ul>
                 </div>

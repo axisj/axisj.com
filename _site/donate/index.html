@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="en" href="http://localhost:4000/donate/" />
-<link rel="alternate" i18n="ko" href="http://localhost:4000/ko/donate/" />
+    <meta http-equiv="Content-Language" content="ko"><link rel="alternate" i18n="ko" href="http://localhost:4000/donate/" />
+<link rel="alternate" i18n="en" href="http://localhost:4000/en/donate/" />
 
     <title>
         
@@ -60,6 +60,21 @@
                 });
 
                 //Timeago
+                
+                jQuery.timeago.settings.strings.suffixAgo = "전";
+                jQuery.timeago.settings.strings.suffixFromNow = "지금부터";
+                jQuery.timeago.settings.strings.inPast = "지금";
+                jQuery.timeago.settings.strings.seconds = "1분 이내";
+                jQuery.timeago.settings.strings.mintue = "약 1분";
+                jQuery.timeago.settings.strings.mintues = "%d분";
+                jQuery.timeago.settings.strings.hour = "약 1시간";
+                jQuery.timeago.settings.strings.hours = "약 %d시간";
+                jQuery.timeago.settings.strings.day = "약 1시간";
+                jQuery.timeago.settings.strings.days = "%d시간";
+                jQuery.timeago.settings.strings.month = "약 1달";
+                jQuery.timeago.settings.strings.months = "%d달";
+                jQuery.timeago.settings.strings.year = "약 1년";
+                jQuery.timeago.settings.strings.years = "%d년";
                 
 
                 jQuery.timeago.settings.allowFuture = true;
@@ -175,7 +190,7 @@
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/assets/css/lang_ko.css">
     <link rel="stylesheet" href="/assets/css/layout_common.css">
     <link rel="stylesheet" href="/assets/css/contents_common.css">
 
@@ -205,17 +220,17 @@
             
             <ul class="top-menu">
                 
-                <li><a href="/" class=""><span class="bullet"></span>Timeline</a></li>
+                <li><a href="/" class=""><span class="bullet"></span>타임라인</a></li>
                 
-                <li><a href="/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                <li><a href="/axboot/" class=""><span class="bullet"></span>액스부트</a></li>
                 
-                <li><a href="/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                <li><a href="/ax5/" class=""><span class="bullet"></span>액스5</a></li>
                 
-                <li><a href="/99nerds/" class=""><span class="bullet"></span>99Nerds</a></li>
+                <li><a href="/99nerds/" class=""><span class="bullet"></span>99너드</a></li>
                 
-                <li><a href="/axicon/" class=""><span class="bullet"></span>AXIcon</a></li>
+                <li><a href="/axicon/" class=""><span class="bullet"></span>액시콘</a></li>
                 
-                <li><a href="/jsongum/" class=""><span class="bullet"></span>JSONGum</a></li>
+                <li><a href="/jsongum/" class=""><span class="bullet"></span>제이슨껌</a></li>
                 
             </ul>
             
@@ -223,11 +238,11 @@
             
             <ul class="option-menu">
                 
-                <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                 
-                <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                 
-                <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                 
 
 
@@ -235,7 +250,7 @@
                 
 
                 
-                <li><a href=" /ko/donate/ "><span class="en"></span>한국어로</a></li>
+                <li><a href=" /ko/donate/ "><span class="ko"></span>To English</a></li>
                 
             </ul>
             
@@ -274,17 +289,17 @@
                     
                     <ul class="top-menu">
                         
-                        <li><a href="/" class="">Timeline</a></li>
+                        <li><a href="/" class="">타임라인</a></li>
                         
-                        <li><a href="/axboot/" class="">AXBoot</a></li>
+                        <li><a href="/axboot/" class="">액스부트</a></li>
                         
-                        <li><a href="/ax5/" class="">AX5</a></li>
+                        <li><a href="/ax5/" class="">액스5</a></li>
                         
-                        <li><a href="/99nerds/" class="">99Nerds</a></li>
+                        <li><a href="/99nerds/" class="">99너드</a></li>
                         
-                        <li><a href="/axicon/" class="">AXIcon</a></li>
+                        <li><a href="/axicon/" class="">액시콘</a></li>
                         
-                        <li><a href="/jsongum/" class="">JSONGum</a></li>
+                        <li><a href="/jsongum/" class="">제이슨껌</a></li>
                         
                     </ul>
                     
@@ -292,16 +307,16 @@
                     
                     <ul class="option-menu">
                         
-                            <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                         
-                            <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                            <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                         
-                            <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                            <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                         
                     </ul>
                     
                     
-                    <a href=" /ko/donate/ " class="lang-menu en"><span> en</span></a>
+                    <a href=" /en/donate/ " class="lang-menu ko"><span> ko</span></a>
                 </div>
             </div>
             <div class="axu-clear"></div>
@@ -317,15 +332,15 @@
     <div id="AXUVisual">
         <div class="axu-layer">
             <div class="axu-wrap">
-                <h1>Donation</h1>
+                <h1>후원</h1>
                 <h2><span id="typed"></span></h2>
                 <div id="typed-msgs">
                     
-                    <p>Develop and write together.</p>
+                    <p>함께 만들고 함께 씁니다.</p>
                     
-                    <p>We run today for great development</p>
+                    <p>멋진 개발을 위해 오늘도 달립니다.</p>
                     
-                    <p>A small donation brings together a beautiful application.</p>
+                    <p>작은 후원 하나 하나 모여 아름다운 애플리케이션으로 탄생합니다.</p>
                     
                 </div>
             </div>
@@ -339,11 +354,11 @@
             <div class="axu-wrap">
                 <div class="axu-unit">
                     
-                    <div class="msg-1">We do our best to make a valuable open-source of AXISJ, not a free and low-quality one.</div>
+                    <div class="msg-1">공짜라서 싸구려가 아닌 오픈소스라서 가치있는 액시스제이가 되기위해, 오늘도 수많은 우리들 속에 영웅들이 땀흘려 노력하고 있습니다!!</div>
                     
-                    <div class="msg-2">We are doing open-source projects and services from Javascript UI library 'AXISJ', responsive web application template package 'AXU', web icon font package 'AXIcon' and etc.</div>
+                    <div class="msg-2">자바스크립트 UI 라이브러리 AXISJ, 반응형 웹 애플리케이션 템플릿 패키지 AXU, 웹 아이콘 폰트 패키지 AXIcon 등 다양한 오픈소스 프로젝트를 진행하고 또 서비스 하고 있습니다.</div>
                     
-                    <div class="msg-3">We are looking for someone who can help AXISJ. You can support through the following ways.</div>
+                    <div class="msg-3">우리는 액시스제이에 후원을 하실 귀한 분들을 찾고 있습니다. 다음의 방법으로 후원을 해주십시요. 보다 가치있고 의미 있는 일에 쓰겠습니다.</div>
                     
                 </div>
             </div>
@@ -352,7 +367,7 @@
         
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>How to support</span></h3>
+                <h3><span>후원방법</span></h3>
             </div>
         </div>
         <div class="axu-layer">
@@ -362,7 +377,7 @@
                     <div class="axu-unit">
                         <div class="support-card bank">
                             <div class="support-img"><img src="/assets/images/donate-how-bank.png" /></div>
-                            <h3>Bank transfer</h3>
+                            <h3>은행송금</h3>
                             <div class="support-method">
 
                                     
@@ -370,11 +385,11 @@
                                         <!-- bank -->
                                         <p class="desc">
                                         
-                                        Woori bank<br />
+                                        우리은행<br />
                                         
                                         1005-402-375399<br />
                                         
-                                        AXISJ<br />
+                                        액시스제이<br />
                                         
                                         </p>
                                     
@@ -388,7 +403,7 @@
                     <div class="axu-unit">
                         <div class="support-card paypal">
                             <div class="support-img"><img src="/assets/images/donate-how-paypal.png" /></div>
-                            <h3>Paypal</h3>
+                            <h3>페이팔</h3>
                             <div class="support-method">
 
                                     
@@ -400,17 +415,17 @@
                                         <input type="hidden" name="on0" value="donate">
                                         <select name="os0">
                                             
-                                            <option value="LV1">3 USD</option>
+                                            <option value="LV1">$3 USD</option>
                                             
-                                            <option value="LV2">100 USD</option>
+                                            <option value="LV2">$100 USD</option>
                                             
-                                            <option value="LV3">200 USD</option>
+                                            <option value="LV3">$200 USD</option>
                                             
-                                            <option value="LV4">400 USD</option>
+                                            <option value="LV4">$400 USD</option>
                                             
                                         </select>
                                         <input type="hidden" name="currency_code" value="USD">
-                                        <button>Donation</button>
+                                        <button>후원</button>
                                     </form>
                                     
 
@@ -423,12 +438,12 @@
                     <div class="axu-unit">
                         <div class="support-card jsongum">
                             <div class="support-img"><img src="/assets/images/donate-how-jsongum.png" /></div>
-                            <h3>Purchase JSONGum</h3>
+                            <h3>제이슨껌 구매</h3>
                             <div class="support-method">
 
                                     
                                     
-                                    <a href="/jsongum" target="_blank">Only $4.99</a>
+                                    <a href="/jsongum" target="_blank">오직 $4.99</a>
                                     
 
                             </div>
@@ -443,7 +458,7 @@
             <div class="axu-wrap">
                 <div class="support-desc">
                     <div class="axu-unit">
-                    <p>You will be registered in our hero list with the information of your paypal account if you make a donation by paypal. If you prefer bank transfer, please let us know through email at tom@axisj.com or call +82-10-8881-9137 after making your transaction.</p>
+                    <p>페이팔로 후원해주시면 페이팔 결재시스템과 연동되어 페이팔 정보(이메일, 이름)으로 후원영웅 목록에 등록되십니다. 은행송금방식으로 입금하신 경우에는 tom@axisj.com으로 연락주시거나 전화로(010-8881-9137) 알려주세요.</p>
                     </div>
                 </div>
             </div>
@@ -451,7 +466,7 @@
         
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Support regularly</span></h3>
+                <h3><span>정기후원</span></h3>
             </div>
         </div>
         <div class="axu-layer">
@@ -461,7 +476,7 @@
                     <div class="axu-unit">
                         <div class="support-card bank">
                             <div class="support-img"><img src="/assets/images/donate-how-bank.png" /></div>
-                            <h3>Bank transfer</h3>
+                            <h3>은행송금</h3>
                             <div class="support-method">
 
                                     
@@ -469,11 +484,11 @@
                                         <!-- bank -->
                                         <p class="desc">
                                         
-                                        Woori bank<br />
+                                        우리은행<br />
                                         
                                         1005-402-375399<br />
                                         
-                                        AXISJ<br />
+                                        액시스제이<br />
                                         
                                         </p>
                                     
@@ -487,7 +502,7 @@
                     <div class="axu-unit">
                         <div class="support-card paypal">
                             <div class="support-img"><img src="/assets/images/donate-how-paypal.png" /></div>
-                            <h3>Paypal Reguarly</h3>
+                            <h3>페이팔 정기후원</h3>
                             <div class="support-method">
 
                                     
@@ -499,19 +514,19 @@
                                         <input type="hidden" name="on0" value="donate">
                                         <select name="os0">
                                             
-                                            <option value="LV1">12 USD</option>
+                                            <option value="LV1">매년 $12 USD</option>
                                             
-                                            <option value="LV2">36 USD</option>
+                                            <option value="LV2">매년 $36 USD</option>
                                             
-                                            <option value="LV3">120 USD</option>
+                                            <option value="LV3">매년 $120 USD</option>
                                             
-                                            <option value="LV4">360 USD</option>
+                                            <option value="LV4">매년 $360 USD</option>
                                             
                                             <option value="LV5">1000 USD</option>
                                             
                                         </select>
                                         <input type="hidden" name="currency_code" value="USD">
-                                        <button>Donation</button>
+                                        <button>후원</button>
                                     </form>
                                     
 
@@ -524,12 +539,12 @@
                     <div class="axu-unit">
                         <div class="support-card github">
                             <div class="support-img"><img src="/assets/images/donate-how-github.png" /></div>
-                            <h3>Join Github contributor</h3>
+                            <h3>깃허브 컨트리뷰터 참여</h3>
                             <div class="support-method">
 
                                     
                                     
-                                    <a href="https://github.com/axisj" target="_blank">Go Github.com</a>
+                                    <a href="https://github.com/axisj" target="_blank">깃허브 액시스제이 가기</a>
                                     
 
                             </div>
@@ -544,7 +559,7 @@
             <div class="axu-wrap">
                 <div class="support-desc">
                     <div class="axu-unit">
-                    <p>Regular supporters(who donate annually or monthly) will be registered as our sponsor hero. gitHub contributors will be registered as Q&A hero or Bugging hero.</p>
+                    <p>정기후원(매달/매년 일정 금액을 후원해주시는 분들)해주시는 분들 후원영웅(마스터)로 등록됩니다. gitHub 컨트리뷰터로 활동하시는 분들께는 답변영웅, 버그영웅 등으로 등록됩니다.</p>
                     </div>
                 </div>
             </div>
@@ -553,11 +568,35 @@
 
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span></span></h3>
+                <h3><span>소프트웨어 후원사</span></h3>
             </div>
         </div>
         <div class="axu-layer">
             <div class="axu-wrap">
+            
+            <div class="axu-col-3 sw-column">
+                <div class="axu-unit">
+                    <img src="/assets/images/donate-sw-1.png" alt="JetBrain" />
+                </div>
+            </div>
+            
+            <div class="axu-col-3 sw-column">
+                <div class="axu-unit">
+                    <img src="/assets/images/donate-sw-2.png" alt="IntelliJ IDEA" />
+                </div>
+            </div>
+            
+            <div class="axu-col-3 sw-column">
+                <div class="axu-unit">
+                    <img src="/assets/images/donate-sw-3.png" alt="Atlassian" />
+                </div>
+            </div>
+            
+            <div class="axu-col-3 sw-column">
+                <div class="axu-unit">
+                    <img src="/assets/images/donate-sw-4.png" alt="JIRA" />
+                </div>
+            </div>
             
             <div class="axu-clear"></div>
             </div>
@@ -565,7 +604,7 @@
 
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>Heroes</span></h3>
+                <h3><span>영웅들</span></h3>
             </div>
         </div>
 
@@ -587,7 +626,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Sanghee Park</h4>
+                            <h4>박상희</h4>
                             <div class="cate">
                                 
                                 
@@ -603,7 +642,7 @@
                             
                             <img src="/assets/images/hero-jikook.png" class="photo" />
                             
-                            <h4>Jikook</h4>
+                            <h4>국정일</h4>
                             <div class="cate">
                                 
                                 
@@ -619,7 +658,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Jaesung Ryu</h4>
+                            <h4>류재성</h4>
                             <div class="cate">
                                 
                                 
@@ -635,7 +674,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Taeseong Kwon</h4>
+                            <h4>권태성</h4>
                             <div class="cate">
                                 
                                 
@@ -651,7 +690,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Ingu Heo</h4>
+                            <h4>허인구</h4>
                             <div class="cate">
                                 
                                 
@@ -667,7 +706,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Jaemin Kim</h4>
+                            <h4>김재민</h4>
                             <div class="cate">
                                 
                                 
@@ -683,7 +722,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Chul Won Park</h4>
+                            <h4>박철원</h4>
                             <div class="cate">
                                 
                                 
@@ -699,7 +738,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Sunghoon Yun</h4>
+                            <h4>윤성훈</h4>
                             <div class="cate">
                                 
                                 <a href="http://ndotcom.com" class="homepage">ndotcom.com</a>
@@ -715,7 +754,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Keis</h4>
+                            <h4>카이스</h4>
                             <div class="cate">
                                 
                                 
@@ -731,7 +770,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Se hyun Park</h4>
+                            <h4>박세현</h4>
                             <div class="cate">
                                 
                                 
@@ -747,7 +786,7 @@
                             
                             <img src="/assets/images/hero-moon.png" class="photo" />
                             
-                            <h4>Moonchang Chae</h4>
+                            <h4>채문창</h4>
                             <div class="cate">
                                 
                                 <a href="http://mcchae.egloos.com" class="homepage">mcchae.egloos.com</a>
@@ -763,7 +802,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Jahong Lim</h4>
+                            <h4>임자홍</h4>
                             <div class="cate">
                                 
                                 
@@ -779,7 +818,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Kisang Kim</h4>
+                            <h4>김기상</h4>
                             <div class="cate">
                                 
                                 
@@ -795,7 +834,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Kuk Hee Lee</h4>
+                            <h4>이국희</h4>
                             <div class="cate">
                                 
                                 
@@ -811,7 +850,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Mingyu Jo</h4>
+                            <h4>조민규</h4>
                             <div class="cate">
                                 
                                 <a href="http://blog.minbyul.cat" class="homepage">blog.minbyul.cat</a>
@@ -827,11 +866,11 @@
                             
                             <img src="/assets/images/hero-brant.png" class="photo" />
                             
-                            <h4>Inseo Hwang</h4>
+                            <h4>황인서</h4>
                             <div class="cate">
                                 
                                 
-                                <div class="desc">Kakao</div>
+                                <div class="desc">카카오</div>
                             </div>
                         </div>
                     </div>
@@ -843,23 +882,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Inho Lee</h4>
-                            <div class="cate">
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="axu-col-2 hero-column">
-                    <div class="axu-unit">
-                        <div class="hero-card page-donate">
-                            
-                            <img src="/assets/images/hero-face-icon@2x.png" />
-                            
-                            <h4>Manho Jeon</h4>
+                            <h4>이인호</h4>
                             <div class="cate">
                                 
                                 
@@ -875,7 +898,7 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Insuk Bae</h4>
+                            <h4>전만호</h4>
                             <div class="cate">
                                 
                                 
@@ -891,7 +914,23 @@
                             
                             <img src="/assets/images/hero-face-icon@2x.png" />
                             
-                            <h4>Wooseok Seo</h4>
+                            <h4>배인숙</h4>
+                            <div class="cate">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="axu-col-2 hero-column">
+                    <div class="axu-unit">
+                        <div class="hero-card page-donate">
+                            
+                            <img src="/assets/images/hero-face-icon@2x.png" />
+                            
+                            <h4>서우석</h4>
                             <div class="cate">
                                 
                                 
@@ -921,9 +960,9 @@
                     <span class="copy">© AXISJ 2014-2017</span>
                     <ul class="lang">
                         
-                        <li><a class="on" href=" /donate/ ">EN</a></li>
+                        <li><a  href=" /en/donate/ ">EN</a></li>
                         
-                        <li><a  href=" /ko/donate/ ">KO</a></li>
+                        <li><a class="on" href=" /donate/ ">KO</a></li>
                         
                     </ul>
                 </div>

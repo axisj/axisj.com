@@ -5,7 +5,7 @@ languages:
       - en: "영어"
         ko: "한국어"
 
-define_axisj: "<strong>액시스제이</strong>는 오픈소스 그룹입니다."
+define_axisj: "<strong>액시스제이</strong>는 오픈소스 개발탐험대입니다."
 products_str: "액시스제이 오픈소스"
 
 strings:
@@ -66,11 +66,11 @@ page_axboot_desc:
 
 page_axboot_btns:
   - label: "데모보기"
-    link: "/"
+    link: "http://demo.axboot.com/"
   - label: "깃허브"
-    link: "/"
-  - label: "액스부트 설정"
-    link: "/"
+    link: "https://github.com/axboot"
+  - label: "액스부트 Initialzr"
+    link: "http://start.axboot.com/"
 
 page_axboot_features:
   - label: "풀스택 프레임워크"
@@ -189,7 +189,7 @@ page_ax5_btns:
   - label: "데모 사이트"
     link: "http://ax5.io"
   - label: "깃허브"
-    link: "http://www.github.com/ax5"
+    link: "https://github.com/ax5ui"
 
 page_ax5_intro:
   - label: "AX5 UI"
@@ -222,17 +222,15 @@ page_ax5_features:
   - label: "유용한"
     desc: "클래스, 함수, 오브젝트, 프로토타입으로 정리된 API 문서는 라이브러리 초기 도입에 큰 도움이 됩니다. 또한 미리 준비해둔 샘플을 참조할 수 있어 유용하게 이용할 수 있습니다."
     links:
-      - label: "개발 API 문서 바로가기"
-        link: ""
       - label: "샘플페이지 바로가기"
-        link: ""
+        link: "http://ax5.io/"
   - label: "강력한"
     desc: "80개 이상의 사용자 인터페이스 구성요소를 통해 다양한 화면에 대한 요구사항을 처리할 수 있습니다. 또한 최신의 브라우저 뿐만 아니라 터치 기반의 기기에도 동작하도록 개발되어 있습니다."
   - label: "충실한"
     desc: "오픈소스로 비영리로 운영되고 있지만 궁금한 점을 깃헙(Github) 이슈트래커를 통해 최대한 빠른 시일내에 응대해드리고 있습니다. 또한 업체의 커스텀 및 별도 개발을 위해 방문교육, 원격지원, 이메일, 전화상담 등 다양한 기술상품으로 배포된 소스와 개발물에 책임을 다하고 있습니다"
     links:
       - label: "깃헙 이슈 트래커 바로가기"
-        link: ""
+        link: "https://github.com/ax5ui/ax5ui-kernel/issues"
 
 page_ax5_specials:
   - label: "생산성"
@@ -278,7 +276,7 @@ page_99nerds_btns:
   - label: "스티커 쇼핑"
     link: "http://www.99nerds.io"
   - label: "스티커 제안"
-    link: "mailto:thomas@axisj.com"
+    link: "mailto:tom@axisj.com"
 
 # Page - AXIcon ########################
 page_axicon_name: "액시콘"
@@ -323,8 +321,10 @@ page_jsongum_desc:
           껌은 씹어야 제맛이죠! JSON을 씹어 드립니다."
 
 page_jsongum_btns:
-  - label: "설치하기"
-    link: "/"
+  - label: "설치하기(Win)"
+    link: "/assets/jsongum/JSONGum-setup-win32-1-0.exe"
+  - label: "설치하기(OS X)"
+    link: "/assets/jsongum/JSONGum.dmg"
 
 page_jsongum_capture:
   - label: "프리웨어"
@@ -355,14 +355,14 @@ page_jsongum_buy:
     desc: "제이슨껌은 정품 라이센스가 없어도 사용할 수 있습니다. 다만 정품 라이센스가 없으면 정품 사용자에 비해 몇번의 클릭을 더 하셔야 합니다."
     btns:
       - label: "OSX 버전 다운로드"
-        link: "location.href = 'download/JSONGum.dmg"
+        link: "location.href = '/assets/jsongum/JSONGum.dmg';"
       - label: "WIN 32비트 다운로드"
-        link: "location.href = 'download/jsongum-setup-win32-1-0.exe"
+        link: "location.href = '/assets/jsongum/JSONGum-setup-win32-1-0.exe"
   - label: "제이슨껌 정품 라이센스 구매하기"
     desc: "페이팔로 결재하시면 페이팔 계정에 등록된 이메일주소로 라이선스가 발급됩니다."
     btns:
-      - label: "페이팔 $4.99"
-        link: "https://www.paypal.com/cgi-bin/webscr"
+      - label: "준비중."
+        link: "#"
 
 page_jsongum_license:
   label: "라이선스"
@@ -448,11 +448,11 @@ members:
     email: "tom@axisj.com"
     links:
       - name: "Github"
-        link: "http://github.com/thomasjang"
+        link: "https://github.com/thomasjang"
       - name: "Blog"
-        link: "http://blog.axisj.com"
+        link: "https://medium.com/chequer"
       - name: "Facebook"
-        link: "http://facebook.com/axisjtom"
+        link: "https://www.facebook.com/axisjtom"
     history:
       - text: "HTML5, CSS, JavaScript Expert"
       - text: "Web Application Interface Professional"
@@ -460,6 +460,7 @@ members:
       - text: "Creator of Advanced HTML5 UI Framework"
       - text: "Global Opensource Frontier - NIPA"
       - text: "The Winner of Super Developer K3 Award- NIA"
+      - text: "OSS World Challenge 2016 first prize"
 
   - name: "Brant Hwang"
     desc: "Brant Hwang is a back-end engineer who manages Distributed Processing, Java, Spring Framework"
@@ -468,13 +469,13 @@ members:
     email: "brant@axboot.com"
     links:
       - name: "Github"
-        link: "http://github.com/brant-hwang"
+        link: "https://github.com/brant-hwang"
       - name: "Blog"
-        link: "http://brantiffy.axisj.com/about-me"
+        link: "https://medium.com/chequer"
       - name: "Facebook"
-        link: "http://facebook.com/tjdus3361"
+        link: "https://www.facebook.com/tjdus3361"
       - name: "LinkedIn"
-        link: "http://linkedin.com/in/ishwang"
+        link: "https://www.linkedin.com/in/ishwang/"
     history:
       - text: "Java, Spring Framework, Linux Expert"
       - text: "Former E-Commerce Platform, Commerce Service Developer at KAKAO"
@@ -485,3 +486,4 @@ members:
       - text: "Sun Certified Network, System Engineer & Java Programmer"
       - text: "Certified Linux Server Professional"
       - text: "Spring Boot in Action Korean version translator - Spring Boot Coding Factory"
+      - text: "OSS World Challenge 2016 first prize"

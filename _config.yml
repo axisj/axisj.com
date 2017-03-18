@@ -33,7 +33,7 @@ exclude   : ['Gemfile','Gemfile.lock','CNAME']
 
 # Setup
 title   :   AXISJ
-tagline : 'Open Source Group'
+tagline : 'Open Source Development Expedition'
 paginate: 5
 version : 1.2.4
 github  :

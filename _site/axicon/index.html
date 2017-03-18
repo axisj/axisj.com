@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="Content-Language" content="en"><link rel="alternate" i18n="en" href="http://localhost:4000/axicon/" />
-<link rel="alternate" i18n="ko" href="http://localhost:4000/ko/axicon/" />
+    <meta http-equiv="Content-Language" content="ko"><link rel="alternate" i18n="ko" href="http://localhost:4000/axicon/" />
+<link rel="alternate" i18n="en" href="http://localhost:4000/en/axicon/" />
 
     <title>
         
@@ -63,6 +63,21 @@
                 });
 
                 //Timeago
+                
+                jQuery.timeago.settings.strings.suffixAgo = "전";
+                jQuery.timeago.settings.strings.suffixFromNow = "지금부터";
+                jQuery.timeago.settings.strings.inPast = "지금";
+                jQuery.timeago.settings.strings.seconds = "1분 이내";
+                jQuery.timeago.settings.strings.mintue = "약 1분";
+                jQuery.timeago.settings.strings.mintues = "%d분";
+                jQuery.timeago.settings.strings.hour = "약 1시간";
+                jQuery.timeago.settings.strings.hours = "약 %d시간";
+                jQuery.timeago.settings.strings.day = "약 1시간";
+                jQuery.timeago.settings.strings.days = "%d시간";
+                jQuery.timeago.settings.strings.month = "약 1달";
+                jQuery.timeago.settings.strings.months = "%d달";
+                jQuery.timeago.settings.strings.year = "약 1년";
+                jQuery.timeago.settings.strings.years = "%d년";
                 
 
                 jQuery.timeago.settings.allowFuture = true;
@@ -178,7 +193,7 @@
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/lang_en.css">
+    <link rel="stylesheet" href="/assets/css/lang_ko.css">
     <link rel="stylesheet" href="/assets/css/layout_axicon.css">
     <link rel="stylesheet" href="/assets/css/contents_axicon.css">
 
@@ -207,17 +222,17 @@
             
             <ul class="top-menu">
                 
-                <li><a href="/" class=""><span class="bullet"></span>Timeline</a></li>
+                <li><a href="/" class=""><span class="bullet"></span>타임라인</a></li>
                 
-                <li><a href="/axboot/" class=""><span class="bullet"></span>AXBoot</a></li>
+                <li><a href="/axboot/" class=""><span class="bullet"></span>액스부트</a></li>
                 
-                <li><a href="/ax5/" class=""><span class="bullet"></span>AX5</a></li>
+                <li><a href="/ax5/" class=""><span class="bullet"></span>액스5</a></li>
                 
-                <li><a href="/99nerds/" class=""><span class="bullet"></span>99Nerds</a></li>
+                <li><a href="/99nerds/" class=""><span class="bullet"></span>99너드</a></li>
                 
-                <li><a href="/axicon/" class="on"><span class="bullet"></span>AXIcon</a></li>
+                <li><a href="/axicon/" class="on"><span class="bullet"></span>액시콘</a></li>
                 
-                <li><a href="/jsongum/" class=""><span class="bullet"></span>JSONGum</a></li>
+                <li><a href="/jsongum/" class=""><span class="bullet"></span>제이슨껌</a></li>
                 
             </ul>
             
@@ -225,11 +240,11 @@
             
             <ul class="option-menu">
                 
-                <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                 
-                <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                 
-                <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                 
 
 
@@ -237,7 +252,7 @@
                 
 
                 
-                <li><a href=" /ko/axicon/ "><span class="en"></span>한국어로</a></li>
+                <li><a href=" /ko/axicon/ "><span class="ko"></span>To English</a></li>
                 
             </ul>
             
@@ -276,17 +291,17 @@
                     
                     <ul class="top-menu">
                         
-                        <li><a href="/" class="">Timeline</a></li>
+                        <li><a href="/" class="">타임라인</a></li>
                         
-                        <li><a href="/axboot/" class="">AXBoot</a></li>
+                        <li><a href="/axboot/" class="">액스부트</a></li>
                         
-                        <li><a href="/ax5/" class="">AX5</a></li>
+                        <li><a href="/ax5/" class="">액스5</a></li>
                         
-                        <li><a href="/99nerds/" class="">99Nerds</a></li>
+                        <li><a href="/99nerds/" class="">99너드</a></li>
                         
-                        <li><a href="/axicon/" class="on">AXIcon</a></li>
+                        <li><a href="/axicon/" class="on">액시콘</a></li>
                         
-                        <li><a href="/jsongum/" class="">JSONGum</a></li>
+                        <li><a href="/jsongum/" class="">제이슨껌</a></li>
                         
                     </ul>
                     
@@ -294,16 +309,16 @@
                     
                     <ul class="option-menu">
                         
-                            <li><a href="https://medium.com/@axisj" target="_blank"><span class="icon1"></span>Medium</a></li>
+                            <li><a href="https://medium.com/chequer" target="_blank"><span class="icon1"></span>미디엄</a></li>
                         
-                            <li><a href="/heroes" target="_self"><span class="icon2"></span>Heroes</a></li>
+                            <li><a href="/heroes" target="_self"><span class="icon2"></span>영웅들</a></li>
                         
-                            <li><a href="/donate" target="_self"><span class="icon3"></span>Donate</a></li>
+                            <li><a href="/donate" target="_self"><span class="icon3"></span>후원하기</a></li>
                         
                     </ul>
                     
                     
-                    <a href=" /ko/axicon/ " class="lang-menu en"><span> en</span></a>
+                    <a href=" /en/axicon/ " class="lang-menu ko"><span> ko</span></a>
                 </div>
             </div>
             <div class="axu-clear"></div>
@@ -323,17 +338,17 @@
                     <div class="axu-col-2">
                         <div class="logo">
                             <img src="/assets/images/page_logo_axicon@2x.png" />
-                            <span>AXIcon</span>
+                            <span>액시콘</span>
                         </div>
                     </div>
                     <div class="axu-col-10">
                         <ul class="menu">
                             
-                            <li><a href="#feature">Features</a></li>
+                            <li><a href="#feature">특징</a></li>
                             
-                            <li><a href="#how">How to use</a></li>
+                            <li><a href="#how">사용법</a></li>
                             
-                            <li><a href="#http://axicon.axisj.com">Icon Finder</a></li>
+                            <li><a href="#http://axicon.axisj.com">검색도구</a></li>
                             
                         </ul>
                     </div>
@@ -342,18 +357,18 @@
         </div>
         <div class="axu-layer visual-message-layer">
             <div class="axu-wrap">
-                <h1>Both developers and designers need the tools</h1>
+                <h1>개발자도 디자이너도 모두 필요한 도구</h1>
                 <h2><span id="typed"></span></h2>
                 <div id="typed-msgs">
                     
                     
                     
                     
-                    <p>It is also beautiful on a high resolution screen. Clear.</p>
+                    <p>고해상도 스크린에서도 깨끗하게. 선명하게.</p>
                     
                     
                     
-                    <p>Icon search tool conveniently.</p>
+                    <p>아이콘 검색도구로 편리하게.</p>
                     
                     
                 </div>
@@ -366,13 +381,13 @@
         </div>
         <div class="axu-layer visual-desc-layer">
             <div class="axu-wrap">
-                <h3>Web Icon Font Package, AXIcon</h3>
-                <p>Try using vector icons for your web application projects. Web application can be built more easily and quickly with more than 900 vector icons. AXIcon is just right choice for managers, programmers and designers.</p>
+                <h3>웹 아이콘 폰트 패키지, 액시콘</h3>
+                <p>당신의 웹 애플리케이션 프로젝트에 벡터 아이콘을 사용해보세요. 900개가 넘는 벡터 아이콘으로 보다 쉽고 빠르게 웹 애플리케이션을 구축할 수 있습니다. 기획자도, 프로그래머도, 디자이너도 액시콘이 답입니다.</p>
                 <div class="btns">
                     
-                    <a href="https://github.com/axisj/axicon/releases" target="_blank" class="btn-1">Download</a>
+                    <a href="https://github.com/axisj/axicon/releases" target="_blank" class="btn-1">다운로드</a>
                     
-                    <a href="http://axicon.axisj.com" target="_blank" class="btn-2">Icon Finder</a>
+                    <a href="http://axicon.axisj.com" target="_blank" class="btn-2">아이콘 탐색기</a>
                     
                 </div>
             </div>
@@ -384,7 +399,7 @@
     <a name="feature"></a>
     <div id="AXUFeatures">
         <div class="axu-section-title">
-            <h3><span>Features</span></h3>
+            <h3><span>특징</span></h3>
         </div>
         <div class="axu-layer">
             <div class="axu-wrap">
@@ -393,8 +408,8 @@
                     <div class="axu-unit">
                         <div class="feature-card">
                             <img src="/assets/images/axicon-feature-1.png" />
-                            <h3>Vector font icons</h3>
-                            <p>More than 900 pictographic icons within one font. It shows clear images even with enlarged icons in vector. Especially, it is powerful for retina displays.</p>
+                            <h3>벡터 폰트 아이콘</h3>
+                            <p>하나의 폰트에 900개의 픽토그래픽 아이콘이 가득합니다. 또한 벡터방식으로 사이즈를 변경해도 깨끗한 이미지를 보여줍니다. 특히 레티나 디스플레이에 완벽하게 보여집니다.</p>
                         </div>
                     </div>
                 </div>
@@ -403,8 +418,8 @@
                     <div class="axu-unit">
                         <div class="feature-card">
                             <img src="/assets/images/axicon-feature-2.png" />
-                            <h3>Easy and quick</h3>
-                            <p>It can be controlled by just using CSS without Javascript. Icons can be added simply with some tags. Also, you can build up a wonderful outcome especially using AXU along with AXIcon.</p>
+                            <h3>빠르고 쉽다</h3>
+                            <p>자바스크립트 없이 CSS만으로 조작이 가능합니다. 간단히 태그만으로 쉽게 아이콘을 추가합니다. 특히 “악수(AXU, 반응형 디자인 프레임워크)”과 함께라면 빠르고 쉽게 근사한 결과물을 만들 수 있습니다.</p>
                         </div>
                     </div>
                 </div>
@@ -413,8 +428,8 @@
                     <div class="axu-unit">
                         <div class="feature-card">
                             <img src="/assets/images/axicon-feature-3.png" />
-                            <h3>Icon search tool</h3>
-                            <p>No need to search every icon wasting much time as it offers a convenient search tool. Search quickly and just copy and paste the tags to use icons.</p>
+                            <h3>아이콘 검색 도구</h3>
+                            <p>수 많은 아이콘을 일일이 확인하며 찾을 필요가 없습니다. 액시콘은 편리한 검색도구를 제공합니다. 빠르게 검색하고 용도에 맞게 복사하여 붙여넣어 사용하십시오.</p>
                         </div>
                     </div>
                 </div>
@@ -429,43 +444,38 @@
     <div id="AXUMarkDown">
         <div class="axu-layer">
             <div class="axu-section-title">
-                <h3><span>How to use</span></h3>
+                <h3><span>사용법</span></h3>
             </div>
         </div>
         <div class="axu-layer">
             <div class="axu-wrap">
                 <div class="axu-unit">
                 
-                <h1 id="install">Install</h1>
-<p>AXIcon is insanely easy to use. Just add up two lines of code in your web application, and that’s it.
-Especially, with AXU, your project will be more wonderful and quicker to build up.</p>
+                <h1 id="설치">설치</h1>
+<p>액시콘을 사용방법은 매우 간단합니다. 당신의 웹 애플리케이션에 단 두 줄만 추가하는 것으로 바로 사용이 가능합니다.
+악수(AXU)와 함께라면 더욱 멋지고 빠르게 프로젝트를 끝낼 수 있습니다.</p>
 
 <hr />
 
-<h2 id="an-easy-way--import-css">An easy way : Import CSS</h2>
+<h2 id="쉬운-방법--import-css">쉬운 방법 : Import CSS</h2>
 <ol>
-  <li>Download AXIcon from its website.</li>
-  <li>Copy it with the name of axicon in your web application.
-(Suppose that it is put in /axisj/axicon in this sample)</li>
-  <li>
-    <p>In html &lt;head&gt; tag, paste axicon.min.css file as the followings.</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> &lt;link rel="stylesheet" type="text/css" href="/axisj/axicon/axicon.min.css" /&gt;
-</code></pre>
-    </div>
-  </li>
-  <li>Enjoy your project with AXIcon using AXIcon search tool simply.</li>
+  <li>액시콘의 홈페이지에서 액시콘은 다운로드 받는다.</li>
+  <li>axicon 이라는 폴더명으로 당신의 웹 애플리케이션에 복사한다.
+(여기에서는 /axisj/axicon/에 두었다고 가정한다)</li>
+  <li>html &lt;head&gt; 태그 안에 axicon.min.css 파일 위치를 아래와 같이 가져온다.
+     <link rel="stylesheet" type="text/css" href="/axisj/axicon/axicon.min.css" /></li>
+  <li>액시콘 검색도구를 사용해서 즐겁게 액시콘을 프로젝트에 적용한다.</li>
 </ol>
 
 <hr />
 
-<h2 id="how-to-use">How to use</h2>
-<p>Have you finished installing AXIcon? Please use “AXIcon search tool” to find the icons you want. Refer to the followings if you want to have more various settings.</p>
+<h2 id="사용방법">사용방법</h2>
+<p>액시콘 설치는 간단히 끝내셨나요? 원하는 아이콘을 선택하려면 “액시콘 검색도구”를 이용해주세요. 좀 더 다양한 설정을 하고 싶다면 아래의 내용을 읽어주세요.</p>
 
 <hr />
 
-<h3 id="default-icons">Default icons</h3>
-<p>AXIcon uses CSS prefix with the name of axi. Though it uses <i> tag for code simplicity, it is actually more appropriate to use <span> considering HTML context.</span></i></p>
+<h3 id="기본-아이콘">기본 아이콘</h3>
+<p>액시콘은 axi라는 CSS prefix를 사용하고 있습니다. 코드의 간결성을 위해 <i>태그를 사용하고 있지만 <span>을 사용하는 것이 HTML 의미상으로는 더 정확합니다.</span></i></p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&lt;i class="axi axi-axisj"&gt;&lt;/i&gt;
 &lt;i class="axi axi-axu"&gt;&lt;/i&gt;
@@ -473,8 +483,8 @@ Especially, with AXU, your project will be more wonderful and quicker to build u
 </code></pre>
 </div>
 
-<h3 id="icon-size">Icon size</h3>
-<p>AXIcon can be re-sized directly by applying font-size.</p>
+<h3 id="아이콘-크기">아이콘 크기</h3>
+<p>액시콘은 기본 사이즈에서 직접 font-size를 적용하는 형식으로 취하고 있습니다.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&lt;i class="axi axi-axisj"&gt;&lt;/i&gt;
 &lt;i class="axi axi-axu"&gt;&lt;/i&gt;
@@ -482,8 +492,8 @@ Especially, with AXU, your project will be more wonderful and quicker to build u
 </code></pre>
 </div>
 
-<h3 id="spin-icons">Spin icons</h3>
-<p>Animation such as loading can be implemented by using AXIcon.</p>
+<h3 id="스핀-아이콘">스핀 아이콘</h3>
+<p>액시콘을 사용하여 로딩상태 등의 애니메이션을 사용할 수 있습니다.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&lt;i class="axi axi-ion-load-a axi-spin"&gt;&lt;/i&gt;
 &lt;i class="axi axi-ion-load-b axi-spin"&gt;&lt;/i&gt;
@@ -492,8 +502,8 @@ Especially, with AXU, your project will be more wonderful and quicker to build u
 </code></pre>
 </div>
 
-<h3 id="rotate-icons">Rotate icons</h3>
-<p>Icons can be rotated 90 degrees.</p>
+<h3 id="회전-아이콘">회전 아이콘</h3>
+<p>아이콘을 90도 각도로 회전시킬 수 있습니다.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&lt;i class="axi axi-bicycle-man"&gt;&lt;/i&gt;Normal&lt;br /&gt;
 &lt;i class="axi axi-bicycle-man axi-rotate-90"&gt;&lt;/i&gt;axi-rotate-90&lt;br /&gt;
@@ -502,8 +512,8 @@ Especially, with AXU, your project will be more wonderful and quicker to build u
 </code></pre>
 </div>
 
-<h3 id="use-with-axisj-buttons">Use with AXISJ buttons</h3>
-<p>A more wonderful buttons can be made with AXISJ buttons.</p>
+<h3 id="액시스제이-버튼과-함께-사용">액시스제이 버튼과 함께 사용</h3>
+<p>액시스제이 버튼과 사용하면 더욱 멋진 버튼을 구현할 수 있습니다.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&lt;button class="AXButton"&gt;&lt;i class="axi axi-axisj"&gt;&lt;/i&gt; AXISJ&lt;/button&gt;&lt;br /&gt;
 &lt;button class="AXButton Red"&gt;&lt;i class="axi axi-axu"&gt;&lt;/i&gt; AXU&lt;/button&gt;&lt;br /&gt;
@@ -512,49 +522,49 @@ Especially, with AXU, your project will be more wonderful and quicker to build u
 </code></pre>
 </div>
 
-<h1 id="license">License</h1>
-<p>AXIcon follows LGPL license. This means that you can use it for commercial purposes and add or make some changes.
-But, when you modify some codes of AXIcon, you are bound to open it to the public as well.
-Please refer to the license details by category below.</p>
+<h1 id="라이선스">라이선스</h1>
+<p>액시콘 기본적으로 LGPL 라이선스를 따릅니다. 그렇게 때문에 영리적인 목적으로 사용해도 상관없고 추가 및 개선을 하셔도 무방합니다.
+단 액시콘이 제공하는 소스를 수정하는 경우는 동일하게 공개하셔야 되는 의무가 있을 뿐입니다.
+자세한 사항은 아래의 파트별 라이선스를 참조해주세요</p>
 
 <hr />
 
-<h2 id="font-license">Font License</h2>
+<h2 id="글꼴-라이선스">글꼴 라이선스</h2>
 
 <ul>
-  <li>Applies to all desktop and webfont files in the following directories: axicon/fonts/</li>
-  <li>Axicon is redistributing a combination of the following icon file files. Each icon file has the following license.
+  <li>다음 디렉토리에있는 모든 데스크톱 및 webfont 파일에 적용 axicon/fonts/</li>
+  <li>액시콘은 다음의 아이콘 파일 파일을 조합하여 재 배포 하고 있습니다. 각각의 아이콘 파일들은 다음의 라이선스를 가지고 있습니다.
     <ul>
       <li>axisj
-License : SIL OFL 1.1 <a href="http://axisj.com/axicon">http://axisj.com/axicon</a></li>
+라이센스 : SIL OFL 1.1 <a href="http://axisj.com/axicon">http://axisj.com/axicon</a></li>
       <li>Meteocons
-License : custom <a href="http://www.alessioatzeni.com/meteocons/">http://www.alessioatzeni.com/meteocons/</a></li>
+라이센스 : custom <a href="http://www.alessioatzeni.com/meteocons/">http://www.alessioatzeni.com/meteocons/</a></li>
       <li>Feather
-License : MIT URL : http://colebemis.com/feather/</li>
+라이센스 : MIT URL : http://colebemis.com/feather/</li>
       <li>ionicons
-License : MIT URL : http://ionicons.com/</li>
+라이센스 : MIT URL : http://ionicons.com/</li>
       <li>Font Awesome
-License : SIL OFL 1.1 http://fortawesome.github.io/Font-Awesome/</li>
+라이센스 : SIL OFL 1.1 http://fortawesome.github.io/Font-Awesome/</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="source-code-license">Source Code License</h2>
+<h2 id="소스코드-라이선스">소스코드 라이선스</h2>
 <ul>
-  <li>Applied to all files in the following directories : axisj/lib/</li>
-  <li>License : LGPL v2</li>
+  <li>다음 디렉토리에있는 모든 파일에 적용 : axisj/lib/</li>
+  <li>라이선스 : LGPL v2</li>
   <li>URL : <a href="https://www.gnu.org/licenses/lgpl-2.1.html">https://www.gnu.org/licenses/lgpl-2.1.html</a></li>
 </ul>
 
-<h2 id="other-license">Other License</h2>
+<h2 id="그외-라이선스">그외 라이선스</h2>
 <ul>
-  <li>All of the files in axisj not specified in the licenses above</li>
-  <li>License : 3.0 CC</li>
+  <li>위에 라이선스들에서 제시하지 않은 axicon내의 모든 파일</li>
+  <li>라이선스 : 3.0 CC</li>
   <li>URL : <a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a></li>
 </ul>
 
-<h2 id="brand-icon-license">Brand Icon License</h2>
-<p>All brand icons belong to their respective owners. The use of these trademarks does not indicate endorsement of the trademark holder by AXIcon, nor vice versa.</p>
+<h2 id="브랜드-아이콘-라이선스">브랜드 아이콘 라이선스</h2>
+<p>모든 브랜드 아이콘은 해당 소유자의 상표입니다. 이 상표의 사용은 그 반대의 액시콘에 의해 상표의 승인을 받았다는 것을 의미하지는 않습니다.</p>
 
                 </div>
             </div>
@@ -574,9 +584,9 @@ License : SIL OFL 1.1 http://fortawesome.github.io/Font-Awesome/</li>
                     <span class="copy">© AXISJ 2014-2017</span>
                     <ul class="lang">
                         
-                        <li><a class="on" href=" /axicon/ ">EN</a></li>
+                        <li><a  href=" /en/axicon/ ">EN</a></li>
                         
-                        <li><a  href=" /ko/axicon/ ">KO</a></li>
+                        <li><a class="on" href=" /axicon/ ">KO</a></li>
                         
                     </ul>
                 </div>

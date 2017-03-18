@@ -16,7 +16,7 @@ topmenus:
   - label: Option Menu
     submenus:
     - label: Medium
-      url : 'https://medium.com/@axisj'
+      url : 'https://medium.com/chequer'
       target: '_blank'
     - label: Heroes
       url : '/heroes'
