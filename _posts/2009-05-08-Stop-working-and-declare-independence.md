@@ -2,7 +2,7 @@
 layout: post
 title: Stop working and declare independece
 category: timeline
-type : right
+type : left
 lang : en
 ---
 

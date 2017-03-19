@@ -2,7 +2,7 @@
 layout: post
 title: GrooveDK joins in AXISJ
 category: timeline
-type : right
+type : left
 lang : ko
 ---
 
