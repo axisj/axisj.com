@@ -54,6 +54,67 @@ bar_logo_link: '/'
                         </div>
                     </li>
 
+                    <li class="timeline-left">
+                        <div class="timeline-badge"></div>
+                        <div class="timeline-panel pinned">
+                            <div class="timeline-heading">
+                                <h4>{{ site.data.vars.products_str }}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    AXISJ에서 개발하고 운영하는 오픈소스와 서비스들을 소개합니다.
+                                </p>
+
+                                <div class="">
+                                    <div class="axu-col-3">
+                                        <a href="axboot" class="thumbnail">
+                                            <img src="/assets/images/mem-axboot.png" alt="axboot" class="logo" />
+                                            <div class="caption">
+                                                <strong>AXBoot</strong>
+                                                <p>
+                                                    풀스택 웹애플리케이션 개발 프레임워크
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="axu-col-3">
+                                        <a href="ax5" class="thumbnail">
+                                            <img src="/assets/images/mem-ax5.png" alt="ax5ui" class="logo" />
+                                            <div class="caption">
+                                                <strong>AX5UI</strong>
+                                                <p>
+                                                    HTML5 웹표준 Javascript UI 컴포넌트
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="axu-col-3">
+                                        <a href="99nerds" class="thumbnail">
+                                            <img src="/assets/images/mem-99nerds.png" alt="99NERDS" class="logo" />
+                                            <div class="caption">
+                                                <strong>99NERDS</strong>
+                                                <p>
+                                                    개발자를 위한 쇼핑몰
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="axu-col-3">
+                                        <a href="axicon" class="thumbnail">
+                                            <img src="/assets/images/mem-axicon.png" alt="axicon" class="logo" />
+                                            <div class="caption">
+                                                <strong>AXICON</strong>
+                                                <p>
+                                                    웹 아이콘 폰트 패키지
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     {% for post in site.categories["timeline"] %}
                     <!-- s.timeline one -->
                     <li class="timeline-{{ post.type }}">

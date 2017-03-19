@@ -8,6 +8,8 @@ languages:
 define_axisj: "<strong>AXISJ</strong>는 대한민국 No.1 오픈 소스 그룹입니다."
 products_str: "AXISJ Open Source & Services"
 
+
+
 strings:
     email: "이메일"
     submit: "확인"
