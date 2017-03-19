@@ -7,7 +7,10 @@ languages:
 
 define_axisj: "<strong>AXISJ</strong>는 대한민국 No.1 오픈 소스 그룹입니다."
 products_str: "AXISJ Open Source & Services"
-
+products_axboot_str: "풀스택 웹애플리케이션 개발 프레임워크"
+products_ax5_str: "HTML5 웹표준 Javascript UI 컴포넌트"
+products_99nerds_str: "개발자를 위한 쇼핑몰"
+products_axicon_str: "웹 아이콘 폰트 패키지"
 
 
 strings:
