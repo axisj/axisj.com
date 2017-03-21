@@ -83,7 +83,8 @@
     }
     .btns{
       padding:20px;
-      a{
+      a, button{
+        background: #fff;
         border:1px solid $color-fore;
         text-decoration: none;
         padding:10px 20px;

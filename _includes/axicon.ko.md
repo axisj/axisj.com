@@ -9,7 +9,9 @@
 2. axicon 이라는 폴더명으로 당신의 웹 애플리케이션에 복사한다.
 (여기에서는 /axisj/axicon/에 두었다고 가정한다)
 3. html &lt;head&gt; 태그 안에 axicon.min.css 파일 위치를 아래와 같이 가져온다.
-        <link rel="stylesheet" type="text/css" href="/axisj/axicon/axicon.min.css" />
+
+    `<link rel="stylesheet" type="text/css" href="/axisj/axicon/axicon.min.css" />`
+
 4. 액시콘 검색도구를 사용해서 즐겁게 액시콘을 프로젝트에 적용한다.
 
 ***

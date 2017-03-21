@@ -10,7 +10,7 @@ Especially, with AXU, your project will be more wonderful and quicker to build u
 (Suppose that it is put in /axisj/axicon in this sample)
 3. In html <head> tag, paste axicon.min.css file as the followings.
 
-        <link rel="stylesheet" type="text/css" href="/axisj/axicon/axicon.min.css" />
+        `<link rel="stylesheet" type="text/css" href="/axisj/axicon/axicon.min.css" />`
 
 4. Enjoy your project with AXIcon using AXIcon search tool simply.
 

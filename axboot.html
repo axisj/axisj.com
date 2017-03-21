@@ -54,7 +54,7 @@ bar_logo_link: '/'
                 <p>{{ site.data.vars.page_axboot_desc[1].msg }}</p>
                 <div class="btns">
                     {% for btn in site.data.vars.page_axboot_btns %}
-                    <a href="{{ btn.link }}" class="btn-{{forloop.index}}">{{ btn.label }}</a>
+                    <button onclick="location.href='{{ btn.link }}';" class="btn-{{forloop.index}}">{{ btn.label }}</button>
                     {% endfor %}
                 </div>
             </div>
