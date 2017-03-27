@@ -178,7 +178,7 @@ page_axboot_contact:
 page_ax5_name: "AX5"
 page_ax5_type:
   - msg: "No.1 웹 애플리케이션 UI 컴포넌트"
-  - msg: "웹을 애플리케이션 UI를 가장 완벽하게 만드는 방법, AX5"
+  - msg: "웹 애플리케이션 UI를 가장 완벽하게 만드는 방법, AX5"
 
 page_ax5_desc:
   - msg: "가장 진화된 HTML5 UI 컴포넌트"
