@@ -45,7 +45,7 @@ bar_logo_link: '/'
         <div class="axu-layer">
             <div class="axu-wrap">
                 {% for method in support.methods %}
-                <div class="axu-col-4 how-column">
+                <div class="axu-col-6 how-column">
                     <div class="axu-unit">
                         <div class="support-card {{method.prefix}}">
                             <div class="support-img"><img src="/assets/images/donate-how-{{method.prefix}}.png" /></div>
@@ -98,6 +98,35 @@ bar_logo_link: '/'
             </div>
         </div>
         {% endfor %}
+
+        <div class="axu-layer">
+            <div class="axu-section-title">
+                <h3><span>{{ site.data.vars.page_donate_opencollective.label }}</span></h3>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                {% for oc in site.data.vars.page_donate_opencollective.list %}
+                <div class="axu-col-4 sw-column">
+                    <div class="axu-unit">
+                        <a href="{{ oc.link }}" target="_blank">
+                        <img src="{{ oc.img }}" alt="{{ oc.name }}" /></a>
+                        <p>{{ oc.desc }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="axu-clear"></div>
+            </div>
+        </div>
+        <div class="axu-layer">
+            <div class="axu-wrap">
+                <div class="support-desc">
+                    <div class="axu-unit">
+                        <p>{{ site.data.vars.page_donate_opencollective.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="axu-layer">
             <div class="axu-section-title">

@@ -358,6 +358,7 @@ page_donate_desc:
   - msg: ""
 
 page_donate_support_how:
+
   - label : "후원방법"
     desc  : "페이팔로 후원하시면 페이팔 정보(이메일, 이름)를 기반으로 후원 목록에 자동으로 등록됩니다.
            후원 계좌에 입금하신 경우에는 tom@axisj.com 혹은 02-2663-3039로 알려주세요."
@@ -365,25 +366,22 @@ page_donate_support_how:
       - label : "은행송금"
         prefix: "bank"
         desc  : "우리은행,1005-402-375399,액시스제이"
-      - label : "페이팔"
-        prefix: "paypal"
-        desc  : "$3,$100,$200,$400"
       - label : "오픈 소스에 공헌하기"
         prefix: "github"
         desc  : "Github Repository"
 
-  - label : "정기후원"
-    desc: "정기후원을 하시면 후원영웅으로 등록됩니다."
-    methods:
-      - label : "은행송금"
-        prefix: "bank"
-        desc  : "우리은행,1005-402-375399,액시스제이"
-      - label : "페이팔 정기후원"
-        prefix: "paypal"
-        desc  : "매년 $12,매년 $36,매년 $120,매년 $360, 매년 $1,000"
-      - label : "오픈 소스에 공헌하기"
-        prefix: "github"
-        desc  : "Github Repository"
+page_donate_opencollective:
+    label: "Opencollective를 통해 후원하기"
+    desc  : "Opencollective를 통해 후원하시면 후원금액이 어디에 어떻게 사용되는지 투명하게 확인 할 수 있어 더욱 좋습니다."
+    list:
+      - name  : "ax5ui"
+        desc  : ""
+        img   : "/assets/images/opencollective-ax5ui.png"
+        link  : "https://opencollective.com/ax5ui-kernel"
+      - name  : "axboot"
+        desc  : ""
+        img   : "/assets/images/opencollective-axboot.png"
+        link  : "https://opencollective.com/ax-boot-framework"
 
 page_donate_support_sw:
     label: "소프트웨어 후원사"
