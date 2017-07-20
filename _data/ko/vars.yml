@@ -188,7 +188,7 @@ page_ax5_btns:
   - label: "Demo"
     link: "http://ax5.io"
   - label: "Github Repository"
-    link: "https://github.com/AX5"
+    link: "https://github.com/ax5ui"
 
 page_ax5_intro:
   - label: "AX5 UI"
