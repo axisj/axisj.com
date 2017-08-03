@@ -1,0 +1,323 @@
+//가져오기
+@import 'preset_ax5';
+@import 'utils';
+@import 'axu'; //Responsive SCSS
+
+#AXUContents{
+  margin:0; padding:0;
+  width:100%; height:100%;
+}
+
+// AXUVisual //////////////////
+#AXUVisual{
+  background:url('/assets/images/bg_pattern_ax5.png') repeat-x;
+  .visual-top{
+    position:relative;
+    .visual-top-layer{
+      position: absolute;
+      width:100%;
+      .logo{
+        margin-top:15px;
+        width:80px; text-align: center;
+        img{width:100%;}
+        span{
+          display:block;
+          font-weight: bold;
+          font-size:13px; color:lighten($color-fore, 30%);
+        }
+      }
+      .menu{
+        float:right;
+        list-style:none;
+        li{
+          float:left;
+          a{
+            font-size:16px;
+            margin:0 5px;
+            padding:5px;
+            //background:#f00;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .visual-message-layer{
+    text-align: center;
+    h1{
+      font-size:30px;
+      margin:0px; padding:80px 20px 0 20px;
+    }
+    h2{
+      font-size:18px;
+      margin:0px;
+      padding:10px 30px;
+    }
+    @include rwd(mx){
+      h1{ font-size:20px; padding-top:20px; }
+      h2{ font-size:14px; padding:5px 30px; }
+    }
+  }
+  .visual-image-layer {
+    text-align: center;
+    img{width:300px; height:300px;}
+  }
+  .visual-desc-layer{
+    text-align: center;
+    font-size:13px;
+    h3{
+      font-size:18px;
+      margin:0px; padding:10px;
+    }
+    p{
+      width:70%; padding:10px; margin:0px auto;
+    }
+    .btns{
+      padding:20px;
+      a{
+        border:1px solid $color-fore;
+        text-decoration: none;
+        padding:10px 20px;
+        &.btn-1{
+          background:$color-fore;
+          color:$color-back;
+        }
+        &:hover{
+          background: lighten($color-fore, 20%);
+          color: $color-back;
+        }
+      }
+
+    }
+  }
+}
+@include rwd(mx){
+  #AXUVisual {
+    .visual-top{display:none;}
+    .visual-image-layer {
+      img{width:200px; height:200px;}
+    }
+  }
+}
+
+#AXUIntroduction{
+  .axu-section-title{ //Override...
+    h3{
+      span{background:darken($color-back, 4%)}
+    }
+  }
+  @include linear-gradient(0deg, darken($color-back, 2%),darken($color-back, 4%));
+
+  .intro-column{
+    .intro-card{
+      padding-bottom:30px;
+      font-size:13px;
+      line-height: 140%;
+      img{width:auto; height:64px;}
+      h3{color:$color-spot; font-size:24px;margin:0; padding:0;}
+      h4{font-size:14px; margin:0; padding:20px 0;}
+      ul{
+        margin:0 30px; padding:10px 0;
+      }
+    }
+  }
+  @include rwd(mx){
+    .intro-column{
+      width:100%;
+      .intro-card{
+        text-align: center;
+        h3, h4, p, li {text-align: left;}
+      }
+    }
+  }
+}
+
+#AXUFeatures{
+  background: $color-spot;
+  img{width:64px; height:64px;}
+  .axu-section-title{ //Override...
+    h3{
+      color:$color-back;
+      &:before{ background:lighten($color-spot, 10%);}
+      span{background:$color-spot;}
+    }
+  }
+  .feature-layer{
+    .feature-column {
+      .feature-card {
+        text-align: center;
+        padding-bottom:30px;
+        color: lighten($color-back, 10%);
+        h3 {
+          font-size:18px;
+        }
+        p{
+          text-align: left;
+          font-size:13px;
+          line-height: 140%;
+        }
+        .btns {
+          text-align: left;
+          a {
+            display: inline-block;
+            background:darken($color-spot, 15%);
+            font-size: 13px;
+            border: 1px solid lighten($color-spot, 25%);
+            color: lighten($color-back, 10%);
+            padding: 3px 6px;
+            text-decoration: none;
+            &:hover{
+              border: 1px solid lighten($color-back,30%);
+              background: lighten($color-back,30%);
+              color: darken($color-spot, 10%);
+            }
+          }
+        }
+      }
+    }
+    @include rwd(mx){
+      .feature-column{
+        width:100%;
+        .feature-card{
+          .btns{text-align: center;}
+        }
+      }
+    }
+  }
+  .special-layer{
+
+    color:darken($color-fore,15%);
+    background: lighten($color-spot, 15%);
+    .special-column {
+      .special-card {
+        padding: 30px 0px;
+        text-align: center;
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 13px;
+          text-align: left;
+        }
+        .btns {
+          text-align: left;
+          a {
+            display: inline-block;
+            background: lighten($color-spot, 5%);
+            font-size: 13px;
+            border: 1px solid darken($color-fore, 20%);
+            color: darken($color-fore, 20%);
+            padding: 3px 6px;
+            text-decoration: none;
+            &:hover {
+              color: lighten($color-spot, 5%);
+              background: darken($color-fore, 20%);
+            }
+          }
+        }
+      }
+    }
+    @include rwd(mx){
+      .special-column{
+        width:100%;
+        .special-card{
+          .btns{text-align: center;}
+        }
+      }
+    }
+  }
+}
+
+
+#AXUMarkDown{
+  //s.MarkDown Area...
+  overflow: hidden;
+  word-wrap: break-word;
+
+  font-size:13px;
+  h1{font-size:26px; margin:0; padding:10px 0; line-height: 140%;}
+  h2{font-size:20px; margin:0; padding:0; line-height: 140%;}
+  h3{font-size:18px; margin:0; padding:0; line-height: 140%;}
+  h4{font-size:16px; margin:0; padding:0; line-height: 140%;}
+  h5{font-size:15px; margin:0; padding:0; line-height: 140%;}
+  h6{font-size:14px; margin:0; padding:0; line-height: 140%;}
+  p{
+    font-size:13px; margin:6px 0; padding:10px 0; line-height: 140%; color:darken($color-fore,10%);
+    &>code{
+      border:1px solid lighten($color-spot, 20%);
+      @include border-radius(2px);
+      color:$color-spot;
+      padding:1px 2px;
+      background:lighten($color-back, 30%);
+    }
+  }
+  ul{ margin-left:15px; padding:0px; list-style-position: outside; }
+  ol{ margin-left:20px; padding:0px; list-style-position: outside; }
+
+  blockquote{
+    margin:6px 0; padding:0px 10px;
+    border-left:3px solid darken($color-back, 10%); font-style: italic;
+  }
+  hr{border:none;border-top:1px dashed darken($color-back, 10%); margin:10px 0px; font-size:0px;}
+  a{
+    padding:0px 5px;
+    color:$color-spot;
+    margin:0 2px;
+    text-decoration: underline;
+    cursor:hand;
+    &:hover{
+      border-radius: 20px;
+      text-decoration: none;
+      background:lighten($color-back, 10%); color:$color-spot;
+      border:1px solid lighten($color-spot, 5%);
+    }
+  }
+  img{
+    //width:100%;
+    //position:relative;
+    //float:left;
+    &:after{clear:both;}
+    &[src$="#profile"] {
+      width:100px; height:100px;
+      @include border-radius(50%);
+    }
+    &[src$="#gallery-2"]{ //한 줄에 이미지 2개 놓기 위한 프리픽스
+      width:50%; height:100px;
+      outline: 2px solid $color-fore;
+      outline-offset: 0px;
+    }
+    &[src$="#gallery-3"]{
+      width:33.3334%; height:100px; overflow: hidden;
+      outline: 2px solid $color-fore;
+      outline-offset: 0px;
+    } //한 줄에 이미지 3개 놓기 위한 프리픽스
+  }
+}
+
+
+
+
+.axu-section-title{
+  padding:30px 30%;
+  h3{
+    position: relative;
+    text-align: center;
+    &:before{
+      background: lighten($color-fore, 40%);
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left:0;
+    }
+    span{
+      background: $color-back;
+      padding: 0 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+}

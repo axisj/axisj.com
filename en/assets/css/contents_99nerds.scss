@@ -1,0 +1,231 @@
+@import 'preset_99nerds';
+@import 'utils';
+@import 'axu'; //Responsive SCSS
+
+#AXUContents{
+  margin:0; padding:0;
+  width:100%; height:100%;
+}
+
+// AXUVisual //////////////////
+#AXUVisual{
+  background:url('/assets/images/bg_pattern_99nerds.png') repeat-x;
+  background-size: 40%;
+  .visual-top{
+    position:relative;
+    .visual-top-layer{
+      position: absolute;
+      width:100%;
+      .logo{
+        margin-top:15px;
+        width:80px; text-align: center;
+        img{width:100%;}
+        span{
+          display:block;
+          font-weight: bold;
+          font-size:13px; color:lighten($color-fore, 30%);
+        }
+      }
+      .menu{
+        float:right;
+        list-style:none;
+        li{
+          float:left;
+          a{
+            font-size:16px;
+            margin:0 5px;
+            padding:5px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .visual-message-layer{
+    text-align: center;
+    h1{
+      font-size:30px;
+      margin:0px; padding:80px 20px 0 20px;
+    }
+    h2{
+      font-size:18px;
+      margin:0px;
+      padding:10px 30px;
+    }
+    @include rwd(mx){
+      h1{ font-size:20px; padding-top:20px; }
+      h2{ font-size:14px; padding:5px 30px; }
+    }
+  }
+  .visual-image-layer {
+    text-align: center;
+    img{width:300px; height:300px;}
+  }
+  .visual-desc-layer{
+    text-align: center;
+    font-size:13px;
+    h3{
+      font-size:18px;
+      margin:0px; padding:10px;
+      color:darken($color-back, 20%);
+      text-shadow:0 1px rgba(255,255,255,0.2);
+    }
+    p{
+      text-align: center;
+      width:50%; padding:10px; margin:0px auto;
+      color:lighten($color-back, 40%);
+      text-shadow:0 -1px rgba(0,0,0,0.3);
+    }
+    .btns{
+      padding:20px;
+      a{
+        border:1px solid $color-fore;
+        text-decoration: none;
+        padding:10px 20px;
+        &.btn-1{
+          background:$color-fore;
+          color:$color-back;
+        }
+        &:hover{
+          background: lighten($color-fore, 20%);
+          color: $color-back;
+        }
+      }
+
+    }
+  }
+  @include rwd(mx){
+    .visual-desc-layer {
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
+@include rwd(mx){
+  #AXUVisual {
+    .visual-top{display:none;}
+    .visual-image-layer {
+      img{width:200px; height:200px;}
+    }
+  }
+}
+
+
+#AXUIntro{
+
+  .promo-card {
+    text-align: center;
+    img {
+      max-width: 500px;
+    }
+  }
+
+  .sticker-column{
+    .sticker-card{
+      padding-bottom:20px;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color:lighten($color-fore, 20%);
+        img{width:80px; height:80px;}
+        p{
+          margin:0; padding:0;
+          font-size:14px;
+        }
+        &:hover{
+          color:$color-spot;
+        }
+      }
+
+    }
+  }
+  @include rwd(tx){
+    .sticker-column{
+      width:25%;
+    }
+  }
+  @include rwd(mx){
+    .promo-card{
+      img{
+        max-width:300px;
+      }
+    }
+    .sticker-column{
+      width:50%;
+    }
+  }
+
+}
+
+#AXUStickers{
+
+  .promo-card {
+    text-align: center;
+    img {
+      max-width: 500px;
+    }
+  }
+
+  .sticker-column{
+    .sticker-card{
+      padding-bottom:20px;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color:lighten($color-fore, 20%);
+        img{width:80px; height:80px;}
+        p{
+          margin:0; padding:0;
+          font-size:14px;
+        }
+        &:hover{
+          color:$color-spot;
+        }
+      }
+
+    }
+  }
+  @include rwd(tx){
+    .sticker-column{
+      width:25%;
+    }
+  }
+  @include rwd(mx){
+    .promo-card{
+      img{
+        max-width:300px;
+      }
+    }
+    .sticker-column{
+      width:50%;
+    }
+  }
+
+}
+
+.axu-section-title{
+  padding:30px 30%;
+  h3{
+    position: relative;
+    text-align: center;
+    &:before{
+      background: darken($color-back, 10%);
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left:0;
+    }
+    span{
+      background: $color-back;
+      padding: 0 10px;
+      position: relative;
+      z-index: 1;
+      color:darken($color-back, 20%);
+    }
+
+  }
+}
