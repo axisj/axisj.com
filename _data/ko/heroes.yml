@@ -55,6 +55,11 @@ hero_list:
     prefix: "donate"
     desc: "AXISJ 오픈 소스에 후원 하신 영웅들 입니다."
     heroes:
+      - name: "김웅"
+        img: ""
+        email: ""
+        homepage: ""
+        desc: ""
       - name: "박상희"
         img: ""
         email: ""
