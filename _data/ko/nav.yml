@@ -33,8 +33,6 @@ menu_axboot:
     link: "document"
   - name: "테마"
     link: "theme"
-  - name: "컨설팅"
-    link: "contact"
 
 menu_99nerds:
   - name: "쇼핑몰 소개"
